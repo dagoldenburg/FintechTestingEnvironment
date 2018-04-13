@@ -17,9 +17,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="databas-test" target="1.5" />
-      <module name="ExjobbMonkaS" target="1.5" />
-      <module name="ExjobbWebsite" target="1.7" />
+      <module name="databas-test" target="1.8" />
+      <module name="ExjobbMonkaS" target="1.8" />
+      <module name="ExjobbWebsite" target="1.8" />
       <module name="RESTFrontend" target="1.8" />
       <module name="restvertx" target="1.8" />
       <module name="sftp-client" target="1.8" />

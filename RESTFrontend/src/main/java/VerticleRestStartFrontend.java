@@ -6,7 +6,7 @@ public class VerticleRestStartFrontend extends AbstractVerticle {
 
     public static void main(String[] args) throws InterruptedException {
         Vertx vertx = Vertx.vertx();
-        for(int i = 1;i<=10000;i*=10){
+        for(int i = 1;i<=100;i*=10){
             System.out.println(i);
             Thread t = new Thread(new Measurement("RestSendManyTrans"+i));
             t.start();

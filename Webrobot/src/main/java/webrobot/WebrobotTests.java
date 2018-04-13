@@ -14,7 +14,7 @@ import Tests.*;
  */
 public class WebrobotTests {
 
-    public void makeOneTransactionTest(int nrTimes) {
+    public long makeOneTransactionTest(int nrTimes) {
         try {
             //One transaction at a time test
 
@@ -31,13 +31,16 @@ public class WebrobotTests {
             System.out.println("ONE TRANSACTION TEST");
             System.out.println(nrTimes + " operations took: " + timeTaken + " ms.");
             System.out.println("Average time: " + (timeTaken / nrTimes));
+            return (timeTaken / nrTimes);
 
         } catch (Exception ex) {
-            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+            ex.printStackTrace();
+            return 0;
         }
     }
 
-    public void makeSeveralTransactionsTest(int nrTimes, int nrTransactions) {
+
+    public long makeSeveralTransactionsTest(int nrTimes, int nrTransactions) {
         try { //Several transactions at a time test
             long startTime = System.currentTimeMillis();
            
@@ -49,15 +52,27 @@ public class WebrobotTests {
             System.out.println("SEVERAL (" + nrTransactions + ") TRANSACTIONS TEST");
             System.out.println(nrTimes + " operations took: " + timeTaken + " ms.");
             System.out.println("Average time: " + (timeTaken / nrTimes));
+            return (timeTaken / nrTimes);
+
         } catch (Exception e) {
             e.printStackTrace();
+            return 0;
         }
     }
-    
-    public void getTransactionHistoryTest(int nrTimes, int nrTransactions){
+
+    /**
+     * Returns the average time of each lifecycle of the test.
+     * Use this value for graphs etc.
+     * @param nrTimes
+     * @param nrTransactions
+     * @return
+     */
+    public long getTransactionHistoryTest(int nrTimes, int nrTransactions){
         try{
             long startTime = System.currentTimeMillis();
-            
+
+
+
             for(int i = 0; i < nrTimes; i++){
                 getTransactionHistory(nrTransactions);
             }
@@ -66,9 +81,14 @@ public class WebrobotTests {
             System.out.println("SEVERAL (" + nrTransactions + ") TRANSACTION HISTORY TEST");
             System.out.println(nrTimes + " operations took: " + timeTaken + " ms.");
             System.out.println("Average time: " + (timeTaken/nrTimes));
+
+            return (timeTaken/nrTimes); //average ms per lifecycle
+
         }catch(Exception e){
             e.printStackTrace();
+            return 0;
         }
+
     }
 
     public void makeOneTransaction() {

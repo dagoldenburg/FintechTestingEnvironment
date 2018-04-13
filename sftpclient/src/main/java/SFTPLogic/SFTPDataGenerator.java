@@ -52,7 +52,7 @@ public class SFTPDataGenerator {
             encodedBytes = Base64.getEncoder().encode(hash);
             filename = new String(encodedBytes);
             filename = filename.replace("/","!");
-            writer = new BufferedWriter( new FileWriter("/Users/do/IdeaProjects/sftpclient/files/"+filename));
+            writer = new BufferedWriter( new FileWriter(filename));
             writer.write( sb.toString());
         }
         catch (IOException e) {

@@ -20,7 +20,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Webrobot {
 
     private WebDriver driver;
-
+    static final String URL = "http://localhost:8080/ExjobbWebsite/";
     public Webrobot(BrowserType type) throws Exception {
         switch (type) {
             case CHROME:
@@ -84,7 +84,7 @@ public class Webrobot {
     }
 
     public void login() {
-        driver.get("http://localhost:8080/Frontend/");
+        driver.get(URL);
         
         //Get username field and enter username
         WebElement usernameField;
@@ -124,7 +124,7 @@ public class Webrobot {
     }
 
     public boolean transactionDidSucceed() {
-        if (driver.getPageSource().contains("Success!")) {
+        if (driver.getPageSource().contains("success")) {
             return true;
         } else {
             return false;

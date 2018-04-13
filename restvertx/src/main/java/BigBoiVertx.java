@@ -90,7 +90,6 @@ public class BigBoiVertx extends AbstractVerticle {
             rc.response().setStatusCode(200).putHeader("content-type","text/html").end("GOOD REQ");
         }else
             rc.response().setStatusCode(400).putHeader("content-type","text/html").end("BAD REQ");
-
     }
 
     private void getUsers(RoutingContext rc){

@@ -29,7 +29,7 @@ public class PostGreSQLDb implements DbI {
             Log.e(this,"bababababa");
             Class.forName("org.postgresql.Driver");
             connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/"+DATABASE_NAME,
-                    "postgres","admin");
+                    "postgres","root");
             connection.setAutoCommit(true);
         }catch (ClassNotFoundException e) {
             e.printStackTrace();
