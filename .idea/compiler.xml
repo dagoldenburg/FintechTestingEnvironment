@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="databas-test" />
+        <module name="ExjobbWebsite" />
+        <module name="RESTFrontend" />
+        <module name="restvertx" />
+        <module name="sftp-client" />
+        <module name="sftpserverhandler" />
+        <module name="Tests" />
+        <module name="Webrobot" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="databas-test" target="1.5" />
+      <module name="ExjobbMonkaS" target="1.5" />
+      <module name="ExjobbWebsite" target="1.7" />
+      <module name="RESTFrontend" target="1.8" />
+      <module name="restvertx" target="1.8" />
+      <module name="sftp-client" target="1.8" />
+      <module name="sftpserverhandler" target="1.8" />
+      <module name="Tests" target="1.8" />
+      <module name="Webrobot" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

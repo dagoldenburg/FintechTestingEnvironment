@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>   
+        <h:form>
+            <h2>Create new account</h2>
+            #{userBean.statusMessage}<br/>
+            
+            Username:
+            <h:inputText id="username" value="#{userBean.username}">
+                <f:ajax event="keyup" render="alreadyExists"/>
+            </h:inputText>
+            <h:outputText id="alreadyExists" value=" #{userBean.nameAlreadyExists()}"/>
+            <br/>
+            Password:
+            <h:inputSecret value="#{userBean.password}"/><br/>
+            Password again:
+            <h:inputSecret value="#{userBean.password2}"/><br/>
+            <h:commandButton id="knapp" value="Submit" action="#{userBean.createAccount}"/>
+            <br/>
+            <h:commandLink value='Go back' action="#{navigationBean.goToLogin()}" />
+        </h:form>
+    </h:body>
+</html>
+
