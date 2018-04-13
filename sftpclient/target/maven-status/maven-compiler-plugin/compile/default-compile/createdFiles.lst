@@ -1,0 +1,5 @@
+Exceptions/SFTPClientException.class
+SFTPLogic/SFTPDataGenerator.class
+Main.class
+SFTPLogic/SFTPClientI.class
+SFTPLogic/SFTPClient.class

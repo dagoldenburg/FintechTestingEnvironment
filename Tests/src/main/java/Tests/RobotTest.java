@@ -1,3 +1,5 @@
+package Tests;
+
 public class RobotTest extends TestI implements Cloneable{
 
 

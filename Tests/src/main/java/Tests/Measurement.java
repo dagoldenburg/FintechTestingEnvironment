@@ -1,3 +1,5 @@
+package Tests;
+
 import com.sun.management.OperatingSystemMXBean;
 
 import java.io.File;

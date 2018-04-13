@@ -1,3 +1,5 @@
+package Tests;
+
 import java.io.Serializable;
 
 public class Transaction implements Serializable {
@@ -16,7 +18,7 @@ public class Transaction implements Serializable {
 
     @Override
     public String toString() {
-        return "Transaction{" +
+        return "Tests.Transaction{" +
                 "amount=" + amount +
                 ", to='" + to + '\'' +
                 ", from='" + from + '\'' +

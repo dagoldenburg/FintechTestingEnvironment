@@ -1,3 +1,5 @@
+package Tests;
+
 import Exceptions.SFTPClientException;
 import SFTPLogic.SFTPClient;
 import SFTPLogic.SFTPDataGenerator;
