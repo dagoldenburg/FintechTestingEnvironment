@@ -4,15 +4,13 @@ import SFTPLogic.SFTPDataGenerator;
 
 public class SFTPTest extends TestI{
 
-    public SFTPTest(String filename) {
-        super(filename);
-    }
+
 
     @Override
-    void testSendTransactions(int amountOfTests) {
-        super.setFileNameEnding("SFTPSendManyTrans"+amountOfTests);
+    void testSendTransactions(int amountOfTransactions) {
+        super.setFileNameEnding("SFTPSendManyTrans"+ amountOfTransactions);
         SFTPDataGenerator dg = new SFTPDataGenerator();
-        String fname = dg.generateTransactionBatch(amountOfTests);
+        String fname = dg.generateTransactionBatch(amountOfTransactions);
         SFTPClient sftpc =
                 new SFTPClient("localhost",22, "do",
                         "JakobENoob123#\"!",2222);

@@ -2,14 +2,9 @@ abstract class TestI implements Cloneable{
 
     String filename;
 
-    public TestI(String filename){
-        this.filename = filename;
-        setUpEnvironment();
-    }
+    abstract void testSendTransactions(int amountOfTransactions);
 
-    abstract void testSendTransactions(int amountOfTests);
-
-    abstract void testRetrieveTransactions(int amountOfTests);
+    abstract void testRetrieveTransactions(int amountOfTransactions);
 
     abstract void setUpEnvironment();
 

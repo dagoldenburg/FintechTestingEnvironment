@@ -67,7 +67,7 @@ public class Webrobot {
                 By.name("j_idt16:j_idt18"));
         submitButton.click();
 
-        
+
         for (int i = 0; i < nrTransactions; i++) {
             try {
                 WebElement e = driver.findElement(
@@ -78,14 +78,14 @@ public class Webrobot {
                 e.printStackTrace();
             }
         }
-        
+
         return transactionList;
 
     }
 
     public void login() {
         driver.get("http://localhost:8080/Frontend/");
-        
+
         //Get username field and enter username
         WebElement usernameField;
         usernameField = driver.findElement(By.name("j_idt6:username"));
@@ -100,8 +100,8 @@ public class Webrobot {
         WebElement loginBtn;
         loginBtn = driver.findElement(By.name("j_idt6:knapp"));
         loginBtn.click();
-        
-        
+
+
     }
 
     public void makeTransaction() {
