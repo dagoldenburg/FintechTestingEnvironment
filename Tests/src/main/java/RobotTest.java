@@ -22,6 +22,7 @@ public class RobotTest extends TestI implements Cloneable{
         Thread t = new Thread(new Measurement(filename));
         t.start();
         wt.getTransactionHistory(amountOfTransactions);
+        t.interrupt();
     }
 
 

@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.lang.management.ManagementFactory;
+import java.math.BigInteger;
 import java.text.DecimalFormat;
 import java.util.Locale;
 
@@ -60,7 +61,9 @@ public class Measurement implements Runnable{
                     Thread.sleep(10);
                     CPUsb.append(String.format(Locale.US, "%1.8f", osMBean.getProcessCpuLoad()));
                     CPUsb.append(",");
-                    RAMsb.append(((rt.totalMemory() - rt.freeMemory()) / 1024));
+                    RAMsb.append((
+                            ((rt.totalMemory() - rt.freeMemory())
+                                    /((double)1600000000*10))*100));
                     RAMsb.append(",");
                     TIMEsb.append(System.currentTimeMillis()-firstTime);
                     TIMEsb.append(",");

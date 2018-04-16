@@ -2,6 +2,7 @@ package DB;
 
 
 import DB.Model.Transaction;
+import javafx.scene.control.TableView;
 
 import java.sql.*;
 import java.util.LinkedList;
@@ -142,6 +143,7 @@ public class PostGreSQLDb implements DbI {
 
 
     /**
+     * Retrieves all usernames
      * @return A linkedlist of strings with all the usernames available in the database.
      */
     public LinkedList<String> retrieveAllUsernames(){
@@ -158,7 +160,7 @@ public class PostGreSQLDb implements DbI {
         }
         return usernames;
     }
-    
+
         public void disconnect() {
         try {
             if (connection != null) {
@@ -166,6 +168,39 @@ public class PostGreSQLDb implements DbI {
             }
         } catch (SQLException ex) {
             Logger.getLogger(PostGreSQLDb.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public void saveToken(String token){
+        String insertString = "INSERT INTO tokens (token) VALUES (?)";
+        PreparedStatement ps;
+        try{
+            ps = connection.prepareStatement(insertString);
+            ps.setString(1,token);
+            ps.executeUpdate();
+            Log.i(this,"inserted token");
+        } catch (SQLException e) {
+            Log.e(this,"Couldn't insert token");
+        }
+    }
+
+    public boolean matchToken(String token){
+        String selectString = "SELECT * FROM tokens";
+        ResultSet rs;
+        try{
+            PreparedStatement ps = connection.prepareStatement(selectString);
+            rs = ps.executeQuery();
+            if(rs.next()){
+                Log.i(this,"Inserted token");
+                return true;
+            }else {
+
+                Log.i(this,"No match for token");
+                return false;
+            }
+        } catch (SQLException e) {
+            Log.e(this,"Couldn't match token");
+            return false;
         }
     }
 

@@ -30,11 +30,14 @@ public class Communicator extends AbstractVerticle {
                 getNrOfTransactions();
             }
         }
-        t.interrupt();
-        vertx.close();
-    }
+        try {
+            t.interrupt();
+        }catch(NullPointerException e){
 
-    int amountOfTests;
+        }
+    }
+    //http://tutorials.jenkov.com/oauth2/overview.html oauth
+   int amountOfTests;
     boolean send;
     private Thread t;
 

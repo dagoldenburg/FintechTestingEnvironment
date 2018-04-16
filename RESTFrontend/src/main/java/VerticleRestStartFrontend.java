@@ -5,13 +5,21 @@ public class VerticleRestStartFrontend extends AbstractVerticle {
 
     public static void main(String[] args) throws InterruptedException {
         Vertx vertx = Vertx.vertx();
+
+        //warmup
         for(int i = 1;i<=10000;i*=10){
-            System.out.println(i);
+            vertx.deployVerticle(new Communicator(i,true,null));
+        }
+        System.gc();
+        Thread.sleep(1000);
+        System.out.println("LALALALALALALA");
+        for(int i = 1;i<=10000;i*=10){
             Thread t = new Thread(new Measurement("RestSendManyTrans"+i));
             t.start();
             vertx.deployVerticle(new Communicator(i,true,t));
             Thread.sleep(500);
         }
+        System.out.println("done diddy");
 
     }
 
