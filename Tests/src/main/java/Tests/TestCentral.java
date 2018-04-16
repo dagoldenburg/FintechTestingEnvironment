@@ -1,5 +1,4 @@
-import io.vertx.core.Vertx;
-
+package Tests;
 import java.util.Scanner;
 
 public class TestCentral {
