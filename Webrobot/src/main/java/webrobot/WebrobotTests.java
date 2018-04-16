@@ -19,13 +19,9 @@ public class WebrobotTests {
             //One transaction at a time test
 
             long startTime = System.currentTimeMillis();
-             
-            Thread t = new Thread(new Measurement("WebRobotSendTransaction"+nrTimes));
-            t.start();
             for (int i = 0; i < nrTimes; i++) {
                 makeOneTransaction();
             }
-            t.interrupt();
             long finTime = System.currentTimeMillis();
             long timeTaken = finTime - startTime;
             System.out.println("ONE TRANSACTION TEST");
@@ -70,8 +66,6 @@ public class WebrobotTests {
     public long getTransactionHistoryTest(int nrTimes, int nrTransactions){
         try{
             long startTime = System.currentTimeMillis();
-
-
 
             for(int i = 0; i < nrTimes; i++){
                 getTransactionHistory(nrTransactions);

@@ -7,6 +7,8 @@ public class Main {
     static final String SERVERIP = "10.46.1.90";
     public static void main(String[] args){
 
+
+        /*
         SFTPDataGenerator dg = new SFTPDataGenerator();
         String filename = dg.generateTransactionBatch(100);
         SFTPClient sftpc = new SFTPClient(SERVERIP,22,"do","JakobENoob123#\"!",2222);
@@ -23,6 +25,6 @@ public class Main {
             e.printStackTrace();
         }
         sftpc.retrieveFile();
-        sftpc.disconnect();
+        sftpc.disconnect();*/
     }
 }

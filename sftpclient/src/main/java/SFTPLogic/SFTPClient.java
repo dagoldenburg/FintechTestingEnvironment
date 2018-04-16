@@ -73,7 +73,7 @@ public class SFTPClient implements SFTPClientI{
             Socket clientSocket = new Socket(ip, tcpPort);
             DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream());
             BufferedReader inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-            outToServer.writeBytes("CF DAG 10" + '\n');
+            outToServer.writeBytes("CF Jubbe 10" + '\n');
             String response = inFromServer.readLine();
             String[] strings = response.split(" ");
             if(strings[0].equals("DONE")){
