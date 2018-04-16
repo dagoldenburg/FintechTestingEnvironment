@@ -2,7 +2,6 @@ package DB;
 
 
 import DB.Model.Transaction;
-import javafx.scene.control.TableView;
 
 import java.sql.*;
 import java.util.LinkedList;
@@ -27,10 +26,10 @@ public class PostGreSQLDb implements DbI {
      */
     public boolean createConnection() {
         try{
-            Log.e(this,"bababababa");
+            Log.setPrintLog(false);
             Class.forName("org.postgresql.Driver");
             connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/"+DATABASE_NAME,
-                    "postgres","root");
+                    "postgres","admin");
             connection.setAutoCommit(true);
         }catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -180,6 +179,7 @@ public class PostGreSQLDb implements DbI {
             ps.executeUpdate();
             Log.i(this,"inserted token");
         } catch (SQLException e) {
+            e.printStackTrace();
             Log.e(this,"Couldn't insert token");
         }
     }

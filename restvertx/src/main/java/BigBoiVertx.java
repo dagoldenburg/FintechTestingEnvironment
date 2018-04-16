@@ -10,7 +10,9 @@ import io.vertx.ext.web.Router;
 import io.vertx.ext.web.RoutingContext;
 import io.vertx.ext.web.handler.BodyHandler;
 
+import java.io.UnsupportedEncodingException;
 import java.security.SecureRandom;
+import java.util.Base64;
 import java.util.LinkedList;
 
 public class BigBoiVertx extends AbstractVerticle {
@@ -42,7 +44,6 @@ public class BigBoiVertx extends AbstractVerticle {
     }
 
     private void authenticateUser(RoutingContext rc) {
-        if (dbReference.matchToken(rc.request().getParam("token"))) {
             String string = rc.getBodyAsString();
             System.out.println("FORM DATA authenticate: " + string);
             String[] strings = string.split("&");
@@ -52,13 +53,12 @@ public class BigBoiVertx extends AbstractVerticle {
                 SecureRandom random = new SecureRandom();
                 byte bytes[] = new byte[20];
                 random.nextBytes(bytes);
-                String token = bytes.toString();
+                byte[] encodeByte = Base64.getEncoder().encode(bytes);
+                String token = new String(encodeByte);
                 dbReference.saveToken(token);
                 rc.response().setStatusCode(200).putHeader("content-type", "text/html").end(token);
             } else
                 rc.response().setStatusCode(401).putHeader("content-type", "text/html").end("Unsuccessful login!");
-
-        }
     }
 
     private void getAllTransactions(RoutingContext rc){
@@ -72,6 +72,8 @@ public class BigBoiVertx extends AbstractVerticle {
             } else {
                 rc.response().setStatusCode(204).putHeader("content-type", "text/html").end("No data BOI");
             }
+        }else{
+            System.out.println("NO TOKERINO");
         }
     }
 
@@ -85,6 +87,8 @@ public class BigBoiVertx extends AbstractVerticle {
                         .end(Json.encodePrettily(list));
             } else
                 rc.response().setStatusCode(204).putHeader("content-type", "text/html").end("No data BOI");
+        }else{
+            System.out.println("NO TOKERINO");
         }
     }
 
@@ -101,6 +105,8 @@ public class BigBoiVertx extends AbstractVerticle {
                     rc.response().setStatusCode(200).putHeader("content-type", "text/html").end("GOOD REQ");
                 } else
                     rc.response().setStatusCode(400).putHeader("content-type", "text/html").end("BAD REQ");
+            }else{
+                System.out.println("NO TOKERINO");
             }
 
     }
@@ -115,6 +121,8 @@ public class BigBoiVertx extends AbstractVerticle {
                         .end(Json.encodePrettily(list));
             } else
                 rc.response().setStatusCode(204).putHeader("content-type", "text/html").end("No data BOI");
+        }else{
+            System.out.println("NO TOKERINO");
         }
 
     }

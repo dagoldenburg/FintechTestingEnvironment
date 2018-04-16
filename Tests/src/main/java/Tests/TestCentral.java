@@ -1,3 +1,8 @@
+package Tests;
+
+import Tests.RestTest;
+import Tests.RobotTest;
+import Tests.SFTPTest;
 import io.vertx.core.Vertx;
 
 import java.util.Scanner;

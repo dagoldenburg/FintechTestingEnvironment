@@ -1,3 +1,4 @@
+import Tests.Measurement;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Vertx;
 
@@ -12,14 +13,12 @@ public class VerticleRestStartFrontend extends AbstractVerticle {
         }
         System.gc();
         Thread.sleep(1000);
-        System.out.println("LALALALALALALA");
         for(int i = 1;i<=10000;i*=10){
             Thread t = new Thread(new Measurement("RestSendManyTrans"+i));
             t.start();
             vertx.deployVerticle(new Communicator(i,true,t));
             Thread.sleep(500);
         }
-        System.out.println("done diddy");
 
     }
 

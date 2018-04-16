@@ -1,3 +1,5 @@
+package Tests;
+
 import webrobot.BrowserType;
 import webrobot.Webrobot;
 import webrobot.WebrobotTests;

@@ -28,15 +28,15 @@ public class Main {
 
         int nrTimes = 10;
         int nrTransactions = 10;
-        
+
         WebrobotTests tester = new WebrobotTests();
 
-        long historyAvgTime = tester.getTransactionHistoryTest(nrTimes, 10);
+        /*long historyAvgTime = tester.getTransactionHistoryTest(nrTimes, 10);
         long oneTxsAvgTime = tester.makeOneTransactionTest(nrTimes);
-        long severalTxsAvgTime = tester.makeSeveralTransactionsTest(nrTimes, nrTransactions);
+        long severalTxsAvgTime = tester.makeSeveralTransactionsTest(nrTimes, nrTransactions);*/
 
 
-        ///Print results
+       /* ///Print results
         System.out.println();
         System.out.println("******** TEST RESULTS *********");
         System.out.println("-- HISTORY TEST --");
@@ -52,6 +52,6 @@ public class Main {
         System.out.println("Number transactions sent each lifecycle: " + nrTransactions);
         System.out.println("Average time per lifecycle: " + severalTxsAvgTime);
         System.out.println();
-        System.out.println("********************************");
+        System.out.println("********************************");*/
     }
 }

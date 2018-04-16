@@ -15,12 +15,13 @@ import java.util.LinkedList;
 public class Communicator extends AbstractVerticle {
 
     WebClient client;
-    private static final String SERVERIP = "10.46.1.90";
+    String myToken;
+    private static final String SERVERIP = "10.46.31.225";
     @Override
     public void start() {
         client = WebClient.create(vertx);
 
-       // sendLoginForm();
+        sendLoginForm();
         if(send) {
             for (int i = 0; i < amountOfTests; i++) {
                 makeTransaction();
@@ -48,6 +49,7 @@ public class Communicator extends AbstractVerticle {
     }
 
     public void sendLoginForm(){
+        System.out.println();
         MultiMap form = MultiMap.caseInsensitiveMultiMap();
         form.set("username","dagge");
         form.set("password","dagge");
@@ -55,6 +57,7 @@ public class Communicator extends AbstractVerticle {
                 .sendForm(form,ar -> {
                     if(ar.succeeded()){
                         HttpResponse<Buffer> response = ar.result();
+                        myToken = response.bodyAsString();
                     }
                 });
     }
@@ -68,6 +71,7 @@ public class Communicator extends AbstractVerticle {
         client.get(7089,SERVERIP,"/rest/getNrOfTransactions")
                 .addQueryParam("name","dag")
                 .addQueryParam("nrOfTransactions","10")
+                .addQueryParam("token",myToken)
                 .send(ar-> succeededTransaction(ar));
     }
 
@@ -84,15 +88,11 @@ public class Communicator extends AbstractVerticle {
         form.set("usernameFrom","jakob");
         form.set("amount","123.45");
 
-        System.out.println("Sending txs");
-
         client.post(7089,SERVERIP,"/rest/makeTransaction")
                 .sendForm(form,ar -> {
                     if(ar.succeeded()){
                         HttpResponse<Buffer> response = ar.result();
-                        System.out.println("YAYYYYYYY");
                     }else{
-
                         System.out.println("FAIIIILLLL: " + ar.cause().getMessage());
                     }
                 });
