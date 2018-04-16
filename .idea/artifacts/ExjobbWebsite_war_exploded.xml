@@ -9,7 +9,7 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.glassfish:javax.faces:2.2.7" />
           <element id="archive" name="databas-test-1.0-SNAPSHOT.jar">
-            <element id="module-output" name="databas-test" />
+            <element id="module-output" name="Database" />
           </element>
           <element id="library" level="project" name="Maven: org.postgresql:postgresql:42.2.2.jre7" />
         </element>

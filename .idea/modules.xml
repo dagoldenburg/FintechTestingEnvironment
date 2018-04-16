@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Database/Database.iml" filepath="$PROJECT_DIR$/Database/Database.iml" />
       <module fileurl="file://$PROJECT_DIR$/ExjobbMonkaS.iml" filepath="$PROJECT_DIR$/ExjobbMonkaS.iml" />
       <module fileurl="file://$PROJECT_DIR$/ExjobbWebsite/ExjobbWebsite.iml" filepath="$PROJECT_DIR$/ExjobbWebsite/ExjobbWebsite.iml" />
-      <module fileurl="file://$PROJECT_DIR$/RESTFrontend/RESTFrontend.iml" filepath="$PROJECT_DIR$/RESTFrontend/RESTFrontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RESTClient/RESTClient.iml" filepath="$PROJECT_DIR$/RESTClient/RESTClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RESTServer/RESTServer.iml" filepath="$PROJECT_DIR$/RESTServer/RESTServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SFTPClient/sftp-client.iml" filepath="$PROJECT_DIR$/SFTPClient/sftp-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SFTPServer/SFTPServer.iml" filepath="$PROJECT_DIR$/SFTPServer/SFTPServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tests/Tests.iml" filepath="$PROJECT_DIR$/Tests/Tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/Webrobot/Webrobot.iml" filepath="$PROJECT_DIR$/Webrobot/Webrobot.iml" />
-      <module fileurl="file://$PROJECT_DIR$/databastest/databas-test.iml" filepath="$PROJECT_DIR$/databastest/databas-test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/restvertx/restvertx.iml" filepath="$PROJECT_DIR$/restvertx/restvertx.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sftpclient/sftp-client.iml" filepath="$PROJECT_DIR$/sftpclient/sftp-client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sftpserverhandler/sftpserverhandler.iml" filepath="$PROJECT_DIR$/sftpserverhandler/sftpserverhandler.iml" />
     </modules>
   </component>
 </project>
