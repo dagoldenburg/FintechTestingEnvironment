@@ -1,3 +1,5 @@
+package Tests;
+
 import io.vertx.core.Vertx;
 
 public class RestTest extends TestI implements Cloneable{

@@ -15,12 +15,12 @@ import java.util.LinkedList;
 public class Communicator extends AbstractVerticle {
 
     WebClient client;
-
+    private static final String SERVERIP = "10.46.1.90";
     @Override
     public void start() {
         client = WebClient.create(vertx);
 
-        sendLoginForm();
+       // sendLoginForm();
         if(send) {
             for (int i = 0; i < amountOfTests; i++) {
                 makeTransaction();
@@ -36,8 +36,8 @@ public class Communicator extends AbstractVerticle {
 
         }
     }
-    //http://tutorials.jenkov.com/oauth2/overview.html oauth
-   int amountOfTests;
+
+    int amountOfTests;
     boolean send;
     private Thread t;
 
@@ -51,7 +51,7 @@ public class Communicator extends AbstractVerticle {
         MultiMap form = MultiMap.caseInsensitiveMultiMap();
         form.set("username","dagge");
         form.set("password","dagge");
-        client.post(7089,"localhost","/rest/login")
+        client.post(7089,SERVERIP,"/rest/login")
                 .sendForm(form,ar -> {
                     if(ar.succeeded()){
                         HttpResponse<Buffer> response = ar.result();
@@ -60,12 +60,12 @@ public class Communicator extends AbstractVerticle {
     }
 
     private void getAllTransactions(){
-        client.get(7089,"localhost","/rest/getAllTransactions").addQueryParam("name","dag")
+        client.get(7089,SERVERIP,"/rest/getAllTransactions").addQueryParam("name","dag")
                 .send(ar -> succeededTransaction(ar));
     }
 
     public void getNrOfTransactions(){
-        client.get(7089,"localhost","/rest/getNrOfTransactions")
+        client.get(7089,SERVERIP,"/rest/getNrOfTransactions")
                 .addQueryParam("name","dag")
                 .addQueryParam("nrOfTransactions","10")
                 .send(ar-> succeededTransaction(ar));
@@ -84,16 +84,22 @@ public class Communicator extends AbstractVerticle {
         form.set("usernameFrom","jakob");
         form.set("amount","123.45");
 
-        client.post(7089,"localhost","/rest/makeTransaction")
+        System.out.println("Sending txs");
+
+        client.post(7089,SERVERIP,"/rest/makeTransaction")
                 .sendForm(form,ar -> {
                     if(ar.succeeded()){
                         HttpResponse<Buffer> response = ar.result();
+                        System.out.println("YAYYYYYYY");
+                    }else{
+
+                        System.out.println("FAIIIILLLL: " + ar.cause().getMessage());
                     }
                 });
     }
 
     private void getUsers(){
-        client.get(7089,"localhost","/rest/getUsers")
+        client.get(7089,SERVERIP,"/rest/getUsers")
                 .send(ar->{
                     if(ar.succeeded()){
                         HttpResponse<Buffer> response = ar.result();

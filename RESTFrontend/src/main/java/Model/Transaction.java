@@ -18,7 +18,7 @@ public class Transaction implements Serializable {
 
     @Override
     public String toString() {
-        return "Transaction{" +
+        return "Tests.Transaction{" +
                 "amount=" + amount +
                 ", to='" + to + '\'' +
                 ", from='" + from + '\'' +

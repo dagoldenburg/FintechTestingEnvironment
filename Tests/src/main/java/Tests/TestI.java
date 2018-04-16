@@ -1,3 +1,5 @@
+package Tests;
+
 abstract class TestI implements Cloneable{
 
     String filename;

@@ -4,11 +4,12 @@ import SFTPLogic.SFTPDataGenerator;
 
 public class Main {
 
+    static final String SERVERIP = "10.46.1.90";
     public static void main(String[] args){
 
         SFTPDataGenerator dg = new SFTPDataGenerator();
         String filename = dg.generateTransactionBatch(100);
-        SFTPClient sftpc = new SFTPClient("localhost",22,"do","passwordHere",2222);
+        SFTPClient sftpc = new SFTPClient(SERVERIP,22,"do","JakobENoob123#\"!",2222);
             try {
                 sftpc.connect();
             } catch (SFTPClientException e) {
@@ -16,7 +17,7 @@ public class Main {
                 return;
             }
         try {
-            sftpc.uploadFile("/Users/do/IdeaProjects/sftpclient/files/"+filename,
+            sftpc.uploadFile(filename,
                     "/Users/do/Documents/REQUESTDOCUMENTS/"+filename);
         } catch (SFTPClientException e) {
             e.printStackTrace();

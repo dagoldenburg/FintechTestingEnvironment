@@ -78,7 +78,7 @@ public class SFTPClient implements SFTPClientI{
             String[] strings = response.split(" ");
             if(strings[0].equals("DONE")){
                 retrieveFile("/Users/do/Documents/RESPONSEDOCUMENTS/" + strings[1],
-                        "/Users/do/IdeaProjects/sftpclient/files/"+strings[1]);
+                        strings[1]);
             }
 
             clientSocket.close();
