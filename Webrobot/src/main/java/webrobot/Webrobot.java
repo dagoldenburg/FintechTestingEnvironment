@@ -20,11 +20,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Webrobot {
 
     private WebDriver driver;
-    static final String URL = "http://localhost:8080/ExjobbWebsite/";
+
     public Webrobot(BrowserType type) throws Exception {
         switch (type) {
             case CHROME:
-                System.setProperty("webdriver.chrome.driver", "/Users/jakdan/Downloads/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "chromedriver");
                 driver = new ChromeDriver();
                 break;
             case FIREFOX:
@@ -67,7 +67,7 @@ public class Webrobot {
                 By.name("j_idt16:j_idt18"));
         submitButton.click();
 
-        
+
         for (int i = 0; i < nrTransactions; i++) {
             try {
                 WebElement e = driver.findElement(
@@ -78,37 +78,37 @@ public class Webrobot {
                 e.printStackTrace();
             }
         }
-        
+
         return transactionList;
 
     }
 
     public void login() {
-        driver.get(URL);
-        
+        driver.get("http://localhost:8080/ExjobbWebsite/");
+
         //Get username field and enter username
         WebElement usernameField;
         usernameField = driver.findElement(By.name("j_idt6:username"));
-        usernameField.sendKeys("Jubbe");
+        usernameField.sendKeys("dag");
 
         //Get password field and enter password
         WebElement pwField;
         pwField = driver.findElement(By.name("j_idt6:password"));
-        pwField.sendKeys("abc123");
+        pwField.sendKeys("dag");
 
         //Get login button and click it
         WebElement loginBtn;
         loginBtn = driver.findElement(By.name("j_idt6:knapp"));
         loginBtn.click();
-        
-        
+
+
     }
 
     public void makeTransaction() {
         //Get username field and enter username
         WebElement toUsername;
         toUsername = driver.findElement(By.name("j_idt16:toUser"));
-        toUsername.sendKeys("Dag");
+        toUsername.sendKeys("jakob");
 
         //Get amount field, randomize value and enter it
         WebElement amount;

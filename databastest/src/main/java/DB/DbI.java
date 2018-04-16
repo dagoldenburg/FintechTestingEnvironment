@@ -14,4 +14,6 @@ public interface DbI {
     public void disconnect();
     public String createUser(String username, String password);
     public boolean userExists(String username);
+    public void saveToken(String token);
+    public boolean matchToken(String token);
 }

@@ -4,19 +4,13 @@ import io.vertx.core.Vertx;
 
 public class RestTest extends TestI implements Cloneable{
 
-    public RestTest(String filename) {
-        super(filename);
-        setUpEnvironment();
-    }
-
-
     @Override
-    void testSendTransactions(int amountOfTests) {
-        super.setFileNameEnding("RestSendManyTrans"+amountOfTests);
-        new Thread(new Measurement(filename)).start();
+    void testSendTransactions(int amountOfTransactions) {
+        super.setFileNameEnding("RestSendManyTrans"+ amountOfTransactions);
+        Thread t = new Thread(new Measurement(filename));
+        t.start();
         Vertx vertx = Vertx.vertx();
-        //vertx.deployVerticle(new Communicator(amountOfTests,true));
-
+        //vertx.deployVerticle(new Communicator(amountOfTests,true,t));
     }
 
     @Override

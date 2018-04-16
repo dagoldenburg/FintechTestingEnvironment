@@ -30,7 +30,11 @@ public class Communicator extends AbstractVerticle {
                 getNrOfTransactions();
             }
         }
-        t.interrupt();
+        try {
+            t.interrupt();
+        }catch(NullPointerException e){
+
+        }
     }
 
     int amountOfTests;
@@ -88,7 +92,7 @@ public class Communicator extends AbstractVerticle {
                         HttpResponse<Buffer> response = ar.result();
                         System.out.println("YAYYYYYYY");
                     }else{
-                   
+
                         System.out.println("FAIIIILLLL: " + ar.cause().getMessage());
                     }
                 });

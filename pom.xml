@@ -5,19 +5,6 @@
     <artifactId>ExjobbMonkaS</artifactId>
     <version>1.0</version>
     <packaging>pom</packaging>
-    <modules>
-        <module>databastest</module>
-        <module>ExjobbWebsite</module>
-        <module>RESTFrontend</module>
-        <module>restvertx</module>
-        <module>sftpclient</module>
-        <module>sftpserverhandler</module>
-        <module>Tests</module>
-        <module>Webrobot</module>
-    </modules>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
     <build>
         <plugins>
             <plugin>
@@ -30,4 +17,21 @@
             </plugin>
         </plugins>
     </build>
+
+    <properties>
+        <!-- necessary for intellij to function -->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <modules>
+        <module>databastest</module>
+        <module>ExjobbWebsite</module>
+        <module>RESTFrontend</module>
+        <module>restvertx</module>
+        <module>sftpclient</module>
+        <module>sftpserverhandler</module>
+        <module>Tests</module>
+        <module>Webrobot</module>
+    </modules>
 </project>

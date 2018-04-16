@@ -1,21 +1,28 @@
-package Tests;
+import webrobot.BrowserType;
+import webrobot.Webrobot;
+import webrobot.WebrobotTests;
 
 public class RobotTest extends TestI implements Cloneable{
 
 
-    public RobotTest(String filename) {
-        super(filename);
+    @Override
+    void testSendTransactions(int amountOfTransactions) {
+        super.setFileNameEnding("RetrieveManyTrans"+amountOfTransactions);
+        WebrobotTests wt = new WebrobotTests();
+        Thread t = new Thread(new Measurement(filename));
+        t.start();
+        wt.makeSeveralTransactions(amountOfTransactions);
+        t.interrupt();
     }
 
     @Override
-    void testSendTransactions(int amountOfTests) {
-        super.setFileNameEnding("RetrieveManyTrans"+amountOfTests);
-    }
-
-    @Override
-    void testRetrieveTransactions(int amountOfTests) {
-
-        super.setFileNameEnding("RetrieveManyTrans"+amountOfTests);
+    void testRetrieveTransactions(int amountOfTransactions) {
+        super.setFileNameEnding("RetrieveManyTrans"+amountOfTransactions);
+        WebrobotTests wt = new WebrobotTests();
+        Thread t = new Thread(new Measurement(filename));
+        t.start();
+        wt.getTransactionHistory(amountOfTransactions);
+        t.interrupt();
     }
 
 
