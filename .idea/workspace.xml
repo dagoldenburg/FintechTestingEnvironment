@@ -7,18 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bef6c738-f1f9-46a9-b96a-d5d31a2c1684" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/RESTFrontend/src/main/java/Communicator.java" afterPath="$PROJECT_DIR$/RESTFrontend/src/main/java/Communicator.java" />
-      <change beforePath="$PROJECT_DIR$/RESTFrontend/src/main/java/VerticleRestStartFrontend.java" afterPath="$PROJECT_DIR$/RESTFrontend/src/main/java/VerticleRestStartFrontend.java" />
       <change beforePath="$PROJECT_DIR$/RESTFrontend/target/classes/Communicator.class" afterPath="$PROJECT_DIR$/RESTFrontend/target/classes/Communicator.class" />
       <change beforePath="$PROJECT_DIR$/RESTFrontend/target/classes/VerticleRestStartFrontend.class" afterPath="$PROJECT_DIR$/RESTFrontend/target/classes/VerticleRestStartFrontend.class" />
-      <change beforePath="$PROJECT_DIR$/RestSendManyTrans1.csv" afterPath="$PROJECT_DIR$/RestSendManyTrans1.csv" />
-      <change beforePath="$PROJECT_DIR$/RestSendManyTrans10.csv" afterPath="$PROJECT_DIR$/RestSendManyTrans10.csv" />
-      <change beforePath="$PROJECT_DIR$/RestSendManyTrans100.csv" afterPath="$PROJECT_DIR$/RestSendManyTrans100.csv" />
-      <change beforePath="$PROJECT_DIR$/RestSendManyTrans1000.csv" afterPath="$PROJECT_DIR$/RestSendManyTrans1000.csv" />
-      <change beforePath="$PROJECT_DIR$/RestSendManyTrans10000.csv" afterPath="$PROJECT_DIR$/RestSendManyTrans10000.csv" />
-      <change beforePath="$PROJECT_DIR$/Tests/src/main/java/Tests/RobotTest.java" afterPath="$PROJECT_DIR$/Tests/src/main/java/Tests/RobotTest.java" />
-      <change beforePath="$PROJECT_DIR$/Tests/src/main/java/Tests/TestCentral.java" afterPath="$PROJECT_DIR$/Tests/src/main/java/Tests/TestCentral.java" />
       <change beforePath="$PROJECT_DIR$/Tests/target/classes/Measurement.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Tests/target/classes/RestTest.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Tests/target/classes/RobotTest.class" afterPath="" />
@@ -32,12 +24,9 @@
       <change beforePath="$PROJECT_DIR$/Tests/target/classes/Tests/TestCentral.class" afterPath="$PROJECT_DIR$/Tests/target/classes/Tests/TestCentral.class" />
       <change beforePath="$PROJECT_DIR$/Tests/target/classes/Tests/TestI.class" afterPath="$PROJECT_DIR$/Tests/target/classes/Tests/TestI.class" />
       <change beforePath="$PROJECT_DIR$/Tests/target/classes/Transaction.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Webrobot/src/main/java/webrobot/Main.java" afterPath="$PROJECT_DIR$/Webrobot/src/main/java/webrobot/Main.java" />
       <change beforePath="$PROJECT_DIR$/Webrobot/target/classes/webrobot/Main.class" afterPath="$PROJECT_DIR$/Webrobot/target/classes/webrobot/Main.class" />
-      <change beforePath="$PROJECT_DIR$/databastest/src/main/java/DB/PostGreSQLDb.java" afterPath="$PROJECT_DIR$/databastest/src/main/java/DB/PostGreSQLDb.java" />
       <change beforePath="$PROJECT_DIR$/databastest/target/classes/DB/DbI.class" afterPath="$PROJECT_DIR$/databastest/target/classes/DB/DbI.class" />
       <change beforePath="$PROJECT_DIR$/databastest/target/classes/DB/PostGreSQLDb.class" afterPath="$PROJECT_DIR$/databastest/target/classes/DB/PostGreSQLDb.class" />
-      <change beforePath="$PROJECT_DIR$/restvertx/src/main/java/BigBoiVertx.java" afterPath="$PROJECT_DIR$/restvertx/src/main/java/BigBoiVertx.java" />
       <change beforePath="$PROJECT_DIR$/restvertx/target/classes/BigBoiVertx.class" afterPath="$PROJECT_DIR$/restvertx/target/classes/BigBoiVertx.class" />
       <change beforePath="$PROJECT_DIR$/sftpclient/target/classes/Main.class" afterPath="$PROJECT_DIR$/sftpclient/target/classes/Main.class" />
       <change beforePath="$PROJECT_DIR$/sftpclient/target/classes/SFTPLogic/SFTPClient.class" afterPath="$PROJECT_DIR$/sftpclient/target/classes/SFTPLogic/SFTPClient.class" />
@@ -84,8 +73,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            <state relative-caret-position="210">
+              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -197,6 +186,7 @@
         <option value="$PROJECT_DIR$/databastest/src/main/java/DB/PostGreSQLDb.java" />
         <option value="$PROJECT_DIR$/RESTFrontend/src/main/java/VerticleRestStartFrontend.java" />
         <option value="$PROJECT_DIR$/RESTFrontend/src/main/java/Communicator.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -681,10 +671,18 @@
       <workItem from="1523625677661" duration="4665000" />
       <workItem from="1523883801849" duration="234000" />
     </task>
+    <task id="LOCAL-00001" summary="tokens in restiboy">
+      <created>1523887393467</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1523887393467</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11520000" />
+    <option name="totallyTimeSpent" value="11729000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="6" />
@@ -757,6 +755,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="tokens in restiboy" />
+    <option name="LAST_COMMIT_MESSAGE" value="tokens in restiboy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1161,8 +1163,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        <state relative-caret-position="210">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           <folding />
         </state>
       </provider>
