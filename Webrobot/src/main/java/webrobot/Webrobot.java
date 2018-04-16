@@ -89,12 +89,12 @@ public class Webrobot {
         //Get username field and enter username
         WebElement usernameField;
         usernameField = driver.findElement(By.name("j_idt6:username"));
-        usernameField.sendKeys("dag");
+        usernameField.sendKeys("Jubbe");
 
         //Get password field and enter password
         WebElement pwField;
         pwField = driver.findElement(By.name("j_idt6:password"));
-        pwField.sendKeys("dag");
+        pwField.sendKeys("Jubbe");
 
         //Get login button and click it
         WebElement loginBtn;
