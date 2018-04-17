@@ -80,7 +80,6 @@ public class SFTPClient implements SFTPClientI{
                 retrieveFile("/Users/do/Documents/RESPONSEDOCUMENTS/" + strings[1],
                         strings[1]);
             }
-
             clientSocket.close();
         } catch (UnknownHostException e) {
             e.printStackTrace();

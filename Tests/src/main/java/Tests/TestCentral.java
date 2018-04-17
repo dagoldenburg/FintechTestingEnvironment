@@ -27,8 +27,8 @@ public class TestCentral {
         String folderName = "";
         switch(scanner.nextLine()){
             case "1":
-                    folderName = "RestTest - " + date;
-                    t = new RestTest(folderName);
+                System.out.println("This doesnt work ya twerp");
+                exit(1);
                     break;
             case "2":
                 folderName = "SFTPTest - " + date;
@@ -64,12 +64,12 @@ public class TestCentral {
                     }break;
                 case "2":
                     //warmup
-                    for(int i = 1;i<=10000;i*=10){
+                    for(int i = 1;i<=10;i++){
                         t.testRetrieveTransactions(i);
                     }
                     System.gc();
                     Thread.sleep(1000);
-                    for(int i = 1;i<=10000;i*=10){
+                    for(int i = 1;i<=10;i++){
                         t.testRetrieveTransactions(i);
                     }break;
                 default:
