@@ -7,7 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/ExjobbWebsite/ExjobbWebsite.iml" filepath="$PROJECT_DIR$/ExjobbWebsite/ExjobbWebsite.iml" />
       <module fileurl="file://$PROJECT_DIR$/RESTClient/RESTClient.iml" filepath="$PROJECT_DIR$/RESTClient/RESTClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/RESTServer/RESTServer.iml" filepath="$PROJECT_DIR$/RESTServer/RESTServer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SFTPClient/sftp-client.iml" filepath="$PROJECT_DIR$/SFTPClient/sftp-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SFTPClient/SFTPClient.iml" filepath="$PROJECT_DIR$/SFTPClient/SFTPClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/SFTPServer/SFTPServer.iml" filepath="$PROJECT_DIR$/SFTPServer/SFTPServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tests/Tests.iml" filepath="$PROJECT_DIR$/Tests/Tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/Webrobot/Webrobot.iml" filepath="$PROJECT_DIR$/Webrobot/Webrobot.iml" />

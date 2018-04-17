@@ -94,7 +94,7 @@ public class Webrobot {
         //Get password field and enter password
         WebElement pwField;
         pwField = driver.findElement(By.name("j_idt6:password"));
-        pwField.sendKeys("Jubbe");
+        pwField.sendKeys("abc123");
 
         //Get login button and click it
         WebElement loginBtn;

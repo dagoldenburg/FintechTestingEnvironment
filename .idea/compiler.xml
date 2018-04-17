@@ -20,18 +20,13 @@
         <module name="Webrobot" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="databas-test" target="1.8" />
+    <bytecodeTargetLevel target="1.8">
       <module name="Database" target="1.8" />
       <module name="ExjobbMonkaS" target="1.8" />
       <module name="ExjobbWebsite" target="1.8" />
       <module name="RESTClient" target="1.8" />
-      <module name="RESTFrontend" target="1.8" />
-      <module name="RESTServer" target="1.5" />
-      <module name="restvertx" target="1.8" />
-      <module name="sftp-client" target="1.8" />
-      <module name="SFTPServer" target="1.5" />
-      <module name="sftpserverhandler" target="1.8" />
+      <module name="RESTServer" target="1.8" />
+      <module name="SFTPServer" target="1.8" />
       <module name="Tests" target="1.8" />
       <module name="Webrobot" target="1.8" />
     </bytecodeTargetLevel>
