@@ -7,6 +7,8 @@ import io.vertx.core.Vertx;
 
 import java.util.Scanner;
 
+import static java.lang.System.exit;
+
 public class TestCentral {
 
 
@@ -23,6 +25,7 @@ public class TestCentral {
             case "3": t = new RobotTest();break;
             default:
                 System.out.println("Not valid input");
+                exit(1);
         }
 
         System.out.println("What do you want to test?");

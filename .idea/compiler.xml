@@ -7,10 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="databas-test" />
+        <module name="Database" />
         <module name="ExjobbWebsite" />
+        <module name="RESTClient" />
         <module name="RESTFrontend" />
+        <module name="RESTServer" />
         <module name="restvertx" />
         <module name="sftp-client" />
+        <module name="SFTPServer" />
         <module name="sftpserverhandler" />
         <module name="Tests" />
         <module name="Webrobot" />
@@ -18,11 +22,15 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="databas-test" target="1.8" />
+      <module name="Database" target="1.8" />
       <module name="ExjobbMonkaS" target="1.8" />
-      <module name="ExjobbWebsite" target="1.7" />
+      <module name="ExjobbWebsite" target="1.8" />
+      <module name="RESTClient" target="1.8" />
       <module name="RESTFrontend" target="1.8" />
+      <module name="RESTServer" target="1.5" />
       <module name="restvertx" target="1.8" />
       <module name="sftp-client" target="1.8" />
+      <module name="SFTPServer" target="1.5" />
       <module name="sftpserverhandler" target="1.8" />
       <module name="Tests" target="1.8" />
       <module name="Webrobot" target="1.8" />
