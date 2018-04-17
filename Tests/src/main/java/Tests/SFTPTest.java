@@ -6,7 +6,11 @@ import SFTPLogic.SFTPDataGenerator;
 
 public class SFTPTest extends TestI{
 
+    private String folderName;
 
+    public SFTPTest(String folderName){
+        this.folderName = folderName;
+    }
 
     @Override
     void testSendTransactions(int amountOfTransactions) {
@@ -17,7 +21,7 @@ public class SFTPTest extends TestI{
                 new SFTPClient("localhost",22, "do",
                         "JakobENoob123#\"!",2222);
         try {
-            Thread t = new Thread(new Measurement(filename));
+            Thread t = new Thread(new AverageMeasurement(folderName,filename));
             t.start();
             sftpc.connect();
             sftpc.uploadFile("/Users/do/IdeaProjects/sftpclient/files/"+fname,

@@ -4,10 +4,16 @@ import io.vertx.core.Vertx;
 
 public class RestTest extends TestI implements Cloneable{
 
+    private String folderName;
+
+    public RestTest(String folderName){
+        this.folderName = folderName;
+    }
+
     @Override
     void testSendTransactions(int amountOfTransactions) {
         super.setFileNameEnding("RestSendManyTrans"+ amountOfTransactions);
-        Thread t = new Thread(new Measurement(filename));
+        Thread t = new Thread(new AverageMeasurement(folderName,filename));
         t.start();
         Vertx vertx = Vertx.vertx();
        // vertx.deployVerticle(new Communicator(amountOfTests,true,t));
@@ -16,7 +22,7 @@ public class RestTest extends TestI implements Cloneable{
     @Override
     void testRetrieveTransactions(int amountOfTests) {
         super.setFileNameEnding("RestRetrieveManyTrans"+amountOfTests);
-        new Thread(new Measurement(filename)).start();
+        new Thread(new AverageMeasurement(folderName,filename)).start();
         Vertx vertx = Vertx.vertx();
         //vertx.deployVerticle(new Communicator(amountOfTests,false));
     }
