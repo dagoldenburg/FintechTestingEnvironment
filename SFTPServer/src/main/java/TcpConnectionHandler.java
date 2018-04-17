@@ -34,7 +34,8 @@ public class TcpConnectionHandler implements Runnable {
                     }else{
                         outToClient.writeBytes("NIET\n");
                     }
-                }
+                }else
+                    System.out.println("HUI BLYAT");
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -54,7 +55,8 @@ public class TcpConnectionHandler implements Runnable {
         try {
             StringBuilder sb = new StringBuilder();
             for (Transaction t : dbRef.retrieveNrOfTransactions(username, Integer.parseInt(nrOfTransactions))) {
-                sb.append(t.getTo() + " " + t.getFrom() + " " + t.getAmount());
+                sb.append(t.getTo() + " " + t.getFrom() + " " + t.getAmount()+'\n');
+                System.out.printf(t.getTo() + " " + t.getFrom() + " " + t.getAmount()+'\n');
             }
             MessageDigest digest = MessageDigest.getInstance("SHA-256");
             byte[] hash = digest.digest(sb.toString().getBytes("UTF-8"));
@@ -62,8 +64,9 @@ public class TcpConnectionHandler implements Runnable {
             byte[] encodedBytes = Base64.getEncoder().encode(hash);
             filename = new String(encodedBytes);
             filename = filename.replace("/", "!");
-            BufferedWriter writer = new BufferedWriter(new FileWriter("/Users/do/Documents/RESPONSEDOCUMENTS/" + filename));
+            BufferedWriter writer = new BufferedWriter(new FileWriter("/Users/do/Documents/RESPONSEDOCUMENTS/" + filename+".txt"));
             writer.write(sb.toString());
+            writer.close();
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         } catch (UnsupportedEncodingException e) {

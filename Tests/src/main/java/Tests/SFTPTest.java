@@ -24,7 +24,7 @@ public class SFTPTest extends TestI{
             Thread t = new Thread(new AverageMeasurement(folderName,filename));
             t.start();
             sftpc.connect();
-            sftpc.uploadFile("/Users/do/IdeaProjects/sftpclient/files/"+fname,
+            sftpc.uploadFile("/Users/do/IdeaProjects/ExjobbMonkaSrevert/Hejhej/"+fname,
                     "/Users/do/Documents/REQUESTDOCUMENTS/"+fname);
             sftpc.disconnect();
             t.interrupt();
@@ -36,6 +36,20 @@ public class SFTPTest extends TestI{
     @Override
     void testRetrieveTransactions(int amountOfTests) {
         super.setFileNameEnding("SFTPRetrieveManyTrans"+amountOfTests);
+        SFTPClient sftpc = new SFTPClient("localhost",22,"do","JakobENoob123#\"!",2222);
+
+        try {
+            Thread t = new Thread(new AverageMeasurement(folderName,filename));
+            t.start();
+            sftpc.connect();
+
+        sftpc.retrieveFile();
+        sftpc.disconnect();
+        t.interrupt();
+        } catch (SFTPClientException e) {
+            System.out.println("Connection failed, quitting");
+            return;
+        }
     }
 
     @Override

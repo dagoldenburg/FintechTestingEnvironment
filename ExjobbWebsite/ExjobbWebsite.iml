@@ -22,6 +22,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Database" />
     <orderEntry type="library" name="Maven: org.glassfish:javax.faces:2.2.7" level="project" />
     <orderEntry type="module" module-name="Database" />
     <orderEntry type="library" name="Maven: org.postgresql:postgresql:42.2.2.jre7" level="project" />

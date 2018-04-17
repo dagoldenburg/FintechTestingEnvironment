@@ -13,7 +13,6 @@
         <module name="RESTFrontend" />
         <module name="RESTServer" />
         <module name="restvertx" />
-        <module name="sftp-client" />
         <module name="SFTPClient" />
         <module name="SFTPServer" />
         <module name="sftpserverhandler" />

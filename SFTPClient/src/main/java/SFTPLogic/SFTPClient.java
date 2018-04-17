@@ -63,7 +63,6 @@ public class SFTPClient implements SFTPClientI{
                 throw new SFTPClientException("Not connected");
             c.put(sourceFileName,destFileName);
         }catch(SftpException e){
-            e.printStackTrace();
             throw new SFTPClientException(e.getMessage());
         }
     }
@@ -73,21 +72,22 @@ public class SFTPClient implements SFTPClientI{
             Socket clientSocket = new Socket(ip, tcpPort);
             DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream());
             BufferedReader inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-            outToServer.writeBytes("CF DAG 10" + '\n');
+            outToServer.writeBytes("CF dag 10" + '\n');
             String response = inFromServer.readLine();
             String[] strings = response.split(" ");
             if(strings[0].equals("DONE")){
-                retrieveFile("/Users/do/Documents/RESPONSEDOCUMENTS/" + strings[1],
-                        strings[1]);
+                //retrieveFile("/Users/do/Documents/RESPONSEDOCUMENTS/" + strings[1]+".txt",
+                //        "/Users/do/IdeaProjects/ExjobbMonkaSrevert/FileStatioN/"+strings[1]+".txt");
+                //System.out.println("Fuckin goteeem");
             }
             clientSocket.close();
         } catch (UnknownHostException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        } catch (SFTPClientException e) {
-            e.printStackTrace();
-        }
+        } //catch (SFTPClientException e) {
+         //   e.printStackTrace();
+       // }
     }
 
     @Override
@@ -96,6 +96,7 @@ public class SFTPClient implements SFTPClientI{
             if(c==null)
                  throw new SFTPClientException("Not connected");
             c.get(sourceFileName, destFileName);
+
         } catch (SftpException e) {
             e.printStackTrace();
             throw new SFTPClientException(e.getMessage());

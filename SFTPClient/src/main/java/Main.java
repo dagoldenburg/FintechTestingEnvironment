@@ -4,7 +4,7 @@ import SFTPLogic.SFTPDataGenerator;
 
 public class Main {
 
-    static final String SERVERIP = "10.46.1.90";
+    static final String SERVERIP = "localhost";
     public static void main(String[] args){
 
         SFTPDataGenerator dg = new SFTPDataGenerator();
@@ -16,12 +16,13 @@ public class Main {
                 System.out.println("Connection failed, quitting");
                 return;
             }
-        try {
-            sftpc.uploadFile(filename,
+        /*try {
+            sftpc.uploadFile("/Users/do/IdeaProjects/ExjobbMonkaSrevert/Hejhej/"+filename,
                     "/Users/do/Documents/REQUESTDOCUMENTS/"+filename);
+
         } catch (SFTPClientException e) {
             e.printStackTrace();
-        }
+        }*/
         sftpc.retrieveFile();
         sftpc.disconnect();
     }

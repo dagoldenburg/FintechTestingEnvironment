@@ -9,6 +9,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Database" />
+    <orderEntry type="module" module-name="SFTPClient" />
     <orderEntry type="library" name="Maven: io.vertx:vertx-web-client:3.5.1" level="project" />
     <orderEntry type="library" name="Maven: io.vertx:vertx-web-common:3.5.1" level="project" />
     <orderEntry type="library" name="Maven: io.vertx:vertx-core:3.5.1" level="project" />
