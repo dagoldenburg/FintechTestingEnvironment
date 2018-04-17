@@ -25,12 +25,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <modules>
-        <module>databastest</module>
+        <module>Database</module>
         <module>ExjobbWebsite</module>
-        <module>RESTFrontend</module>
-        <module>restvertx</module>
-        <module>sftpclient</module>
-        <module>sftpserverhandler</module>
+        <module>RESTClient</module>
+        <module>RESTServer</module>
+        <module>SFTPClient</module>
+        <module>SFTPServer</module>
         <module>Tests</module>
         <module>Webrobot</module>
     </modules>

@@ -49,6 +49,9 @@ public class TestCentral {
                 for(int i = 1;i<=10000;i*=10){
                     t.testRetrieveTransactions(i);
                 }break;
+            default:
+                System.out.println("Invalid input");
+                break;
         }
 
     }

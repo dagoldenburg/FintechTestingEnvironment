@@ -8,7 +8,7 @@ public class RobotTest extends TestI implements Cloneable{
 
     @Override
     void testSendTransactions(int amountOfTransactions) {
-        super.setFileNameEnding("RetrieveManyTrans"+amountOfTransactions);
+        super.setFileNameEnding("RobotSendManyTrans"+amountOfTransactions);
         WebrobotTests wt = new WebrobotTests();
         Thread t = new Thread(new Measurement(filename));
         t.start();
@@ -18,7 +18,7 @@ public class RobotTest extends TestI implements Cloneable{
 
     @Override
     void testRetrieveTransactions(int amountOfTransactions) {
-        super.setFileNameEnding("RetrieveManyTrans"+amountOfTransactions);
+        super.setFileNameEnding("RobotRetrieveManyTans"+amountOfTransactions);
         WebrobotTests wt = new WebrobotTests();
         Thread t = new Thread(new Measurement(filename));
         t.start();

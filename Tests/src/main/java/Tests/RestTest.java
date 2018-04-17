@@ -10,7 +10,7 @@ public class RestTest extends TestI implements Cloneable{
         Thread t = new Thread(new Measurement(filename));
         t.start();
         Vertx vertx = Vertx.vertx();
-        //vertx.deployVerticle(new Communicator(amountOfTests,true,t));
+       // vertx.deployVerticle(new Communicator(amountOfTests,true,t));
     }
 
     @Override
