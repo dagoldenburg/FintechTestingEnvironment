@@ -17,8 +17,6 @@ public class TestCentral {
     public static void main(String[] args) throws InterruptedException {
         TestI t = null;
 
-        File testDir = new File("TestResults");
-        testDir.mkdir();
         System.out.println("What do you want to test?");
         System.out.println("1 rest");
         System.out.println("2 sftp");

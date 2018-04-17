@@ -14,6 +14,7 @@
         <module name="RESTServer" />
         <module name="restvertx" />
         <module name="sftp-client" />
+        <module name="SFTPClient" />
         <module name="SFTPServer" />
         <module name="sftpserverhandler" />
         <module name="Tests" />
@@ -26,6 +27,7 @@
       <module name="ExjobbWebsite" target="1.8" />
       <module name="RESTClient" target="1.8" />
       <module name="RESTServer" target="1.8" />
+      <module name="SFTPClient" target="1.8" />
       <module name="SFTPServer" target="1.8" />
       <module name="Tests" target="1.8" />
       <module name="Webrobot" target="1.8" />

@@ -3,6 +3,11 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ExjobbWebsite" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RESTClient" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RESTServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SFTPClient" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SFTPServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Tests" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Webrobot" charset="UTF-8" />
   </component>
 </project>

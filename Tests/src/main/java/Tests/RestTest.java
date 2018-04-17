@@ -16,7 +16,7 @@ public class RestTest extends TestI implements Cloneable{
         Thread t = new Thread(new AverageMeasurement(folderName,filename));
         t.start();
         Vertx vertx = Vertx.vertx();
-       // vertx.deployVerticle(new Communicator(amountOfTests,true,t));
+       // vertx.deployVerticle(new Communicator(amountOfTransactions,true,t));
     }
 
     @Override
@@ -31,7 +31,7 @@ public class RestTest extends TestI implements Cloneable{
 
     @Override
     void setUpEnvironment() {
-        /*Vertx vertx = Vertx.vertx();
+        /*MicroServices vertx = MicroServices.vertx();
         vertx.deployVerticle(new BigBoiVertx());
         try {
             Thread.sleep(500);
