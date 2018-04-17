@@ -1,9 +1,0 @@
-ManagedBeans/TransactionBean.class
-Model/BankUser.class
-Operations/UserOperationsPSQL.class
-ViewModel/ViewUser.class
-ViewModel/ViewTransaction.class
-Operations/UserOperations.class
-ManagedBeans/NavigationBean.class
-Operations/UserOperationsEM.class
-ManagedBeans/UserBean.class
