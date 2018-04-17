@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.kth.exjobb</groupId>
-    <artifactId>databas-test</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>Database</artifactId>
+    <version>1.0</version>
     <build>
         <plugins>
             <plugin>
@@ -33,5 +33,5 @@
         </dependency>
         <!--TODO:Add Junit dependency and start TeStInG bro-->
     </dependencies>
-    <name>databas-test</name>
+    <name>Database</name>
 </project>
