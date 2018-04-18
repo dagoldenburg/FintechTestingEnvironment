@@ -7,25 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bef6c738-f1f9-46a9-b96a-d5d31a2c1684" name="Default" comment="Merge branch 'master' of https://github.com/kraken108/ExjobbMonkaS&#10;&#10;# Conflicts:&#10;#&#9;Tests/src/main/java/Tests/RobotTest.java&#10;#&#9;Tests/src/main/java/Tests/TestCentral.java">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ExjobbWebsite_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ExjobbWebsite_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Database/src/main/java/DB/PostGreSQLDb.java" afterPath="$PROJECT_DIR$/Database/src/main/java/DB/PostGreSQLDb.java" />
-      <change beforePath="$PROJECT_DIR$/ExjobbWebsite/ExjobbWebsite.iml" afterPath="$PROJECT_DIR$/ExjobbWebsite/ExjobbWebsite.iml" />
-      <change beforePath="$PROJECT_DIR$/FNaLOE4CSHwAE3cx!DCZzOD+Oi+M0yRGLQUqVU8gEpM=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/O1FDY52Ed8s5rA467Kn2NJtT4M0Vn0sTtXqJvOzO!7U=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/PeToDREEcCW!VJtG0XVnJ5iZmKrYJzazouSAqFsDPWw=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RESTClient/RESTClient.iml" afterPath="$PROJECT_DIR$/RESTClient/RESTClient.iml" />
-      <change beforePath="$PROJECT_DIR$/RESTServer/RESTServer.iml" afterPath="$PROJECT_DIR$/RESTServer/RESTServer.iml" />
-      <change beforePath="$PROJECT_DIR$/SFTPClient/src/main/java/Main.java" afterPath="$PROJECT_DIR$/SFTPClient/src/main/java/Main.java" />
-      <change beforePath="$PROJECT_DIR$/SFTPClient/src/main/java/SFTPLogic/SFTPClient.java" afterPath="$PROJECT_DIR$/SFTPClient/src/main/java/SFTPLogic/SFTPClient.java" />
-      <change beforePath="$PROJECT_DIR$/SFTPClient/src/main/java/SFTPLogic/SFTPDataGenerator.java" afterPath="$PROJECT_DIR$/SFTPClient/src/main/java/SFTPLogic/SFTPDataGenerator.java" />
-      <change beforePath="$PROJECT_DIR$/SFTPServer/SFTPServer.iml" afterPath="$PROJECT_DIR$/SFTPServer/SFTPServer.iml" />
-      <change beforePath="$PROJECT_DIR$/SFTPServer/src/main/java/TcpConnectionHandler.java" afterPath="$PROJECT_DIR$/SFTPServer/src/main/java/TcpConnectionHandler.java" />
-      <change beforePath="$PROJECT_DIR$/Tests/Tests.iml" afterPath="$PROJECT_DIR$/Tests/Tests.iml" />
-      <change beforePath="$PROJECT_DIR$/Tests/src/main/java/Tests/SFTPTest.java" afterPath="$PROJECT_DIR$/Tests/src/main/java/Tests/SFTPTest.java" />
       <change beforePath="$PROJECT_DIR$/Webrobot/target/classes/webrobot/Webrobot$1.class" afterPath="$PROJECT_DIR$/Webrobot/target/classes/webrobot/Webrobot$1.class" />
       <change beforePath="$PROJECT_DIR$/Webrobot/target/classes/webrobot/Webrobot.class" afterPath="$PROJECT_DIR$/Webrobot/target/classes/webrobot/Webrobot.class" />
       <change beforePath="$PROJECT_DIR$/Webrobot/target/classes/webrobot/WebrobotTests.class" afterPath="$PROJECT_DIR$/Webrobot/target/classes/webrobot/WebrobotTests.class" />
@@ -52,95 +34,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SFTPTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/SFTPTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="666">
-              <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SFTPClient/src/main/java/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SFTPClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SFTPClient/src/main/java/SFTPLogic/SFTPClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="848">
-              <caret line="89" column="9" lean-forward="false" selection-start-line="89" selection-start-column="9" selection-end-line="89" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SFTPDataGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SFTPClient/src/main/java/SFTPLogic/SFTPDataGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="54" column="57" lean-forward="false" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="106" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SFTPClientI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SFTPClient/src/main/java/SFTPLogic/SFTPClientI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TcpConnectionHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SFTPServer/src/main/java/TcpConnectionHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="67" column="38" lean-forward="false" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SFTPServer/src/main/java/Main.java">
+      <file leaf-file-name="RobotSendManyTrans3.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:13:25 CEST 2018/RobotSendManyTrans3.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Filehandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SFTPServer/src/main/java/Filehandler.java">
+      <file leaf-file-name="RobotSendManyTrans2.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:12:08 CEST 2018/RobotSendManyTrans2.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCentral.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/TestCentral.java">
+      <file leaf-file-name="RobotSendManyTrans3.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:12:08 CEST 2018/RobotSendManyTrans3.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RobotSendManyTrans4.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:12:08 CEST 2018/RobotSendManyTrans4.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RobotSendManyTrans5.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:12:08 CEST 2018/RobotSendManyTrans5.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RobotSendManyTrans1.csv" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:12:08 CEST 2018/RobotSendManyTrans1.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RobotSendManyTrans6.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:13:25 CEST 2018/RobotSendManyTrans6.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RobotSendManyTrans7.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:13:25 CEST 2018/RobotSendManyTrans7.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RobotSendManyTrans9.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:13:25 CEST 2018/RobotSendManyTrans9.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RobotSendManyTrans8.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:13:25 CEST 2018/RobotSendManyTrans8.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -239,10 +227,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="291" />
-    <option name="y" value="23" />
-    <option name="width" value="1964" />
-    <option name="height" value="1336" />
+    <option name="width" value="2560" />
+    <option name="height" value="1440" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -261,15 +247,116 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
               <item name="ExjobbMonkaSrevert" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExjobbMonkaSrevert" type="462c0819:PsiDirectoryNode" />
+              <item name="ExjobbWebsite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExjobbMonkaSrevert" type="462c0819:PsiDirectoryNode" />
+              <item name="ExjobbWebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExjobbMonkaSrevert" type="462c0819:PsiDirectoryNode" />
+              <item name="ExjobbWebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExjobbMonkaSrevert" type="462c0819:PsiDirectoryNode" />
+              <item name="ExjobbWebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExjobbMonkaSrevert" type="462c0819:PsiDirectoryNode" />
+              <item name="Hejhej" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExjobbMonkaSrevert" type="462c0819:PsiDirectoryNode" />
+              <item name="RESTClient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExjobbMonkaSrevert" type="462c0819:PsiDirectoryNode" />
+              <item name="RESTClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExjobbMonkaSrevert" type="462c0819:PsiDirectoryNode" />
+              <item name="RESTClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExjobbMonkaSrevert" type="462c0819:PsiDirectoryNode" />
+              <item name="RESTClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExjobbMonkaSrevert" type="462c0819:PsiDirectoryNode" />
+              <item name="RESTClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="MicroServices" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExjobbMonkaSrevert" type="462c0819:PsiDirectoryNode" />
+              <item name="RESTClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExjobbMonkaSrevert" type="462c0819:PsiDirectoryNode" />
+              <item name="RESTServer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExjobbMonkaSrevert" type="462c0819:PsiDirectoryNode" />
+              <item name="RESTServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExjobbMonkaSrevert" type="462c0819:PsiDirectoryNode" />
+              <item name="RESTServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExjobbMonkaSrevert" type="462c0819:PsiDirectoryNode" />
+              <item name="RESTServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
@@ -331,6 +418,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExjobbMonkaSrevert" type="462c0819:PsiDirectoryNode" />
+              <item name="TestResults" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
@@ -708,6 +800,7 @@
       <workItem from="1523883801849" duration="234000" />
       <workItem from="1523945856815" duration="61000" />
       <workItem from="1523952316629" duration="6801000" />
+      <workItem from="1524032265084" duration="24000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/kraken108/ExjobbMonkaS&#10;&#10;# Conflicts:&#10;#&#9;Tests/src/main/java/Tests/RobotTest.java&#10;#&#9;Tests/src/main/java/Tests/TestCentral.java">
       <created>1523888968276</created>
@@ -716,15 +809,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523888968276</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Merge branch 'master' of https://github.com/kraken108/ExjobbMonkaS&#10;&#10;# Conflicts:&#10;#&#9;Tests/src/main/java/Tests/RobotTest.java&#10;#&#9;Tests/src/main/java/Tests/TestCentral.java">
+      <created>1523969501209</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1523969501209</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31372000" />
+    <option name="totallyTimeSpent" value="33806000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -740,52 +839,25 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32990506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32014388" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35205695" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964426" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.4631579" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35205695" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32978126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -805,74 +877,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/RobotTest - Tue Apr 17 10:52:57 CEST 2018/RobotSendManyTrans1.csv" />
-    <entry file="file://$PROJECT_DIR$/RobotTest - Tue Apr 17 10:52:57 CEST 2018/RobotSendManyTrans10.csv" />
-    <entry file="file://$PROJECT_DIR$/RobotTest - Tue Apr 17 10:52:57 CEST 2018/RobotSendManyTrans9.csv" />
-    <entry file="file://$PROJECT_DIR$/RobotTest - Tue Apr 17 10:52:57 CEST 2018/RobotSendManyTrans8.csv" />
-    <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/AverageMeasurement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="44" column="46" lean-forward="false" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 11:03:30 CEST 2018/RobotSendManyTrans1.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 11:03:30 CEST 2018/RobotSendManyTrans10.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 11:03:30 CEST 2018/RobotSendManyTrans9.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 11:03:30 CEST 2018/RobotSendManyTrans8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 11:03:30 CEST 2018/RobotSendManyTrans7.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 11:03:30 CEST 2018/RobotSendManyTrans6.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FNaLOE4CSHwAE3cx!DCZzOD+Oi+M0yRGLQUqVU8gEpM=">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/O1FDY52Ed8s5rA467Kn2NJtT4M0Vn0sTtXqJvOzO!7U=">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RESTClient/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -988,14 +992,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/Measurement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RESTServer/src/main/java/VerticleRestStartBackend.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1015,7 +1011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1031,17 +1026,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="31" column="37" lean-forward="false" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-          <folding>
-            <marker date="1523963293560" expanded="true" signature="1608:1655" ph="SELECT * FRO... users" />
-            <marker date="1523963293560" expanded="true" signature="2587:2650" ph="INSERT INTO transactions... " />
-            <marker date="1523963293560" expanded="true" signature="3407:3448" ph="SELECT * FRO... transactions" />
-            <marker date="1523963293560" expanded="true" signature="4406:4485" ph="SELECT * FRO... transactions" />
-            <marker date="1523963293560" expanded="true" signature="5447:5469" ph="SELECT name users" />
-            <marker date="1523963293560" expanded="true" signature="6244:6281" ph="INSERT INTO tokens... " />
-            <marker date="1523963293560" expanded="true" signature="6706:6726" ph="SELECT * FRO... tokens" />
-            <marker date="1523963293560" expanded="true" signature="7301:7333" ph="SELECT * FRO... users" />
-            <marker date="1523963293560" expanded="true" signature="8175:8220" ph="INSERT INTO users... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1049,7 +1033,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1057,7 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1081,7 +1063,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1090,19 +1071,12 @@
         <state relative-caret-position="448">
           <caret line="54" column="57" lean-forward="false" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="106" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FileStatioN/47DEQpj8HBSa+!TImW+5JCeuQeRkm5NMpJWZG3hSuFU=">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/FileStatioN/47DEQpj8HBSa+!TImW+5JCeuQeRkm5NMpJWZG3hSuFU=" />
     <entry file="file://$PROJECT_DIR$/SFTPClient/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1119,22 +1093,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FileStatioN/SJrYQ3vJRSIhBtrw0aNNz9DqVTliAEwKN61wnxD2IrQ=.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FileStatioN/SJrYQ3vJRSIhBtrw0aNNz9DqVTliAEwKN61wnxD2IrQ=">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/FileStatioN/SJrYQ3vJRSIhBtrw0aNNz9DqVTliAEwKN61wnxD2IrQ=.txt" />
+    <entry file="file://$PROJECT_DIR$/FileStatioN/SJrYQ3vJRSIhBtrw0aNNz9DqVTliAEwKN61wnxD2IrQ=" />
     <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/TestCentral.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
@@ -1169,11 +1129,120 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/SFTPTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+        <state relative-caret-position="840">
+          <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/Measurement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:13:25 CEST 2018/RobotSendManyTrans2.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:13:25 CEST 2018/RobotSendManyTrans5.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:13:25 CEST 2018/RobotSendManyTrans10.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:13:25 CEST 2018/RobotSendManyTrans9.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:13:25 CEST 2018/RobotSendManyTrans8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:13:25 CEST 2018/RobotSendManyTrans7.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:13:25 CEST 2018/RobotSendManyTrans6.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:13:25 CEST 2018/RobotSendManyTrans3.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:12:08 CEST 2018/RobotSendManyTrans2.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:12:08 CEST 2018/RobotSendManyTrans3.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:12:08 CEST 2018/RobotSendManyTrans4.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:12:08 CEST 2018/RobotSendManyTrans5.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 13:12:08 CEST 2018/RobotSendManyTrans1.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
