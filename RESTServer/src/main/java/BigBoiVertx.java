@@ -45,7 +45,6 @@ public class BigBoiVertx extends AbstractVerticle {
 
     private void authenticateUser(RoutingContext rc) {
             String string = rc.getBodyAsString();
-            System.out.println("FORM DATA authenticate: " + string);
             String[] strings = string.split("&");
             String username = strings[0].split("=")[1];
             String password = strings[1].split("=")[1];
@@ -64,7 +63,6 @@ public class BigBoiVertx extends AbstractVerticle {
     private void getAllTransactions(RoutingContext rc){
         if(dbReference.matchToken(rc.request().getParam("token"))) {
             String username = rc.request().getParam("name");
-            System.out.println("FORM DATA TRANSACTION: " + username);
             LinkedList<Transaction> list = (LinkedList) dbReference.retrieveAllTransactions(username);
             if (list != null) {
                 rc.response().setStatusCode(200).putHeader("content-type", "application/json; charset=utf-8")
@@ -95,7 +93,6 @@ public class BigBoiVertx extends AbstractVerticle {
     private void makeTransactions(RoutingContext rc){
             if(dbReference.matchToken(rc.request().getParam("token"))) {
                 String string = rc.getBodyAsString();
-                System.out.println("FORM DATA MAKE TRANSACTION: " + string);
                 String[] strings = string.split("&");
                 String usernameTo = strings[0].split("=")[1];
                 String usernameFrom = strings[1].split("=")[1];
@@ -114,7 +111,6 @@ public class BigBoiVertx extends AbstractVerticle {
     private void getUsers(RoutingContext rc){
         if(dbReference.matchToken(rc.request().getParam("token"))) {
             String string = rc.getBodyAsString();
-            System.out.println("FORM DATA GET USERS: " + string);
             LinkedList<String> list = (LinkedList) dbReference.retrieveAllUsernames();
             if (list != null) {
                 rc.response().setStatusCode(200).putHeader("content-type", "application/json; charset=utf-8")
