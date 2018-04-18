@@ -33,6 +33,11 @@
             <artifactId>Webrobot</artifactId>
             <version>1.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.kth.exjobb</groupId>
+            <artifactId>RESTClient</artifactId>
+            <version>1.0</version>
+        </dependency>
         <!--<dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-web-client</artifactId>

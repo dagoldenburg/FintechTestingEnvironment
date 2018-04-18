@@ -1,6 +1,10 @@
 package Tests;
 
+import MicroServices.Communicator;
+import OgHTTPClient.HTTPRequests;
 import io.vertx.core.Vertx;
+
+import java.net.HttpURLConnection;
 
 public class RestTest extends TestI implements Cloneable{
 
@@ -13,18 +17,29 @@ public class RestTest extends TestI implements Cloneable{
     @Override
     void testSendTransactions(int amountOfTransactions) {
         super.setFileNameEnding("RestSendManyTrans"+ amountOfTransactions);
+        HTTPRequests h = new HTTPRequests();
         Thread t = new Thread(new AverageMeasurement(folderName,filename));
         t.start();
-        Vertx vertx = Vertx.vertx();
-       // vertx.deployVerticle(new Communicator(amountOfTransactions,true,t));
+        h.login();
+        for(int i = 0;i<amountOfTransactions;i++) {
+            h.retrieveTransaction("name=dag&nrOfTransactions=10");
+        }
+        h.disconnect();
+        t.interrupt();
     }
 
     @Override
     void testRetrieveTransactions(int amountOfTests) {
         super.setFileNameEnding("RestRetrieveManyTrans"+amountOfTests);
-        new Thread(new AverageMeasurement(folderName,filename)).start();
-        Vertx vertx = Vertx.vertx();
-        //vertx.deployVerticle(new Communicator(amountOfTests,false));
+        HTTPRequests h = new HTTPRequests();
+        Thread t = new Thread(new AverageMeasurement(folderName,filename));
+        t.start();
+        h.login();
+        for(int i = 0;i<amountOfTests;i++) {
+            h.retrieveTransaction("name=dag&nrOfTransactions=10");
+        }
+        h.disconnect();
+        t.interrupt();
     }
 
 

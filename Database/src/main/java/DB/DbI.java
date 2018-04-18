@@ -16,4 +16,5 @@ public interface DbI {
     public boolean userExists(String username);
     public void saveToken(String token);
     public boolean matchToken(String token);
+    public void removeToken(String token);
 }

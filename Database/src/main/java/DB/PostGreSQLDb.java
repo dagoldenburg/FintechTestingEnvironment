@@ -256,4 +256,18 @@ public class PostGreSQLDb implements DbI {
         }
     }
 
+    public void removeToken(String token){
+        String deleteString = "DELETE from tokens where token=?";
+        PreparedStatement ps;
+        try{
+            ps = connection.prepareStatement(deleteString);
+            ps.setString(1, token);
+            ps.executeUpdate();
+            Log.i(this,"Removed token");
+        } catch (SQLException e) {
+            Log.e(this,"Failed removing token");
+            e.printStackTrace();
+        }
+    }
+
 }

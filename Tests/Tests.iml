@@ -9,7 +9,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="Database" />
     <orderEntry type="module" module-name="SFTPServer" />
     <orderEntry type="module" module-name="Database" />
     <orderEntry type="module" module-name="RESTServer" />
@@ -54,5 +53,8 @@
     <orderEntry type="library" name="Maven: com.squareup.okhttp3:okhttp:3.9.1" level="project" />
     <orderEntry type="library" name="Maven: com.squareup.okio:okio:1.13.0" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-chrome-driver:3.11.0" level="project" />
+    <orderEntry type="module" module-name="RESTClient" />
+    <orderEntry type="library" name="Maven: io.vertx:vertx-web-client:3.5.1" level="project" />
+    <orderEntry type="library" name="Maven: io.vertx:vertx-web-common:3.5.1" level="project" />
   </component>
 </module>

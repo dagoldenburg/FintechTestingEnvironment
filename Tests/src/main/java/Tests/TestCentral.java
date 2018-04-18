@@ -25,60 +25,72 @@ public class TestCentral {
 
         String date = new Date().toString();
         String folderName = "";
-        switch(scanner.nextLine()){
-            case "1":
-                System.out.println("This doesnt work ya twerp");
-                exit(1);
+        boolean scan = true;
+        while(scan){
+            switch(scanner.nextLine()) {
+                case "1":
+                    folderName = "RestTest - "+ date;
+                    t = new RestTest(folderName);
+                    scan = false;
                     break;
-            case "2":
-                folderName = "SFTPTest - " + date;
-                t = new SFTPTest(folderName);
-                break;
-            case "3":
-                folderName = "RobotTest - " + date;
-                t = new RobotTest(folderName);
-                break;
-            default:
-                System.out.println("Not valid input");
-                exit(1);
+                case "2":
+                    folderName = "SFTPTest - " + date;
+                    t = new SFTPTest(folderName);
+                    scan = false;
+                    break;
+                case "3":
+                    folderName = "RobotTest - " + date;
+                    t = new RobotTest(folderName);
+                    scan = false;
+                    break;
+                default:
+                    System.out.println("Not valid input");
+            }
         }
-
+        scan = true;
         File dir = new File("TestResults/" + folderName);
         boolean success = dir.mkdir();
-
         if(success){
             System.out.println("What do you want to test?");
             System.out.println("1 send");
             System.out.println("2 retrieve");
-            switch(scanner.nextLine()){
-                case "1":
+            while(scan) {
+                switch (scanner.nextLine()) {
+                    case "1":
+                        //warmup
+                        for (int i = 1; i <= 1000; i *= 10) {
+                            t.testSendTransactions(i);
+                        }
+                        System.gc();
+                        Thread.sleep(1000);
 
-                    //warmup
-                    for(int i = 1;i<=10;i++){
-                        t.testSendTransactions(i);
-                    }
-                    System.gc();
-                    Thread.sleep(1000);
-                    for(int i = 1;i<=10;i++){
-                        t.testSendTransactions(i);
-                    }break;
-                case "2":
-                    //warmup
-                    for(int i = 1;i<=10;i++){
-                        t.testRetrieveTransactions(i);
-                    }
-                    System.gc();
-                    Thread.sleep(1000);
-                    for(int i = 1;i<=10;i++){
-                        t.testRetrieveTransactions(i);
-                    }break;
-                default:
-                    System.out.println("Invalid input");
-                    break;
+                        for (int i = 1; i <= 1000; i *= 10) {
+                            t.testSendTransactions(i);
+                        }
+                        scan = false;
+                        break;
+                    case "2":
+                        //warmup
+                        for (int i = 1; i <= 1000; i *= 10) {
+                            t.testRetrieveTransactions(i);
+                        }
+                        System.gc();
+                        Thread.sleep(1000);
+
+                        for (int i = 1; i <= 1000; i *= 10) {
+                            t.testRetrieveTransactions(i);
+                        }
+                        scan = false;
+                        break;
+                    default:
+                        System.out.println("Invalid input");
+                        break;
+                }
             }
         }else{
             System.out.println("Failed to create new folder");
         }
+
 
 
 

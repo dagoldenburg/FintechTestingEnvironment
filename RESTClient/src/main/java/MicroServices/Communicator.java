@@ -15,7 +15,7 @@ public class Communicator extends AbstractVerticle {
 
     WebClient client;
     String myToken;
-    private static final String SERVERIP = "10.46.31.225";
+    private static final String SERVERIP = "localhost";
     @Override
     public void start() {
         client = WebClient.create(vertx);
@@ -44,7 +44,7 @@ public class Communicator extends AbstractVerticle {
                     if(ar.succeeded()){
                         HttpResponse<Buffer> response = ar.result();
                         myToken = response.bodyAsString();
-                        if(send) {
+                        /*if(send) {
                             for (int i = 0; i < amountOfTests; i++) {
                                 makeTransaction();
                             }
@@ -57,7 +57,7 @@ public class Communicator extends AbstractVerticle {
                             t.interrupt();
                         }catch(NullPointerException e){
 
-                        }
+                        }*/
                     }
                 });
     }

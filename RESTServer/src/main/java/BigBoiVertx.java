@@ -33,9 +33,9 @@ public class BigBoiVertx extends AbstractVerticle {
         router.post(ROOT+"makeTransaction").handler(this::makeTransactions);
         router.post(ROOT+"login").handler(this::authenticateUser);
         router.get(ROOT+"getUsers").handler(this::getUsers);
+        router.get(ROOT+"removeToken").handler(this::removeToken);
         router.get(ROOT+"getNrOfTransactions").handler(this::getNrOfTransactions);
         vertx.createHttpServer().requestHandler(router::accept).listen(7089);
-        System.out.println("WE HAWT");
         dbReference.createConnection();
 
     }
@@ -45,6 +45,8 @@ public class BigBoiVertx extends AbstractVerticle {
 
     private void authenticateUser(RoutingContext rc) {
             String string = rc.getBodyAsString();
+            System.out.println(rc.getBodyAsString());
+
             String[] strings = string.split("&");
             String username = strings[0].split("=")[1];
             String password = strings[1].split("=")[1];
@@ -97,7 +99,6 @@ public class BigBoiVertx extends AbstractVerticle {
                 String usernameTo = strings[0].split("=")[1];
                 String usernameFrom = strings[1].split("=")[1];
                 String amount = strings[2].split("=")[1];
-
                 if (dbReference.makeTransaction(usernameTo, usernameFrom, Double.parseDouble(amount))) {
                     rc.response().setStatusCode(200).putHeader("content-type", "text/html").end("GOOD REQ");
                 } else
@@ -120,6 +121,14 @@ public class BigBoiVertx extends AbstractVerticle {
         }else{
             System.out.println("NO TOKERINO");
         }
+
+    }
+
+    public void removeToken(RoutingContext rc){
+        if(dbReference.matchToken(rc.request().getParam("token"))){
+            dbReference.removeToken(rc.request().getParam("token"));
+        }else
+            System.out.println("NO TOKERINO");
 
     }
 

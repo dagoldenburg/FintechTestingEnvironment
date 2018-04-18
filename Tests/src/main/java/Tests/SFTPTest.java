@@ -42,10 +42,9 @@ public class SFTPTest extends TestI{
             Thread t = new Thread(new AverageMeasurement(folderName,filename));
             t.start();
             sftpc.connect();
-
-        sftpc.retrieveFile();
-        sftpc.disconnect();
-        t.interrupt();
+            sftpc.retrieveFile();
+            sftpc.disconnect();
+            t.interrupt();
         } catch (SFTPClientException e) {
             System.out.println("Connection failed, quitting");
             return;
@@ -54,6 +53,7 @@ public class SFTPTest extends TestI{
 
     @Override
     void setUpEnvironment() {
+
     }
 
     @Override
