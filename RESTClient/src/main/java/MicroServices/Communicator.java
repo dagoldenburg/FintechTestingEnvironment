@@ -21,20 +21,7 @@ public class Communicator extends AbstractVerticle {
         client = WebClient.create(vertx);
 
         sendLoginForm();
-        if(send) {
-            for (int i = 0; i < amountOfTests; i++) {
-                makeTransaction();
-            }
-        }else{
-            for (int i = 0; i < amountOfTests; i++) {
-                getNrOfTransactions();
-            }
-        }
-        try {
-            t.interrupt();
-        }catch(NullPointerException e){
 
-        }
     }
 
     int amountOfTests;
@@ -57,6 +44,20 @@ public class Communicator extends AbstractVerticle {
                     if(ar.succeeded()){
                         HttpResponse<Buffer> response = ar.result();
                         myToken = response.bodyAsString();
+                        if(send) {
+                            for (int i = 0; i < amountOfTests; i++) {
+                                makeTransaction();
+                            }
+                        }else{
+                            for (int i = 0; i < amountOfTests; i++) {
+                                getNrOfTransactions();
+                            }
+                        }
+                        try {
+                            t.interrupt();
+                        }catch(NullPointerException e){
+
+                        }
                     }
                 });
     }
@@ -88,6 +89,7 @@ public class Communicator extends AbstractVerticle {
         form.set("amount","123.45");
 
         client.post(7089,SERVERIP,"/rest/makeTransaction")
+                .addQueryParam("token",myToken)
                 .sendForm(form,ar -> {
                     if(ar.succeeded()){
                         HttpResponse<Buffer> response = ar.result();
@@ -99,6 +101,7 @@ public class Communicator extends AbstractVerticle {
 
     private void getUsers(){
         client.get(7089,SERVERIP,"/rest/getUsers")
+                .addQueryParam("token",myToken)
                 .send(ar->{
                     if(ar.succeeded()){
                         HttpResponse<Buffer> response = ar.result();
