@@ -6,32 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef6c738-f1f9-46a9-b96a-d5d31a2c1684" name="Default" comment="Merge branch 'master' of https://github.com/kraken108/ExjobbMonkaS&#10;&#10;# Conflicts:&#10;#&#9;Tests/src/main/java/Tests/RobotTest.java&#10;#&#9;Tests/src/main/java/Tests/TestCentral.java">
+    <list default="true" id="bef6c738-f1f9-46a9-b96a-d5d31a2c1684" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Database/src/main/java/DB/PostGreSQLDb.java" afterPath="$PROJECT_DIR$/Database/src/main/java/DB/PostGreSQLDb.java" />
-      <change beforePath="$PROJECT_DIR$/TestResults/RestTest - Tue Apr 17 11:36:38 CEST 2018/RestSendManyTrans1.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TestResults/RestTest - Tue Apr 17 11:36:38 CEST 2018/RestSendManyTrans10.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TestResults/RestTest - Tue Apr 17 11:36:38 CEST 2018/RestSendManyTrans2.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TestResults/RestTest - Tue Apr 17 11:36:38 CEST 2018/RestSendManyTrans3.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TestResults/RestTest - Tue Apr 17 11:36:38 CEST 2018/RestSendManyTrans4.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TestResults/RestTest - Tue Apr 17 11:36:38 CEST 2018/RestSendManyTrans5.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TestResults/RestTest - Tue Apr 17 11:36:38 CEST 2018/RestSendManyTrans6.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TestResults/RestTest - Tue Apr 17 11:36:38 CEST 2018/RestSendManyTrans7.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TestResults/RestTest - Tue Apr 17 11:36:38 CEST 2018/RestSendManyTrans8.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TestResults/RestTest - Tue Apr 17 11:36:38 CEST 2018/RestSendManyTrans9.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 11:03:30 CEST 2018/RobotSendManyTrans1.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 11:03:30 CEST 2018/RobotSendManyTrans10.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 11:03:30 CEST 2018/RobotSendManyTrans2.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 11:03:30 CEST 2018/RobotSendManyTrans3.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 11:03:30 CEST 2018/RobotSendManyTrans4.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 11:03:30 CEST 2018/RobotSendManyTrans5.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 11:03:30 CEST 2018/RobotSendManyTrans6.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 11:03:30 CEST 2018/RobotSendManyTrans7.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 11:03:30 CEST 2018/RobotSendManyTrans8.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TestResults/RobotTest - Tue Apr 17 11:03:30 CEST 2018/RobotSendManyTrans9.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Webrobot/target/classes/webrobot/Webrobot$1.class" afterPath="$PROJECT_DIR$/Webrobot/target/classes/webrobot/Webrobot$1.class" />
-      <change beforePath="$PROJECT_DIR$/Webrobot/target/classes/webrobot/Webrobot.class" afterPath="$PROJECT_DIR$/Webrobot/target/classes/webrobot/Webrobot.class" />
-      <change beforePath="$PROJECT_DIR$/Webrobot/target/classes/webrobot/WebrobotTests.class" afterPath="$PROJECT_DIR$/Webrobot/target/classes/webrobot/WebrobotTests.class" />
     </list>
     <ignored path="$PROJECT_DIR$/Tests/target/" />
     <ignored path="$PROJECT_DIR$/ExjobbWebsite/target/" />
@@ -55,12 +33,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SFTPTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/SFTPTest.java">
+      <file leaf-file-name="RestTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/RestTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="495">
+              <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,8 +48,8 @@
       <file leaf-file-name="TestI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/TestI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            <state relative-caret-position="210">
+              <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -88,7 +68,7 @@
       <file leaf-file-name="RobotTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/RobotTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="315">
               <caret line="30" column="64" lean-forward="false" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
               <folding />
             </state>
@@ -98,7 +78,7 @@
       <file leaf-file-name="AutoTestCentral.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/AutoTestCentral.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="135">
               <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
               <folding />
             </state>
@@ -118,7 +98,7 @@
       <file leaf-file-name="HTTPRequests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RESTClient/src/main/java/OgHTTPClient/HTTPRequests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1055">
+            <state relative-caret-position="633">
               <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="92" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -140,7 +120,7 @@
       <file leaf-file-name="BigBoiVertx.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RESTServer/src/main/java/BigBoiVertx.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="749">
+            <state relative-caret-position="1695">
               <caret line="127" column="65" lean-forward="false" selection-start-line="127" selection-start-column="34" selection-end-line="127" selection-end-column="65" />
               <folding />
             </state>
@@ -150,22 +130,20 @@
       <file leaf-file-name="PostGreSQLDb.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Database/src/main/java/DB/PostGreSQLDb.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="1000">
+              <caret line="274" column="0" lean-forward="false" selection-start-line="274" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
               <folding>
-                <element signature="e#3506#3519#0" expanded="true" />
-                <element signature="e#4543#4556#0" expanded="true" />
-                <element signature="e#5525#5533#0" expanded="true" />
-                <marker date="1524123547598" expanded="true" signature="1608:1655" ph="SELECT * FRO... users" />
-                <marker date="1524123547598" expanded="true" signature="2587:2650" ph="INSERT INTO transactions... " />
-                <marker date="1524123547598" expanded="true" signature="3407:3448" ph="SELECT * FRO... transactions" />
-                <marker date="1524123547598" expanded="true" signature="4406:4485" ph="SELECT * FRO... transactions" />
-                <marker date="1524123547598" expanded="true" signature="5447:5469" ph="SELECT name users" />
-                <marker date="1524123547598" expanded="true" signature="6244:6281" ph="INSERT INTO tokens... " />
-                <marker date="1524123547598" expanded="true" signature="6706:6726" ph="SELECT * FRO... tokens" />
-                <marker date="1524123547598" expanded="true" signature="7300:7332" ph="SELECT * FRO... users" />
-                <marker date="1524123547598" expanded="true" signature="8174:8219" ph="INSERT INTO users... " />
-                <marker date="1524123547598" expanded="true" signature="9110:9142" ph="DELETE from tokens... " />
+                <element signature="e#5485#5493#0" expanded="true" />
+                <marker date="1524139004564" expanded="true" signature="1640:1687" ph="SELECT * FRO... users" />
+                <marker date="1524139004564" expanded="true" signature="2601:2664" ph="INSERT INTO transactions... " />
+                <marker date="1524139004564" expanded="true" signature="3403:3444" ph="SELECT * FRO... transactions" />
+                <marker date="1524139004564" expanded="true" signature="4384:4463" ph="SELECT * FRO... transactions" />
+                <marker date="1524139004564" expanded="true" signature="5407:5429" ph="SELECT name users" />
+                <marker date="1524139004564" expanded="true" signature="6186:6223" ph="INSERT INTO tokens... " />
+                <marker date="1524139004564" expanded="true" signature="6618:6638" ph="SELECT * FRO... tokens" />
+                <marker date="1524139004564" expanded="true" signature="7194:7226" ph="SELECT * FRO... users" />
+                <marker date="1524139004564" expanded="true" signature="8031:8076" ph="INSERT INTO users... " />
+                <marker date="1524139004564" expanded="true" signature="8930:8962" ph="DELETE from tokens... " />
               </folding>
             </state>
           </provider>
@@ -244,8 +222,8 @@
         <option value="$PROJECT_DIR$/Tests/src/main/java/Tests/AutoTestCentral.java" />
         <option value="$PROJECT_DIR$/Tests/src/main/java/Tests/SFTPTest.java" />
         <option value="$PROJECT_DIR$/Database/Database.iml" />
-        <option value="$PROJECT_DIR$/Database/src/main/java/DB/PostGreSQLDb.java" />
         <option value="$PROJECT_DIR$/RESTServer/src/main/java/BigBoiVertx.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/DB/PostGreSQLDb.java" />
       </list>
     </option>
   </component>
@@ -290,9 +268,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -428,11 +406,46 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExjobbMonkaSrevert" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExjobbMonkaSrevert" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExjobbMonkaSrevert" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExjobbMonkaSrevert" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExjobbMonkaSrevert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExjobbMonkaSrevert" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -748,6 +761,8 @@
       <workItem from="1524032265084" duration="11894000" />
       <workItem from="1524118658803" duration="3350000" />
       <workItem from="1524130442588" duration="282000" />
+      <workItem from="1524131932679" duration="242000" />
+      <workItem from="1524138479416" duration="524000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/kraken108/ExjobbMonkaS&#10;&#10;# Conflicts:&#10;#&#9;Tests/src/main/java/Tests/RobotTest.java&#10;#&#9;Tests/src/main/java/Tests/TestCentral.java">
       <created>1523888968276</created>
@@ -791,11 +806,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524062145096</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Merge branch 'master' of https://github.com/kraken108/ExjobbMonkaS&#10;&#10;# Conflicts:&#10;#&#9;Tests/src/main/java/Tests/RobotTest.java&#10;#&#9;Tests/src/main/java/Tests/TestCentral.java">
+      <created>1524138831797</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1524138831797</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49308000" />
+    <option name="totallyTimeSpent" value="50074000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1278" height="1337" extended-state="0" />
@@ -814,15 +836,14 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39928058" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328777" sideWeight="0.4631579" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20474309" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20474309" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28951487" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28951487" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -831,6 +852,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328777" sideWeight="0.4631579" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -912,7 +934,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,19 +1044,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/RestTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/SFTPTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
+        <state relative-caret-position="735">
           <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
@@ -1043,8 +1054,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/TestI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        <state relative-caret-position="210">
+          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1059,7 +1070,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/RobotTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="315">
           <caret line="30" column="64" lean-forward="false" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
           <folding />
         </state>
@@ -1067,7 +1078,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/AutoTestCentral.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="135">
           <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
           <folding />
         </state>
@@ -1081,16 +1092,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RESTClient/src/main/java/OgHTTPClient/HTTPRequests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1055">
-          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="92" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RESTClient/src/main/java/OgHTTPClient/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1101,30 +1102,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RESTServer/src/main/java/BigBoiVertx.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
+        <state relative-caret-position="1695">
           <caret line="127" column="65" lean-forward="false" selection-start-line="127" selection-start-column="34" selection-end-line="127" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/RestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RESTClient/src/main/java/OgHTTPClient/HTTPRequests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="92" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Database/src/main/java/DB/PostGreSQLDb.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="1000">
+          <caret line="274" column="0" lean-forward="false" selection-start-line="274" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
           <folding>
-            <element signature="e#3506#3519#0" expanded="true" />
-            <element signature="e#4543#4556#0" expanded="true" />
-            <element signature="e#5525#5533#0" expanded="true" />
-            <marker date="1524123547598" expanded="true" signature="1608:1655" ph="SELECT * FRO... users" />
-            <marker date="1524123547598" expanded="true" signature="2587:2650" ph="INSERT INTO transactions... " />
-            <marker date="1524123547598" expanded="true" signature="3407:3448" ph="SELECT * FRO... transactions" />
-            <marker date="1524123547598" expanded="true" signature="4406:4485" ph="SELECT * FRO... transactions" />
-            <marker date="1524123547598" expanded="true" signature="5447:5469" ph="SELECT name users" />
-            <marker date="1524123547598" expanded="true" signature="6244:6281" ph="INSERT INTO tokens... " />
-            <marker date="1524123547598" expanded="true" signature="6706:6726" ph="SELECT * FRO... tokens" />
-            <marker date="1524123547598" expanded="true" signature="7300:7332" ph="SELECT * FRO... users" />
-            <marker date="1524123547598" expanded="true" signature="8174:8219" ph="INSERT INTO users... " />
-            <marker date="1524123547598" expanded="true" signature="9110:9142" ph="DELETE from tokens... " />
+            <element signature="e#5485#5493#0" expanded="true" />
+            <marker date="1524139004564" expanded="true" signature="1640:1687" ph="SELECT * FRO... users" />
+            <marker date="1524139004564" expanded="true" signature="2601:2664" ph="INSERT INTO transactions... " />
+            <marker date="1524139004564" expanded="true" signature="3403:3444" ph="SELECT * FRO... transactions" />
+            <marker date="1524139004564" expanded="true" signature="4384:4463" ph="SELECT * FRO... transactions" />
+            <marker date="1524139004564" expanded="true" signature="5407:5429" ph="SELECT name users" />
+            <marker date="1524139004564" expanded="true" signature="6186:6223" ph="INSERT INTO tokens... " />
+            <marker date="1524139004564" expanded="true" signature="6618:6638" ph="SELECT * FRO... tokens" />
+            <marker date="1524139004564" expanded="true" signature="7194:7226" ph="SELECT * FRO... users" />
+            <marker date="1524139004564" expanded="true" signature="8031:8076" ph="INSERT INTO users... " />
+            <marker date="1524139004564" expanded="true" signature="8930:8962" ph="DELETE from tokens... " />
           </folding>
         </state>
       </provider>

@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 public class PostGreSQLDb implements DbI {
 
     private static String DATABASE_NAME = "ExjobbDatabas";
-
+    private PreparedStatement ps;
     Connection connection;
 
     /**
@@ -51,7 +51,7 @@ public class PostGreSQLDb implements DbI {
     public boolean authenticateUser(String username, String password) {
         String selectString = "SELECT * FROM users WHERE name=? and password=?;";
         try {
-            PreparedStatement ps = connection.prepareStatement(selectString);
+            ps = connection.prepareStatement(selectString);
             ps.setString(1,username);
             ps.setString(2,password);
             ResultSet rs = ps.executeQuery();
@@ -77,7 +77,7 @@ public class PostGreSQLDb implements DbI {
     public boolean makeTransaction(String usernameTo,String usernameFrom, double amount) {
         String insertString = "INSERT INTO transactions (amount,fromuser,touser) VALUES(?,?,?);";
         try{
-            PreparedStatement ps = connection.prepareStatement(insertString);
+            ps = connection.prepareStatement(insertString);
             ps.setDouble(1,amount);
             ps.setString(2,usernameFrom);
             ps.setString(3,usernameTo);
@@ -99,7 +99,7 @@ public class PostGreSQLDb implements DbI {
         String selectString ="SELECT * FROM transactions WHERE touser=?;";
         LinkedList<Transaction> trans = new LinkedList<Transaction>();
         try {
-            PreparedStatement ps = connection.prepareStatement(selectString);
+            ps = connection.prepareStatement(selectString);
             ps.setString(1,username);
             ResultSet rs = ps.executeQuery();
             while(rs.next()){
@@ -125,7 +125,7 @@ public class PostGreSQLDb implements DbI {
         LinkedList<Transaction> trans = new LinkedList<Transaction>();
         Log.i(this, "Getting nr transactions " + nrOfTransactions);
         try {
-            PreparedStatement ps = connection.prepareStatement(selectString);
+            ps = connection.prepareStatement(selectString);
             ps.setString(1,username);
             ps.setInt(2,nrOfTransactions);
             ResultSet rs = ps.executeQuery();
@@ -149,7 +149,7 @@ public class PostGreSQLDb implements DbI {
         String selectString = "SELECT name FROM users";
         LinkedList<String> usernames = new LinkedList<String>();
         try{
-            PreparedStatement ps = connection.prepareStatement(selectString);
+            ps = connection.prepareStatement(selectString);
             ResultSet rs = ps.executeQuery();
             while(rs.next()){
                 usernames.add(new String(rs.getString("name")));
@@ -172,7 +172,6 @@ public class PostGreSQLDb implements DbI {
 
     public void saveToken(String token){
         String insertString = "INSERT INTO tokens (token) VALUES (?)";
-        PreparedStatement ps;
         try{
             ps = connection.prepareStatement(insertString);
             ps.setString(1,token);
@@ -188,7 +187,7 @@ public class PostGreSQLDb implements DbI {
         String selectString = "SELECT * FROM tokens";
         ResultSet rs;
         try{
-            PreparedStatement ps = connection.prepareStatement(selectString);
+            ps = connection.prepareStatement(selectString);
             rs = ps.executeQuery();
             if(rs.next()){
                 Log.i(this,"matched token");
@@ -206,7 +205,6 @@ public class PostGreSQLDb implements DbI {
 
     public boolean userExists(String username) {
         String searchString = "SELECT * FROM users WHERE name=?;";
-        PreparedStatement ps = null;
         ResultSet rs = null;
         try {
             ps = connection.prepareStatement(searchString);
@@ -232,7 +230,6 @@ public class PostGreSQLDb implements DbI {
 
     public String createUser(String username, String password) {
         String createString = "INSERT INTO users (name,password) VALUES(?,?);";
-        PreparedStatement ps = null;
         try {
             if (userExists(username)) {
                 return "Username already exists!";
@@ -258,7 +255,6 @@ public class PostGreSQLDb implements DbI {
 
     public void removeToken(String token){
         String deleteString = "DELETE from tokens where token=?";
-        PreparedStatement ps;
         try{
             ps = connection.prepareStatement(deleteString);
             ps.setString(1, token);
@@ -267,6 +263,16 @@ public class PostGreSQLDb implements DbI {
         } catch (SQLException e) {
             Log.e(this,"Failed removing token");
             e.printStackTrace();
+        }
+    }
+
+    public void truncateTransactionTable(){
+        String truncateString = "TRUNCATE transactions";
+        try{
+            ps = connection.prepareStatement(truncateString);
+            ps.executeUpdate();
+        }catch(SQLException e){
+
         }
     }
 
