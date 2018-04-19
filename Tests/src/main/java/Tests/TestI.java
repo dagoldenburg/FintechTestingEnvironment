@@ -1,5 +1,9 @@
 package Tests;
 
+import Tests.Measuring.MeasureResult;
+
+import java.util.ArrayList;
+
 abstract class TestI implements Cloneable{
 
     String filename;
@@ -12,6 +16,21 @@ abstract class TestI implements Cloneable{
 
     void setFileNameEnding(String specificFileName){
         filename=specificFileName;
+    }
+
+    public MeasureResult getAverageResult(ArrayList<MeasureResult> results){
+        double totalCpu = 0;
+        double totalRam = 0;
+        double totalOperationTime = 0;
+
+        for(MeasureResult m : results){
+            totalCpu += m.getCpuUsage();
+            totalRam += m.getRamUsage();
+            totalOperationTime += m.getOperationTime();
+        }
+        int size = results.size();
+        return new MeasureResult(totalCpu/size,totalRam/size,totalOperationTime/size);
+
     }
 
     @Override
