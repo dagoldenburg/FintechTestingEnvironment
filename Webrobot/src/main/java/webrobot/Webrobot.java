@@ -20,9 +20,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Webrobot {
 
     private WebDriver driver;
-    private final static String BASE_URL = "http://" + "10.46.1.90" + ":8080/ExjobbWebsite/";
 
-    public Webrobot(BrowserType type) throws Exception {
+    private String BASE_URL;
+
+    public Webrobot(BrowserType type,String serverIp) throws Exception {
+        BASE_URL = "http://" + serverIp + ":8080/ExjobbWebsite/";
         switch (type) {
             case CHROME:
                 System.setProperty("webdriver.chrome.driver", "chromedriver");

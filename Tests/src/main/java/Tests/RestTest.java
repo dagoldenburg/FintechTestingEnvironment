@@ -27,7 +27,7 @@ public class RestTest extends TestI implements Cloneable{
 
         for(int i = 0; i < 100; i ++){ //do test 20 times and calculate average
             /** ONE LIFECYCLE **/
-            HTTPRequests h = new HTTPRequests();
+            HTTPRequests h = new HTTPRequests(ServerInfo.getServerIp());
             AverageMeasurement am = new AverageMeasurement(folderName,filename);
             Thread t = new Thread(am);
             t.start();
@@ -70,7 +70,7 @@ public class RestTest extends TestI implements Cloneable{
         ArrayList<MeasureResult> results = new ArrayList<>();
         for(int i = 0; i < 100; i++){ //do test 20 times and calculate average
             /** ONE LIFECYCLE **/
-            HTTPRequests h = new HTTPRequests();
+            HTTPRequests h = new HTTPRequests(ServerInfo.getServerIp());
             AverageMeasurement am = new AverageMeasurement(folderName,filename);
             Thread t = new Thread(am);
             t.start();

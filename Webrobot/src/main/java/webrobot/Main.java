@@ -29,7 +29,7 @@ public class Main {
         int nrTimes = 10;
         int nrTransactions = 10;
 
-        WebrobotTests tester = new WebrobotTests();
+        WebrobotTests tester = new WebrobotTests("localhost");
 
          long historyAvgTime = tester.getTransactionHistoryTest(nrTimes, 10);
         long oneTxsAvgTime = tester.makeOneTransactionTest(nrTimes);

@@ -1,6 +1,7 @@
 package Tests;
 import Tests.FileHandler.CsvWriter;
 import Tests.Measuring.MeasureResult;
+import com.sun.security.ntlm.Server;
 import webrobot.BrowserType;
 import webrobot.Webrobot;
 import webrobot.WebrobotTests;
@@ -14,6 +15,7 @@ public class RobotTest extends TestI implements Cloneable{
     private String folderName;
 
     public RobotTest(String folderName ){
+
         this.folderName = folderName;
     }
 
@@ -22,12 +24,11 @@ public class RobotTest extends TestI implements Cloneable{
         System.out.println("Robot test: send transactions (" + amountOfTransactions + ")");
         super.setFileNameEnding("RobotSendManyTrans"+amountOfTransactions);
 
-
         ArrayList<MeasureResult> results = new ArrayList<>();
 
         for(int i = 0; i < 20; i++){ //do test 20 times and calculate avg
             /** ONE LIFECYCLE **/
-            WebrobotTests wt = new WebrobotTests();
+            WebrobotTests wt = new WebrobotTests(ServerInfo.getServerIp());
             AverageMeasurement am = new AverageMeasurement(folderName,filename);
             Thread t = new Thread(am);
             t.start();
@@ -65,7 +66,7 @@ public class RobotTest extends TestI implements Cloneable{
         ArrayList<MeasureResult> results = new ArrayList<>();
         for(int i = 0; i < 20; i++){
             /** ONE LIFECYCLE **/
-            WebrobotTests wt = new WebrobotTests();
+            WebrobotTests wt = new WebrobotTests(ServerInfo.getServerIp());
             AverageMeasurement am = new AverageMeasurement(folderName,filename);
             Thread t = new Thread(am);
             t.start();

@@ -13,6 +13,11 @@ import java.util.logging.Logger;
  */
 public class WebrobotTests {
 
+    private String serverIp;
+
+    public WebrobotTests(String serverIp){
+        this.serverIp = serverIp;
+    }
     public long makeOneTransactionTest(int nrTimes) {
         try {
             //One transaction at a time test
@@ -91,7 +96,7 @@ public class WebrobotTests {
     public void makeOneTransaction() {
         Webrobot robot = null;
         try {
-            robot = new Webrobot(BrowserType.CHROME);
+            robot = new Webrobot(BrowserType.CHROME,serverIp);
             robot.login();
             robot.goToTransferMoney();
             robot.makeTransaction();
@@ -115,7 +120,7 @@ public class WebrobotTests {
     public void makeSeveralTransactions(int nrTransactions) {
         Webrobot robot = null;
         try {
-            robot = new Webrobot(BrowserType.CHROME);
+            robot = new Webrobot(BrowserType.CHROME,serverIp);
             robot.login();
             robot.goToTransferMoney();
 
@@ -141,7 +146,7 @@ public class WebrobotTests {
     public void getTransactionHistory(int nrTransactions) {
         Webrobot robot = null;
         try {
-            robot = new Webrobot(BrowserType.CHROME);
+            robot = new Webrobot(BrowserType.CHROME,serverIp);
             robot.login();
             robot.goToHistory();
             for (String s : robot.getTransactionHistory(nrTransactions)) {

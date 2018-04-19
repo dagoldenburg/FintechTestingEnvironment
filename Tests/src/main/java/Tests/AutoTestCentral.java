@@ -38,9 +38,9 @@ public class AutoTestCentral {
             //WARMUP
             System.out.println("WARMING UP");
             for(TestI t : tests){
-                for(int i=1;i<=10;i*=10)
+                for(int i=1;i<=100;i*=10)
                     t.testSendTransactions(i);
-                for(int i=1;i<=10;i*=10)
+                for(int i=1;i<=100;i*=10)
                     t.testRetrieveTransactions(i);
             }
 
@@ -48,9 +48,9 @@ public class AutoTestCentral {
             //REAL TESTS
             System.out.println("STARTING REAL TESTS");
             for(TestI t : tests){
-                for(int i=1;i<=10;i*=10)
+                for(int i=1;i<=100;i*=10)
                     t.testSendTransactions(i);
-                for(int i=1;i<=10;i*=10)
+                for(int i=1;i<=100;i*=10)
                     t.testRetrieveTransactions(i);
             }
 

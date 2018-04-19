@@ -12,7 +12,6 @@ public class SFTPTest extends TestI{
 
     private String folderName;
 
-    private final static String serverIp = "10.46.1.90";
     public SFTPTest(String folderName){
 
         this.folderName = folderName;
@@ -29,7 +28,7 @@ public class SFTPTest extends TestI{
             SFTPDataGenerator dg = new SFTPDataGenerator();
             String fname = dg.generateTransactionBatch(amountOfTransactions);
             SFTPClient sftpc =
-                    new SFTPClient(serverIp,22, "do",
+                    new SFTPClient(ServerInfo.getServerIp(),22, "do",
                             "JakobENoob123#\"!",2222);
             try {
                 AverageMeasurement am = new AverageMeasurement(folderName,filename);
@@ -72,7 +71,7 @@ public class SFTPTest extends TestI{
         ArrayList<MeasureResult> results = new ArrayList<>();
         for(int i = 0; i < 20; i++){
             /** ONE LIFECYCLE **/
-            SFTPClient sftpc = new SFTPClient(serverIp,22,"do","JakobENoob123#\"!",2222);
+            SFTPClient sftpc = new SFTPClient(ServerInfo.getServerIp(),22,"do","JakobENoob123#\"!",2222);
             try {
                 AverageMeasurement am = new AverageMeasurement(folderName,filename);
                 Thread t = new Thread(am);
