@@ -191,7 +191,7 @@ public class PostGreSQLDb implements DbI {
             PreparedStatement ps = connection.prepareStatement(selectString);
             rs = ps.executeQuery();
             if(rs.next()){
-                Log.i(this,"Inserted token");
+                Log.i(this,"matched token");
                 return true;
             }else {
 
