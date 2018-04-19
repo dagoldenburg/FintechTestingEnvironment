@@ -20,6 +20,10 @@ public class BigBoiVertx extends AbstractVerticle {
     private static String ROOT = "/rest/";
     DbI dbReference = new PostGreSQLDb();
 
+    /**
+     * Starts the verticle and maps all the calls to functions
+     * Also creates a connection to the database.
+     */
     @Override
     public void start() {
         Router router = Router.router(vertx);
@@ -39,10 +43,20 @@ public class BigBoiVertx extends AbstractVerticle {
         dbReference.createConnection();
 
     }
+
+
+    /**
+     * Test method.
+     * @param rc Routing context.
+     */
     private void sayTjo(RoutingContext rc){
         rc.response().setStatusCode(201).putHeader("content-type","text/html").end("tjo");
     }
 
+    /**
+     * Takes userinfo as input and checks against db if the info is correct.
+     * @param rc Routing context.
+     */
     private void authenticateUser(RoutingContext rc) {
             String string = rc.getBodyAsString();
             System.out.println(rc.getBodyAsString());
@@ -62,6 +76,10 @@ public class BigBoiVertx extends AbstractVerticle {
                 rc.response().setStatusCode(401).putHeader("content-type", "text/html").end("Unsuccessful login!");
     }
 
+    /**
+     * Gets all the transactions from the db, and returns them as a json list of objects.
+     * @param rc Routing context.
+     */
     private void getAllTransactions(RoutingContext rc){
         if(dbReference.matchToken(rc.request().getParam("token"))) {
             String username = rc.request().getParam("name");
@@ -77,6 +95,10 @@ public class BigBoiVertx extends AbstractVerticle {
         }
     }
 
+    /**
+     * Gets a specific number of transactions and returns them as a json list of objects.
+     * @param rc Routing context.
+     */
     private void getNrOfTransactions(RoutingContext rc){
         if(dbReference.matchToken(rc.request().getParam("token"))) {
             String username = rc.request().getParam("name");
@@ -92,6 +114,10 @@ public class BigBoiVertx extends AbstractVerticle {
         }
     }
 
+    /**
+     * Takes in transaction information and tries to add it to the database.
+     * @param rc Routing context.
+     */
     private void makeTransactions(RoutingContext rc){
             if(dbReference.matchToken(rc.request().getParam("token"))) {
                 String string = rc.getBodyAsString();
@@ -109,6 +135,10 @@ public class BigBoiVertx extends AbstractVerticle {
 
     }
 
+    /**
+     * Retrieves all usernames from db and returns them as a json list of objects.
+     * @param rc Routing context.
+     */
     private void getUsers(RoutingContext rc){
         if(dbReference.matchToken(rc.request().getParam("token"))) {
             String string = rc.getBodyAsString();
@@ -124,6 +154,10 @@ public class BigBoiVertx extends AbstractVerticle {
 
     }
 
+    /**
+     * Removes a token from the database.
+     * @param rc Routing context.
+     */
     public void removeToken(RoutingContext rc){
         if(dbReference.matchToken(rc.request().getParam("token"))){
             dbReference.removeToken(rc.request().getParam("token"));

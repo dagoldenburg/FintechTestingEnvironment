@@ -34,6 +34,10 @@ public class SFTPClient implements SFTPClientI{
     private Channel channel;
     private ChannelSftp c;
 
+    /**
+     * Creates a connection and logs into the SFTP server
+     * @throws SFTPClientException Exception if anything related to the SFTP connection goes wrong.
+     */
     @Override
     public void connect() throws SFTPClientException{
         jsch = new JSch();
@@ -56,6 +60,12 @@ public class SFTPClient implements SFTPClientI{
         }
     }
 
+    /**
+     * Uploads a file to the SFTP target directory.
+     * @param sourceFileName Name of the file to transfer
+     * @param destFileName Name of of the destination file
+     * @throws SFTPClientException Exception if anything related to the SFTP connection goes wrong.
+     */
     @Override
     public void uploadFile(String sourceFileName,String destFileName) throws SFTPClientException {
         try{
@@ -67,12 +77,16 @@ public class SFTPClient implements SFTPClientI{
         }
     }
 
-    public void retrieveFile(){
+    /**
+     * Creates a TCP connection to tell the SFTP handler to generate a file that the client can retrieve,
+     * when the client recieves a "DONE" message, the client will proceed to retrieve the file.
+     */
+    public void retrieveFile(String receivingUser, int amountOfTransactions){
         try {
             Socket clientSocket = new Socket(ip, tcpPort);
             DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream());
             BufferedReader inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-            outToServer.writeBytes("CF dag 10" + '\n');
+            outToServer.writeBytes("CF "+receivingUser + " " + amountOfTransactions + '\n');
             String response = inFromServer.readLine();
             String[] strings = response.split(" ");
             if(strings[0].equals("DONE")){

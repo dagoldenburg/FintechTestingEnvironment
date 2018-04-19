@@ -16,18 +16,13 @@ public class HTTPRequests {
 
     private String BASE_URL;
 
-    public void sayTjo() throws IOException {
-        /*HttpURLConnection conn = (HttpURLConnection) (url.openConnection());
-        conn.setRequestMethod("GET");
-        BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-        System.out.println(br.readLine());
-        conn.disconnect();*/
-    }
-
     public HTTPRequests(String serverIp){
         BASE_URL = "http://" + serverIp + ":7089/rest/";
     }
 
+    /**
+     * Authenticates the user to the rest backend.
+     */
     public void login(){
         try {
             String urlParameters  = "username=dagge&password=dagge";
@@ -60,6 +55,9 @@ public class HTTPRequests {
         }
     }
 
+    /**
+     * Makes a transaction to the rest backend.
+     */
     public void makeTransaction(){
         try {
             String urlParameters  = "usernameTo=dag&usernameFrom=jakob&amount=123.45";
@@ -86,6 +84,10 @@ public class HTTPRequests {
         }
     }
 
+    /**
+     * Retrieves a transaction based on the input querry
+     * @param querry querry to be processed.
+     */
     public void retrieveTransaction(String querry) {
         try {
             URL url = new URL(BASE_URL + "getNrOfTransactions?"+querry+"&token="+myToken);
@@ -100,6 +102,9 @@ public class HTTPRequests {
         }
     }
 
+    /**
+     * Removes the user token from the backend.
+     */
     public void disconnect(){
         try {
             URL url = new URL(BASE_URL + "removeToken?&token="+myToken);

@@ -29,7 +29,7 @@ public class PostGreSQLDb implements DbI {
             Log.setPrintLog(true);
             Class.forName("org.postgresql.Driver");
             connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/"+DATABASE_NAME,
-                    "postgres","root");
+                    "postgres","admin");
             connection.setAutoCommit(true);
         }catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -160,7 +160,10 @@ public class PostGreSQLDb implements DbI {
         return usernames;
     }
 
-        public void disconnect() {
+    /**
+     * Disconnectes the connection to the database.
+     */
+    public void disconnect() {
         try {
             if (connection != null) {
                 connection.close();
@@ -170,6 +173,10 @@ public class PostGreSQLDb implements DbI {
         }
     }
 
+    /**
+     * Saves a authorisation token to the database.
+     * @param token token that will be saved
+     */
     public void saveToken(String token){
         String insertString = "INSERT INTO tokens (token) VALUES (?)";
         try{
@@ -183,6 +190,11 @@ public class PostGreSQLDb implements DbI {
         }
     }
 
+    /**
+     * Checks if the input token exists in the database.
+     * @param token token to be checked
+     * @return true if token is in db, false if not
+     */
     public boolean matchToken(String token){
         String selectString = "SELECT * FROM tokens";
         ResultSet rs;
@@ -203,6 +215,11 @@ public class PostGreSQLDb implements DbI {
         }
     }
 
+    /**
+     * Checks if user exists
+     * @param username username to check
+     * @return returns true if user exists and false if not.
+     */
     public boolean userExists(String username) {
         String searchString = "SELECT * FROM users WHERE name=?;";
         ResultSet rs = null;
@@ -228,6 +245,12 @@ public class PostGreSQLDb implements DbI {
         }
     }
 
+    /**
+     * Creates a user in the db.
+     * @param username username for the user that will be created
+     * @param password password for the user that will be created
+     * @return returns a string that tells the user if the creation was possible or not.
+     */
     public String createUser(String username, String password) {
         String createString = "INSERT INTO users (name,password) VALUES(?,?);";
         try {
@@ -253,6 +276,10 @@ public class PostGreSQLDb implements DbI {
         }
     }
 
+    /**
+     * Removes token from the database.
+     * @param token token that will be removed
+     */
     public void removeToken(String token){
         String deleteString = "DELETE from tokens where token=?";
         try{
@@ -266,6 +293,9 @@ public class PostGreSQLDb implements DbI {
         }
     }
 
+    /**
+     * Truncates the transaction table.
+     */
     public void truncateTransactionTable(){
         String truncateString = "TRUNCATE transactions";
         try{
