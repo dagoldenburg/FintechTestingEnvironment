@@ -1,7 +1,7 @@
+
 import DB.DbI;
 import DB.Model.Transaction;
 import DB.PostGreSQLDb;
-import DB.Model.Transaction;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.http.HttpMethod;
 import io.vertx.core.http.HttpServerResponse;

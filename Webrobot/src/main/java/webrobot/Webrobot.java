@@ -20,6 +20,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Webrobot {
 
     private WebDriver driver;
+    private final static String BASE_URL = "http://" + "10.46.1.90" + ":8080/ExjobbWebsite/";
 
     public Webrobot(BrowserType type) throws Exception {
         switch (type) {
@@ -84,7 +85,7 @@ public class Webrobot {
     }
 
     public void login() {
-        driver.get("http://localhost:8080/ExjobbWebsite/");
+        driver.get(BASE_URL);
 
         //Get username field and enter username
         WebElement usernameField;

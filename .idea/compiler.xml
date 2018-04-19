@@ -21,6 +21,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="AppData" target="1.5" />
       <module name="Database" target="1.8" />
       <module name="ExjobbMonkaS" target="1.8" />
       <module name="ExjobbWebsite" target="1.8" />

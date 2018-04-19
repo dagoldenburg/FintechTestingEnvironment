@@ -1,5 +1,6 @@
 package OgHTTPClient;
 
+
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -12,6 +13,7 @@ import java.nio.charset.StandardCharsets;
 public class HTTPRequests {
 
     String myToken;
+    private final static String BASE_URL = "http://" + "10.46.1.90" + ":7089/rest/";
 
     public void sayTjo() throws IOException {
         /*HttpURLConnection conn = (HttpURLConnection) (url.openConnection());
@@ -26,7 +28,7 @@ public class HTTPRequests {
             String urlParameters  = "username=dagge&password=dagge";
             byte[] postData       = urlParameters.getBytes( StandardCharsets.UTF_8 );
             int    postDataLength = postData.length;
-            String request        = "http://localhost:7089/rest/login";
+            String request        = BASE_URL + "login";
             URL    url            = new URL( request );
             HttpURLConnection conn= (HttpURLConnection) url.openConnection();
             conn.setDoOutput( true );
@@ -58,7 +60,7 @@ public class HTTPRequests {
             String urlParameters  = "usernameTo=dag&usernameFrom=jakob&amount=123.45";
             byte[] postData       = urlParameters.getBytes( StandardCharsets.UTF_8 );
             int    postDataLength = postData.length;
-            String request        = "http://localhost:7089/rest/makeTransaction";
+            String request        = BASE_URL + "makeTransaction";
             URL    url            = new URL( request );
             HttpURLConnection conn= (HttpURLConnection) url.openConnection();
             conn.setDoOutput( true );
@@ -73,6 +75,7 @@ public class HTTPRequests {
             BufferedReader br;
             if (200 <= conn.getResponseCode() && conn.getResponseCode() <= 299) {}else{}
             conn.disconnect();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -80,7 +83,7 @@ public class HTTPRequests {
 
     public void retrieveTransaction(String querry) {
         try {
-            URL url = new URL("http://localhost:7089/rest/getNrOfTransactions?"+querry+"&token="+myToken);
+            URL url = new URL(BASE_URL + "getNrOfTransactions?"+querry+"&token="+myToken);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
 
@@ -102,19 +105,11 @@ public class HTTPRequests {
 
     public void disconnect(){
         try {
-            URL url = new URL("http://localhost:7089/rest/removeToken?&token="+myToken);
+            URL url = new URL(BASE_URL + "removeToken?&token="+myToken);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
-
-            StringBuilder result = new StringBuilder();
-            BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-            String line;
-            while ((line = rd.readLine()) != null) {
-                result.append(line);
-            }
-            rd.close();
-            System.out.println(result.toString());
             conn.disconnect();
+            myToken = null;
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (IOException e) {
