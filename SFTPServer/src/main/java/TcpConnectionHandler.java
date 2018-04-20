@@ -18,6 +18,7 @@ public class TcpConnectionHandler implements Runnable {
         try {
             String clientSentence;
             ServerSocket welcomeSocket = new ServerSocket(2222);
+            System.out.println("Started TcpConnectionHandler");
             while (true) {
                 connectionSocket = welcomeSocket.accept();
                 BufferedReader inFromClient =

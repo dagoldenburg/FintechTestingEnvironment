@@ -11,6 +11,7 @@ import java.lang.management.ManagementFactory;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class AverageMeasurement implements Runnable {
     private File csvFile;
@@ -31,7 +32,7 @@ public class AverageMeasurement implements Runnable {
 
     private MeasureResult result;
 
-    private boolean isRunning;
+    private final AtomicBoolean isRunning;
 
 
     public AverageMeasurement(String folderName,String csvFileName) {
@@ -44,7 +45,7 @@ public class AverageMeasurement implements Runnable {
         totalMeasurements = 0;
         cpuUsageList = new ArrayList<>();
         ramUsageList = new ArrayList<>();
-        isRunning = false;
+        isRunning = new AtomicBoolean(false);
     }
 
     public void startTest() throws IOException {
@@ -53,22 +54,12 @@ public class AverageMeasurement implements Runnable {
                 ManagementFactory.OPERATING_SYSTEM_MXBEAN_NAME,
                 OperatingSystemMXBean.class);
         startTime = System.currentTimeMillis();
-        isRunning = true;
+
     }
 
     public void stopTest(){
-        System.out.println("Stopping test");
         stopTime = System.currentTimeMillis();
-
         result = new MeasureResult(getAverage(cpuUsageList),getAverage(ramUsageList),(stopTime-startTime));
-/*
-        PrintWriter pw = new PrintWriter("TestResults/" + folderName + "/" +csvFile+ ".csv");
-        pw.write("Average CPU usage: " + (totalCpuUsage/totalMeasurements));
-        pw.write("\n");
-        pw.write("Average RAM usage: " + (totalRamUsage/totalMeasurements));
-        pw.write("\n");
-        pw.write("Operational Time: "+(stopTime-startTime));
-        pw.close();*/
     }
 
     public double getAverage(ArrayList<Double> list){
@@ -84,19 +75,13 @@ public class AverageMeasurement implements Runnable {
     public void run() {
         try {
             startTest();
-            while (isRunning) {
+            while (isRunning.get()) {
                 cpuUsageList.add(osMBean.getProcessCpuLoad());
                 ramUsageList.add((
                         ((rt.totalMemory() - rt.freeMemory())
                                 /((double)1600000000*10))*100));
-                try{
-                    Thread.sleep(10);
-                }catch(InterruptedException e){
-                    break;
-                }
             }
             stopTest();
-
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -109,6 +94,6 @@ public class AverageMeasurement implements Runnable {
     }
 
     public void setIsRunning(boolean isRunning){
-        this.isRunning = isRunning;
+        this.isRunning.set(isRunning);
     }
 }

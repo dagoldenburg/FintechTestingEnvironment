@@ -78,7 +78,11 @@ public class HTTPRequests {
             DataOutputStream wr = new DataOutputStream( conn.getOutputStream());
             wr.write( postData );
             BufferedReader br;
-            if (200 <= conn.getResponseCode() && conn.getResponseCode() <= 299) {}else{}
+            if (200 <= conn.getResponseCode() && conn.getResponseCode() <= 299) {
+
+            }else{
+                System.out.println("REST MAKE TRANSACTION FAILED!!!!!!");
+            }
             conn.disconnect();
 
         } catch (IOException e) {
@@ -91,6 +95,27 @@ public class HTTPRequests {
             URL url = new URL(BASE_URL + "getNrOfTransactions?"+querry+"&token="+myToken);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
+
+            BufferedReader br = null;
+            try{
+                if (200 <= conn.getResponseCode() && conn.getResponseCode() <= 299) {
+                    br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                } else {
+                    System.out.println("FAILED TO RETRIEVE TRANSACTIONS!!!!!!");
+                    br = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
+                }
+                System.out.println("Response:");
+                String s = "";
+                while((s = br.readLine()) != null){
+                    System.out.println(s);
+                }
+            }catch(Exception e){
+                e.printStackTrace();
+            }finally{
+                if(br != null){
+                    br.close();
+                }
+            }
 
             conn.disconnect();
         } catch (MalformedURLException e) {

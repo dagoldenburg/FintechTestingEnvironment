@@ -52,6 +52,7 @@ public class SFTPClient implements SFTPClientI{
 
             System.out.println("CONNECTED TO SFTP SERVER "+ip+":"+port+" AS "+username);
         } catch (JSchException e) {
+            e.printStackTrace();
             throw new SFTPClientException(e.getMessage());
         }
     }
@@ -68,26 +69,55 @@ public class SFTPClient implements SFTPClientI{
     }
 
     public void retrieveFile(){
+        BufferedReader inFromServer = null;
+        DataOutputStream outToServer = null;
+        Socket clientSocket = null;
         try {
-            Socket clientSocket = new Socket(ip, tcpPort);
-            DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream());
-            BufferedReader inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+            clientSocket = new Socket(ip, tcpPort);
+            outToServer = new DataOutputStream(clientSocket.getOutputStream());
+            inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             outToServer.writeBytes("CF dag 10" + '\n');
             String response = inFromServer.readLine();
             String[] strings = response.split(" ");
             if(strings[0].equals("DONE")){
-                //retrieveFile("/Users/do/Documents/RESPONSEDOCUMENTS/" + strings[1]+".txt",
-                //        "/Users/do/IdeaProjects/ExjobbMonkaSrevert/FileStatioN/"+strings[1]+".txt");
+                retrieveFile("/Users/do/Documents/RESPONSEDOCUMENTS/" + strings[1]+".txt",
+                        "/Users/do/IdeaProjects/ExjobbMonkaSrevert/FileStatioN/"+strings[1]+".txt");
                 //System.out.println("Fuckin goteeem");
+            }else{
+                System.out.println("FAILED TO RETRIEVE SFTP FILE!!!!!!");
             }
             clientSocket.close();
         } catch (UnknownHostException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        } //catch (SFTPClientException e) {
-         //   e.printStackTrace();
-       // }
+        } catch (SFTPClientException e) {
+            e.printStackTrace();
+        } finally{
+            if(inFromServer != null){
+                try {
+                    inFromServer.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if(outToServer != null){
+                try {
+                    outToServer.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if(clientSocket != null){
+                try {
+                    clientSocket.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
     @Override

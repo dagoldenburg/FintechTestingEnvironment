@@ -1,9 +1,13 @@
 package Tests;
 
+import DB.PostGreSQLDb;
+
 import java.awt.*;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Date;
+
+import static java.lang.Thread.sleep;
 
 public class AutoTestCentral {
 
@@ -31,27 +35,35 @@ public class AutoTestCentral {
             RobotFile.mkdir();
 
             ArrayList<TestI> tests = new ArrayList<>();
-           // tests.add(new SFTPTest(SFTPTestFolder));
+            tests.add(new SFTPTest(SFTPTestFolder));
             tests.add(new RestTest(RestTestFolder));
-          //  tests.add(new RobotTest(RobotTestFolder));
+            tests.add(new RobotTest(RobotTestFolder));
 
             //WARMUP
             System.out.println("WARMING UP");
             for(TestI t : tests){
-                for(int i=1;i<=100;i*=10)
-                    t.testSendTransactions(i);
-                for(int i=1;i<=100;i*=10)
-                    t.testRetrieveTransactions(i);
+                t.testSendTransactions(10);
+                t.testRetrieveTransactions(10);
+
+                t.testSendTransactions(10);
+                t.testRetrieveTransactions(10);
             }
 
 
-            //REAL TESTS
-            System.out.println("STARTING REAL TESTS");
             for(TestI t : tests){
-                for(int i=1;i<=100;i*=10)
-                    t.testSendTransactions(i);
-                for(int i=1;i<=100;i*=10)
-                    t.testRetrieveTransactions(i);
+                t.testSendTransactions(1);
+                t.testSendTransactions(5);
+                t.testSendTransactions(10);
+                t.testSendTransactions(15);
+                t.testSendTransactions(20);
+                t.testSendTransactions(25);
+
+                t.testRetrieveTransactions(1);
+                t.testRetrieveTransactions(5);
+                t.testRetrieveTransactions(10);
+                t.testRetrieveTransactions(15);
+                t.testRetrieveTransactions(20);
+                t.testRetrieveTransactions(25);
             }
 
             System.out.println("Klar med testerna");

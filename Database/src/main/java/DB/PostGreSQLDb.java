@@ -38,7 +38,7 @@ public class PostGreSQLDb implements DbI {
             Log.e(this,"Connection to "+DATABASE_NAME+" was not successful");
             return false;
         }
-        Log.i(this,"Connection to "+DATABASE_NAME+" was successful!");
+      //  Log.i(this,"Connection to "+DATABASE_NAME+" was successful!");
         return true;
     }
 
@@ -269,7 +269,8 @@ public class PostGreSQLDb implements DbI {
     public void truncateTransactionTable(){
         String truncateString = "TRUNCATE transactions";
         try{
-            ps = connection.prepareStatement(truncateString);
+            ps =
+                    connection.prepareStatement(truncateString);
             ps.executeUpdate();
         }catch(SQLException e){
 

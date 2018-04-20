@@ -13,6 +13,7 @@ public class Filehandler implements Runnable{
     public void run() {
         DbI dbRef = new PostGreSQLDb();
         dbRef.createConnection();
+        System.out.println("Started FileHandler");
         while(true){
             try {
                 Thread.sleep(1000);

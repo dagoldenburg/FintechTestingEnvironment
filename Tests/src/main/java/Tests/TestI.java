@@ -1,5 +1,6 @@
 package Tests;
 
+import DB.PostGreSQLDb;
 import Tests.Measuring.MeasureResult;
 
 import java.util.ArrayList;
@@ -31,6 +32,12 @@ abstract class TestI implements Cloneable{
         int size = results.size();
         return new MeasureResult(totalCpu/size,totalRam/size,totalOperationTime/size);
 
+    }
+
+    public void clearDatabase(){
+        PostGreSQLDb db = new PostGreSQLDb();
+        db.createConnection();
+        db.truncateTransactionTable();
     }
 
     @Override

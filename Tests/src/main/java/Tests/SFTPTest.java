@@ -22,17 +22,25 @@ public class SFTPTest extends TestI{
         System.out.println("SFTP test: send transactions (" + amountOfTransactions + ")");
         super.setFileNameEnding("SFTPSendManyTrans"+ amountOfTransactions);
 
+        System.gc();
+        try {
+            Thread.sleep(1500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         ArrayList<MeasureResult> results = new ArrayList<>();
         for(int i = 0; i < 20; i++){ // do test 20 times and calculate avg
             /** ONE LIFECYCLE **/
             SFTPDataGenerator dg = new SFTPDataGenerator();
             String fname = dg.generateTransactionBatch(amountOfTransactions);
             SFTPClient sftpc =
-                    new SFTPClient(ServerInfo.getServerIp(),22, "do",
-                            "JakobENoob123#\"!",2222);
+                    new SFTPClient(ServerInfo.getServerIp(),22, ServerInfo.getSFTPUsername(),
+                            ServerInfo.getSFTPPassword(),2222);
             try {
                 AverageMeasurement am = new AverageMeasurement(folderName,filename);
                 Thread t = new Thread(am);
+                am.setIsRunning(true);
                 t.start();
                 sftpc.connect();
                 sftpc.uploadFile("/Users/do/IdeaProjects/ExjobbMonkaSrevert/Hejhej/"+fname,
@@ -50,6 +58,8 @@ public class SFTPTest extends TestI{
                 e.printStackTrace();
             }
             /*******************/
+            //clear db
+            super.clearDatabase();
         }
 
 
@@ -67,14 +77,21 @@ public class SFTPTest extends TestI{
         System.out.println("SFTP test: retrieve transactions (" + amountOfTransactions + ")");
         super.setFileNameEnding("SFTPRetrieveManyTrans"+amountOfTransactions);
 
+        System.gc();
+        try {
+            Thread.sleep(1500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         ArrayList<MeasureResult> results = new ArrayList<>();
         for(int i = 0; i < 20; i++){
             /** ONE LIFECYCLE **/
-            SFTPClient sftpc = new SFTPClient(ServerInfo.getServerIp(),22,"do","JakobENoob123#\"!",2222);
+            SFTPClient sftpc = new SFTPClient(ServerInfo.getServerIp(),22,ServerInfo.getSFTPUsername(),ServerInfo.getSFTPPassword(),2222);
             try {
                 AverageMeasurement am = new AverageMeasurement(folderName,filename);
                 Thread t = new Thread(am);
+                am.setIsRunning(true);
                 t.start();
                 sftpc.connect();
                 sftpc.retrieveFile();
@@ -92,6 +109,8 @@ public class SFTPTest extends TestI{
                 return;
             }
             /******************/
+            //clear db
+            super.clearDatabase();
         }
 
 

@@ -54,7 +54,6 @@ public class SFTPDataGenerator {
             filename = filename.replace("/","!");
             writer = new BufferedWriter( new FileWriter("/Users/do/IdeaProjects/ExjobbMonkaSrevert/Hejhej/"+filename));
             writer.write( sb.toString());
-            System.out.println("jag skrev x) "+filename);
         }
         catch (IOException e) {
             e.printStackTrace();
