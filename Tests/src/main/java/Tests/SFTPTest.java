@@ -94,7 +94,7 @@ public class SFTPTest extends TestI{
                 am.setIsRunning(true);
                 t.start();
                 sftpc.connect();
-                sftpc.retrieveFile();
+                sftpc.retrieveFile("dag",amountOfTransactions);
                 sftpc.disconnect();
 
                 am.setIsRunning(false);
