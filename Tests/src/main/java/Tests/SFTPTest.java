@@ -77,7 +77,7 @@ public class SFTPTest extends TestI{
                 Thread t = new Thread(am);
                 t.start();
                 sftpc.connect();
-                sftpc.retrieveFile();
+                sftpc.retrieveFile("dag",amountOfTransactions);
                 sftpc.disconnect();
 
                 am.setIsRunning(false);

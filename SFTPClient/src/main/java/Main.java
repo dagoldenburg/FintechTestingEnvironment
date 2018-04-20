@@ -4,7 +4,7 @@ import SFTPLogic.SFTPDataGenerator;
 
 public class Main {
 
-    static final String SERVERIP = "localhost";
+    static final String SERVERIP = "";
     public static void main(String[] args){
 
         SFTPDataGenerator dg = new SFTPDataGenerator();
@@ -23,7 +23,7 @@ public class Main {
         } catch (SFTPClientException e) {
             e.printStackTrace();
         }*/
-        sftpc.retrieveFile();
+        //sftpc.retrieveFile();
         sftpc.disconnect();
     }
 }

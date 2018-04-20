@@ -4,6 +4,7 @@ import java.awt.*;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Scanner;
 
 public class AutoTestCentral {
 
@@ -31,27 +32,41 @@ public class AutoTestCentral {
             RobotFile.mkdir();
 
             ArrayList<TestI> tests = new ArrayList<>();
-           // tests.add(new SFTPTest(SFTPTestFolder));
+            tests.add(new SFTPTest(SFTPTestFolder));
             tests.add(new RestTest(RestTestFolder));
-          //  tests.add(new RobotTest(RobotTestFolder));
+            tests.add(new RobotTest(RobotTestFolder));
+
 
             //WARMUP
             System.out.println("WARMING UP");
-            for(TestI t : tests){
-                for(int i=1;i<=100;i*=10)
+            /*for(TestI t : tests){
+                for(int i=1;i<=100;i*=10) {
                     t.testSendTransactions(i);
-                for(int i=1;i<=100;i*=10)
+                }
+                for(int i=1;i<=100;i*=10) {
                     t.testRetrieveTransactions(i);
-            }
+                }
+            }*/
 
+            Scanner s = new Scanner(System.in);
 
             //REAL TESTS
+            System.out.println("press enter to start");
+            s.nextLine();
             System.out.println("STARTING REAL TESTS");
             for(TestI t : tests){
-                for(int i=1;i<=100;i*=10)
+                System.out.println("Test for: 1 send "+t.getClass().getName());
+                for(int i=1;i<=100;i*=10) {
                     t.testSendTransactions(i);
-                for(int i=1;i<=100;i*=10)
+                    System.out.println("Test for: "+(i*10)+" send "+t.getClass().getName());
+                    s.nextLine();
+                }
+                System.out.println("Test for: 1 retrieve "+t.getClass().getName());
+                for(int i=1;i<=100;i*=10) {
                     t.testRetrieveTransactions(i);
+                    System.out.println("Test for: "+(i*10)+" retrieve "+t.getClass().getName());
+                    s.nextLine();
+                }
             }
 
             System.out.println("Klar med testerna");

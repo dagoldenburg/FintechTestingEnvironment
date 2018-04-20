@@ -1,9 +1,6 @@
 package Tests;
 import Tests.FileHandler.CsvWriter;
 import Tests.Measuring.MeasureResult;
-import com.sun.security.ntlm.Server;
-import webrobot.BrowserType;
-import webrobot.Webrobot;
 import webrobot.WebrobotTests;
 
 import java.awt.*;
