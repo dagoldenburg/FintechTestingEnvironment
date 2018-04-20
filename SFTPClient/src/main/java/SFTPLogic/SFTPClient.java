@@ -68,7 +68,7 @@ public class SFTPClient implements SFTPClientI{
         }
     }
 
-    public void retrieveFile(){
+    public void retrieveFile(String receivingUser, int amountOfTransactions){
         BufferedReader inFromServer = null;
         DataOutputStream outToServer = null;
         Socket clientSocket = null;
@@ -76,7 +76,7 @@ public class SFTPClient implements SFTPClientI{
             clientSocket = new Socket(ip, tcpPort);
             outToServer = new DataOutputStream(clientSocket.getOutputStream());
             inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-            outToServer.writeBytes("CF dag 10" + '\n');
+            outToServer.writeBytes("CF " + receivingUser + " " + amountOfTransactions + "\n");
             String response = inFromServer.readLine();
             String[] strings = response.split(" ");
             if(strings[0].equals("DONE")){
@@ -137,6 +137,7 @@ public class SFTPClient implements SFTPClientI{
     public void disconnect() {
         if(c!=null)
             c.disconnect();
+
         if(channel!=null)
             channel.disconnect();
         if(session!=null)

@@ -74,6 +74,8 @@ public class TcpConnectionHandler implements Runnable {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        }finally{
+            dbRef.disconnect();
         }
         return filename;
     }

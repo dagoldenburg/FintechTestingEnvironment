@@ -16,7 +16,7 @@ public class Filehandler implements Runnable{
         System.out.println("Started FileHandler");
         while(true){
             try {
-                Thread.sleep(1000);
+                //Thread.sleep(1000);
                 File testFile = new File("/Users/do/Documents/REQUESTDOCUMENTS/");
                 File[] files = testFile.listFiles();
                 String line;
@@ -32,13 +32,12 @@ public class Filehandler implements Runnable{
                 }
             } catch (NullPointerException e){
                 System.out.println("No file");
-            } catch (InterruptedException e) {
-                e.printStackTrace();
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
+
     }
 }

@@ -1,9 +1,9 @@
 package Tests;
 
 public class ServerInfo {
-    private final static String serverIp = "localhost";
-    private final static String SFTPUsername = "jakdan";
-    private final static String SFTPPassword = "Daggen123";
+    private final static String serverIp = "10.46.1.90";
+    private final static String SFTPUsername = "do";
+    private final static String SFTPPassword = "JakobENoob123#\"!";
 
     public static String getServerIp(){
         return serverIp;

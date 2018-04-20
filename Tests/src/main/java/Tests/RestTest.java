@@ -21,6 +21,7 @@ public class RestTest extends TestI implements Cloneable{
 
     @Override
     void testSendTransactions(int amountOfTransactions) {
+        System.out.println("Testing rest send transactions : " + amountOfTransactions);
         super.setFileNameEnding("RestSendManyTrans"+ amountOfTransactions);
 
         ArrayList<MeasureResult> results = new ArrayList<>();
@@ -56,7 +57,7 @@ public class RestTest extends TestI implements Cloneable{
             results.add(am.getResult());
 
             //clear database
-            super.clearDatabase();
+          //  super.clearDatabase();
         }
         //write to file
         new CsvWriter().writeToFile(folderName + filename, super.getAverageResult(results));
@@ -101,7 +102,7 @@ public class RestTest extends TestI implements Cloneable{
 
             /*******************/
             //clear db
-            super.clearDatabase();
+           // super.clearDatabase();
         }
 
         new CsvWriter().writeToFile(folderName + filename, super.getAverageResult(results));

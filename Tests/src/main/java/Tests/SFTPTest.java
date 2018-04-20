@@ -59,7 +59,7 @@ public class SFTPTest extends TestI{
             }
             /*******************/
             //clear db
-            super.clearDatabase();
+          //  super.clearDatabase();
         }
 
 
@@ -110,7 +110,7 @@ public class SFTPTest extends TestI{
             }
             /******************/
             //clear db
-            super.clearDatabase();
+          //  super.clearDatabase();
         }
 
 

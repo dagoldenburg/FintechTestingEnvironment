@@ -35,8 +35,8 @@ public class AutoTestCentral {
             RobotFile.mkdir();
 
             ArrayList<TestI> tests = new ArrayList<>();
-            tests.add(new SFTPTest(SFTPTestFolder));
-            tests.add(new RestTest(RestTestFolder));
+            //tests.add(new SFTPTest(SFTPTestFolder));
+            //tests.add(new RestTest(RestTestFolder));
             tests.add(new RobotTest(RobotTestFolder));
 
             //WARMUP
@@ -44,26 +44,39 @@ public class AutoTestCentral {
             for(TestI t : tests){
                 t.testSendTransactions(10);
                 t.testRetrieveTransactions(10);
-
+                t.testSendTransactions(10);
+                t.testRetrieveTransactions(10);
+                t.testSendTransactions(10);
+                t.testRetrieveTransactions(10);
+                t.testSendTransactions(10);
+                t.testRetrieveTransactions(10);
+                t.testSendTransactions(10);
+                t.testRetrieveTransactions(10);
+                t.testSendTransactions(10);
+                t.testRetrieveTransactions(10);
+                t.testSendTransactions(10);
+                t.testRetrieveTransactions(10);
+                t.testSendTransactions(10);
+                t.testRetrieveTransactions(10);
+                t.testSendTransactions(10);
+                t.testRetrieveTransactions(10);
                 t.testSendTransactions(10);
                 t.testRetrieveTransactions(10);
             }
 
 
+            System.out.println("STARTING REAL TESTS");
+            Thread.sleep(2000);
             for(TestI t : tests){
                 t.testSendTransactions(1);
-                t.testSendTransactions(5);
                 t.testSendTransactions(10);
-                t.testSendTransactions(15);
-                t.testSendTransactions(20);
-                t.testSendTransactions(25);
+                t.testSendTransactions(50);
+                t.testSendTransactions(100);
 
                 t.testRetrieveTransactions(1);
-                t.testRetrieveTransactions(5);
                 t.testRetrieveTransactions(10);
-                t.testRetrieveTransactions(15);
-                t.testRetrieveTransactions(20);
-                t.testRetrieveTransactions(25);
+                t.testRetrieveTransactions(50);
+                t.testRetrieveTransactions(100);
             }
 
             System.out.println("Klar med testerna");

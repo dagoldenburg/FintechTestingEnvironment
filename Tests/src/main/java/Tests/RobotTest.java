@@ -54,7 +54,7 @@ public class RobotTest extends TestI implements Cloneable{
             }
             /******************/
             //clear db
-            super.clearDatabase();
+          //  super.clearDatabase();
         }
 
         //write to file
@@ -102,7 +102,7 @@ public class RobotTest extends TestI implements Cloneable{
             }
             /*******************/
             //clear db
-            super.clearDatabase();
+          //  super.clearDatabase();
         }
 
 
