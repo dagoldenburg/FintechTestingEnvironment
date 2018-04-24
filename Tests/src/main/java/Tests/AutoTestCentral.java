@@ -6,6 +6,7 @@ import java.awt.*;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Scanner;
 
 import static java.lang.Thread.sleep;
 
@@ -36,32 +37,48 @@ public class AutoTestCentral {
 
             ArrayList<TestI> tests = new ArrayList<>();
 
-           //tests.add(new SFTPTest(SFTPTestFolder));
-            tests.add(new RestTest(RestTestFolder));
-           // tests.add(new RobotTest(RobotTestFolder));
+            //tests.add(new SFTPTest(SFTPTestFolder,true));
+            //tests.add(new RestTest(RestTestFolder,true));
+            tests.add(new RobotTest(RobotTestFolder,true));
 
             //WARMUP
             System.out.println("WARMING UP");
-            for(TestI t : tests){
+            /*for(TestI t : tests){
                 t.testSendTransactions(10);
                 t.testRetrieveTransactions(10);
-            }
+                t.testSendTransactions(10);
+                t.testRetrieveTransactions(10);
+                t.testSendTransactions(10);
+                t.testRetrieveTransactions(10);
+                t.testSendTransactions(10);
+                t.testRetrieveTransactions(10);
+                t.testSendTransactions(10);
+                t.testRetrieveTransactions(10);
+                t.testSendTransactions(10);
+                t.testRetrieveTransactions(10);
+                t.testSendTransactions(10);
+                t.testRetrieveTransactions(10);
+            }*/
 
+            //for(TestI t : tests){
+            //    t.setWarmup(false);
+            //}
+            Scanner s = new Scanner(System.in);
             System.out.println("STARTING REAL TESTS");
+
+
+
             for(TestI t : tests){
-
-                t.testSendTransactions(1);
-
-                for(int i = 10; i <= 100; i+=10){
+                for(int i = 50; i <= 100; i+=50){
+                    System.out.println("time for "+i);
+                    s.nextLine();
                     t.testSendTransactions(i);
                 }
-
-
-                t.testRetrieveTransactions(1);
-
-                for(int i = 10; i <= 100; i+=10){
+                /*for(int i = 50; i <= 100; i+=50){
+                    System.out.println("time for "+i);
+                    s.nextLine();
                     t.testRetrieveTransactions(i);
-                }
+                }*/
             }
 
             System.out.println("Klar med testerna");

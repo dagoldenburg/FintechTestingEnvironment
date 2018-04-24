@@ -12,17 +12,19 @@ public class MeasureLoop {
         SEND, RECEIVE;
     }
 
-    public static void measure(TestI test,int amountOfTransactions,TestType testType){
+    public static void measure(TestI test,int amountOfTransactions,TestType testType,boolean warmup){
         ArrayList<MeasureResult> results = new ArrayList<>();
 
 
         for(int i = 0; i < 20; i ++){ //do test 20 times and calculate average
             //Create measure thread object and start the thread
-            System.gc();
-            try {
-                Thread.sleep(500);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+            if(!warmup) {
+                System.gc();
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
 
             AverageMeasurement am = new AverageMeasurement();

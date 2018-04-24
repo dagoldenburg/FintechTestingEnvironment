@@ -30,17 +30,17 @@ public class TestCentral {
             switch(scanner.nextLine()) {
                 case "1":
                     folderName = "RestTest - "+ date;
-                    t = new RestTest(folderName);
+                    t = new RestTest(folderName,true);
                     scan = false;
                     break;
                 case "2":
                     folderName = "SFTPTest - " + date;
-                    t = new SFTPTest(folderName);
+                    t = new SFTPTest(folderName,true);
                     scan = false;
                     break;
                 case "3":
                     folderName = "RobotTest - " + date;
-                    t = new RobotTest(folderName);
+                    t = new RobotTest(folderName,true);
                     scan = false;
                     break;
                 default:

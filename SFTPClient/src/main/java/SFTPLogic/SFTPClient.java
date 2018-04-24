@@ -81,7 +81,7 @@ public class SFTPClient implements SFTPClientI{
             String[] strings = response.split(" ");
             if(strings[0].equals("DONE")){
                 retrieveFile("/Users/do/Documents/RESPONSEDOCUMENTS/" + strings[1]+".txt",
-                        "/Users/do/IdeaProjects/ExjobbMonkaSrevert/FileStatioN/"+strings[1]+".txt");
+                        "/Users/do/IdeaProjects/ExjobbMonkaS/FileStatioN/"+strings[1]+".txt");
                 //System.out.println("Fuckin goteeem");
             }else{
                 System.out.println("FAILED TO RETRIEVE SFTP FILE!!!!!!");

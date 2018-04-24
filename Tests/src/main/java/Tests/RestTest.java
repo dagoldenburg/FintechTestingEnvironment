@@ -14,10 +14,9 @@ public class RestTest extends TestI implements Cloneable{
 
 
 
-    public RestTest(String folderName){
-
+    public RestTest(String folderName,boolean warmup){
+        super.setWarmup(warmup);
         super.setFolderName(folderName);
-
     }
 
 
@@ -63,9 +62,7 @@ public class RestTest extends TestI implements Cloneable{
     void testSendTransactions(int amountOfTransactions) {
         System.out.println("Testing rest send transactions : " + amountOfTransactions);
         super.setFileNameEnding("RestSendManyTrans"+ amountOfTransactions);
-
-
-        MeasureLoop.measure(this,amountOfTransactions, MeasureLoop.TestType.SEND);
+        MeasureLoop.measure(this,amountOfTransactions, MeasureLoop.TestType.SEND,super.isWarmup());
     }
 
 
@@ -74,7 +71,7 @@ public class RestTest extends TestI implements Cloneable{
         System.out.println("Rest test: retrieving transactions ( " + 10 + ")");
         super.setFileNameEnding("RestRetrieveManyTrans"+amountOfTransactions);
 
-        MeasureLoop.measure(this,amountOfTransactions, MeasureLoop.TestType.RECEIVE);
+        MeasureLoop.measure(this,amountOfTransactions, MeasureLoop.TestType.RECEIVE,super.isWarmup());
 
         System.out.println("KLAR MED TEST RETRIEVE TRANSACTIONS");
     }

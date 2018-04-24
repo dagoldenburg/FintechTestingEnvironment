@@ -12,7 +12,8 @@ public class RobotTest extends TestI implements Cloneable{
 
 
 
-    public RobotTest(String folderName ){
+    public RobotTest(String folderName,boolean warmup){
+        super.setWarmup(warmup);
         super.setFolderName(folderName);
     }
 
@@ -33,7 +34,7 @@ public class RobotTest extends TestI implements Cloneable{
         System.out.println("Robot test: send transactions (" + amountOfTransactions + ")");
         super.setFileNameEnding("RobotSendManyTrans"+amountOfTransactions);
 
-        MeasureLoop.measure(this,amountOfTransactions, MeasureLoop.TestType.SEND);
+        MeasureLoop.measure(this,amountOfTransactions, MeasureLoop.TestType.SEND,super.isWarmup());
 
 
 
@@ -48,7 +49,7 @@ public class RobotTest extends TestI implements Cloneable{
         System.out.println("Robot test: retrieve transactions (" + amountOfTransactions + ")");
         super.setFileNameEnding("RobotRetrieveManyTans"+amountOfTransactions);
 
-        MeasureLoop.measure(this,amountOfTransactions, MeasureLoop.TestType.RECEIVE);
+        MeasureLoop.measure(this,amountOfTransactions, MeasureLoop.TestType.RECEIVE,super.isWarmup());
 
         System.out.println("KLAR MED ROBOT TEST RETRIEVE TRANSACTIONS");
     }
