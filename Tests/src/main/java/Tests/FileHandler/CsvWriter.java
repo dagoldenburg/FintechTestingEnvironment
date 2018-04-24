@@ -9,51 +9,85 @@ import java.util.ArrayList;
 public class CsvWriter {
 
 
+    private class Statistics{
+        private double bottomConfidenceInterval;
+        private double topConfidenceInterval;
+        private double average;
 
-    public MeasureResult getAverageResult(ArrayList<MeasureResult> results){
-        double totalCpu = 0;
-        double totalRam = 0;
-        double totalOperationTime = 0;
+        public Statistics(ArrayList<Double> results){
 
-        for(MeasureResult m : results){
-            totalCpu += m.getCpuUsage();
-            totalRam += m.getRamUsage();
-            totalOperationTime += m.getOperationTime();
+            double total = 0;
+            int nrValues = results.size();
+
+            for(Double d : results){
+                total += d;
+            }
+
+            average = total/results.size();
+
+            ArrayList<Double> preVarians = new ArrayList<>();
+
+            for(Double d : results){
+                preVarians.add(new Double((d-average)*(d-average)));
+            }
+
+            double totalPreVarians = 0;
+            for(Double d : preVarians){
+                totalPreVarians += d;
+            }
+
+            double varians = totalPreVarians / (nrValues-1);
+            double stdAvvikelse = Math.sqrt(varians);
+
+            //Från formeltabell 95% konfidensgrad
+            double confValue = 2.093;
+
+
+            bottomConfidenceInterval = average - (confValue*(stdAvvikelse/(Math.sqrt(nrValues))));
+            topConfidenceInterval = average + (confValue*(stdAvvikelse/(Math.sqrt(nrValues))));
+
+
         }
-        int size = results.size();
-        return new MeasureResult(totalCpu/size,totalRam/size,totalOperationTime/size);
 
+        public double getBottomConfidenceInterval() {
+            return bottomConfidenceInterval;
+        }
+
+        public double getTopConfidenceInterval() {
+            return topConfidenceInterval;
+        }
+
+        public double getAverage() {
+            return average;
+        }
     }
-
 
     public boolean writeToFile(String fileName, ArrayList<MeasureResult> result){
         PrintWriter pw = null;
         try{
             pw = new PrintWriter(fileName);
-            pw.write("CPU Usage: ");
-            for(MeasureResult r : result){
-                pw.write(r.getCpuUsage() +", ");
-            }
-            pw.write("\n");
-            pw.write("Average CPU usage: " + (getAverageResult(result).getCpuUsage()));
-            pw.write("\n\n");
+            pw.write("###### TEST FILE - " + fileName + "######\n\n\n");
+            pw.write("****** CPU USAGE ******\n");
+            Statistics stats = getStatistics(result,MeasureType.CPU);
+            pw.write("Average: " + stats.getAverage() + "\n");
+            pw.write("Confidence interval 1: " + stats.getBottomConfidenceInterval() + "\n");
+            pw.write("Confidence interval 2: " + stats.getTopConfidenceInterval() + "\n");
+            pw.write("*************************\n\n");
 
-            pw.write("RAM Usage: ");
-            for(MeasureResult r : result){
-                pw.write(r.getRamUsage() +", ");
-            }
-            pw.write("\n");
-            pw.write("Average RAM usage: " + (getAverageResult(result).getRamUsage()));
-            pw.write("\n\n");
+            pw.write("****** RAM USAGE ******\n");
+            stats = getStatistics(result,MeasureType.RAM);
+            pw.write("Average: " + stats.getAverage() + "\n");
+            pw.write("Confidence interval 1: " + stats.getBottomConfidenceInterval() + "\n");
+            pw.write("Confidence interval 2: " + stats.getTopConfidenceInterval() + "\n");
+            pw.write("***********************\n\n");
 
+            pw.write("****** OPERATION TIME ******\n");
+            stats = getStatistics(result,MeasureType.OPERATIONTIME);
+            pw.write("Average: " + stats.getAverage() + "\n");
+            pw.write("Confidence interval 1: " + stats.getBottomConfidenceInterval() + "\n");
+            pw.write("Confidence interval 2: " + stats.getTopConfidenceInterval() + "\n");
+            pw.write("*****************************\n\n");
 
-            pw.write("Operation time: ");
-            for(MeasureResult r : result){
-                pw.write(r.getOperationTime() +", ");
-            }
-            pw.write("\n");
-            pw.write("Average operation time: " + (getAverageResult(result).getOperationTime()));
-            pw.write("\n\n");
 
 
             return true;
@@ -65,6 +99,31 @@ public class CsvWriter {
                 pw.close();
             }
         }
+
+    }
+
+    private enum MeasureType{
+        OPERATIONTIME, CPU, RAM;
+    }
+
+    public Statistics getStatistics(ArrayList<MeasureResult> result, MeasureType measureType){
+        ArrayList<Double> list = new ArrayList<>();
+        for(MeasureResult d : result){
+            switch(measureType){
+                case OPERATIONTIME:
+                    list.add(d.getOperationTime());
+                    break;
+                case CPU:
+                    list.add(d.getCpuUsage());
+                    break;
+                case RAM:
+                    list.add(d.getRamUsage());
+                    break;
+                default: break;
+            }
+        }
+
+        return new Statistics(list);
 
     }
 }

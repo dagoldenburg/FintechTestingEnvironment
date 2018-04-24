@@ -73,9 +73,10 @@ public class AverageMeasurement implements Runnable {
             startTest();
             while (isRunning.get()) {
                 cpuUsageList.add(osMBean.getProcessCpuLoad()*100);
-                ramUsageList.add((
-                        ((rt.totalMemory() - rt.freeMemory())
-                                /((double)1600000000*10))*100));
+                ramUsageList.add((rt.totalMemory() - (double)rt.freeMemory())/1000);
+              //  ramUsageList.add((
+                    //    ((rt.totalMemory() - rt.freeMemory())
+                               // /((double)1600000000*10))*100));
             }
             stopTest();
         } catch (FileNotFoundException e) {

@@ -36,13 +36,17 @@ public class AutoTestCentral {
 
             ArrayList<TestI> tests = new ArrayList<>();
 
-           //tests.add(new SFTPTest(SFTPTestFolder));
-            tests.add(new RestTest(RestTestFolder));
+           tests.add(new SFTPTest(SFTPTestFolder));
+           // tests.add(new RestTest(RestTestFolder));
            // tests.add(new RobotTest(RobotTestFolder));
 
             //WARMUP
             System.out.println("WARMING UP");
             for(TestI t : tests){
+                t.testSendTransactions(10);
+                t.testRetrieveTransactions(10);
+                t.testSendTransactions(10);
+                t.testRetrieveTransactions(10);
                 t.testSendTransactions(10);
                 t.testRetrieveTransactions(10);
             }
@@ -55,7 +59,6 @@ public class AutoTestCentral {
                 for(int i = 10; i <= 100; i+=10){
                     t.testSendTransactions(i);
                 }
-
 
                 t.testRetrieveTransactions(1);
 
