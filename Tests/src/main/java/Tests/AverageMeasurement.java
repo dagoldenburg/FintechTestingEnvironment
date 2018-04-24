@@ -14,8 +14,6 @@ import java.util.Locale;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class AverageMeasurement implements Runnable {
-    private File csvFile;
-    private String folderName;
 
     private Runtime rt;
     private OperatingSystemMXBean osMBean;
@@ -35,9 +33,7 @@ public class AverageMeasurement implements Runnable {
     private final AtomicBoolean isRunning;
 
 
-    public AverageMeasurement(String folderName,String csvFileName) {
-        this.csvFile = new File(csvFileName);
-        this.folderName = folderName;
+    public AverageMeasurement() {
 
         this.rt = Runtime.getRuntime();
         totalCpuUsage = 0;
@@ -76,7 +72,7 @@ public class AverageMeasurement implements Runnable {
         try {
             startTest();
             while (isRunning.get()) {
-                cpuUsageList.add(osMBean.getProcessCpuLoad());
+                cpuUsageList.add(osMBean.getProcessCpuLoad()*100);
                 ramUsageList.add((
                         ((rt.totalMemory() - rt.freeMemory())
                                 /((double)1600000000*10))*100));

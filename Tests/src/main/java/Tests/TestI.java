@@ -1,13 +1,21 @@
 package Tests;
 
 import DB.PostGreSQLDb;
+import OgHTTPClient.HTTPRequests;
+import Tests.FileHandler.CsvWriter;
 import Tests.Measuring.MeasureResult;
 
 import java.util.ArrayList;
 
 abstract class TestI implements Cloneable{
 
-    String filename;
+    private String filename;
+    private String folderName;
+
+    abstract void sendTransactions(int amountOfTransactions);
+    abstract void retrieveTransactions(int amountOfTransactions);
+
+
 
     abstract void testSendTransactions(int amountOfTransactions);
 
@@ -19,19 +27,16 @@ abstract class TestI implements Cloneable{
         filename=specificFileName;
     }
 
-    public MeasureResult getAverageResult(ArrayList<MeasureResult> results){
-        double totalCpu = 0;
-        double totalRam = 0;
-        double totalOperationTime = 0;
+    public void setFolderName(String folderName){
+        this.folderName = folderName;
+    }
 
-        for(MeasureResult m : results){
-            totalCpu += m.getCpuUsage();
-            totalRam += m.getRamUsage();
-            totalOperationTime += m.getOperationTime();
-        }
-        int size = results.size();
-        return new MeasureResult(totalCpu/size,totalRam/size,totalOperationTime/size);
+    public String getFilename() {
+        return filename;
+    }
 
+    public String getFolderName() {
+        return folderName;
     }
 
     public void clearDatabase(){

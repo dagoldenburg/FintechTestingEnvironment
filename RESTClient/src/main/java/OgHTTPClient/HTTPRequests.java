@@ -24,13 +24,16 @@ public class HTTPRequests {
      * Authenticates the user to the rest backend.
      */
     public void login(){
+        HttpURLConnection conn = null;
+        DataOutputStream wr = null;
+        BufferedReader br = null;
         try {
             String urlParameters  = "username=dagge&password=dagge";
             byte[] postData       = urlParameters.getBytes( StandardCharsets.UTF_8 );
             int    postDataLength = postData.length;
             String request        = BASE_URL + "login";
             URL    url            = new URL( request );
-            HttpURLConnection conn= (HttpURLConnection) url.openConnection();
+            conn = (HttpURLConnection) url.openConnection();
             conn.setDoOutput( true );
             conn.setInstanceFollowRedirects( false );
             conn.setRequestMethod( "POST" );
@@ -38,20 +41,36 @@ public class HTTPRequests {
             conn.setRequestProperty( "charset", "utf-8");
             conn.setRequestProperty( "Content-Length", Integer.toString( postDataLength ));
             conn.setUseCaches( false );
-            try( DataOutputStream wr = new DataOutputStream( conn.getOutputStream())) {
-                wr.write( postData );
-            }
-            BufferedReader br;
+            wr = new DataOutputStream( conn.getOutputStream());
+            wr.write( postData );
             if (200 <= conn.getResponseCode() && conn.getResponseCode() <= 299) {
                 br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
             } else {
                 br = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
             }
             myToken = br.readLine();
-            br.close();
-            conn.disconnect();
         } catch (IOException e) {
             e.printStackTrace();
+        }finally{
+            if(conn != null){
+                conn.disconnect();
+            }
+            if(wr != null){
+                try {
+                    wr.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if(br != null){
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
         }
     }
 
@@ -59,13 +78,16 @@ public class HTTPRequests {
      * Makes a transaction to the rest backend.
      */
     public void makeTransaction(){
+        HttpURLConnection conn = null;
+        DataOutputStream wr = null;
+        BufferedReader br = null;
         try {
             String urlParameters  = "usernameTo=dag&usernameFrom=jakob&amount=123.45";
             byte[] postData       = urlParameters.getBytes( StandardCharsets.UTF_8 );
             int    postDataLength = postData.length;
             String request        = BASE_URL + "makeTransaction";
             URL    url            = new URL( request );
-            HttpURLConnection conn= (HttpURLConnection) url.openConnection();
+            conn = (HttpURLConnection) url.openConnection();
             conn.setDoOutput( true );
             conn.setInstanceFollowRedirects( false );
             conn.setRequestMethod( "POST" );
@@ -73,9 +95,8 @@ public class HTTPRequests {
             conn.setRequestProperty( "charset", "utf-8");
             conn.setRequestProperty( "Content-Length", Integer.toString( postDataLength ));
             conn.setUseCaches( false );
-            DataOutputStream wr = new DataOutputStream( conn.getOutputStream());
+            wr = new DataOutputStream( conn.getOutputStream());
             wr.write( postData );
-            BufferedReader br;
             if (200 <= conn.getResponseCode() && conn.getResponseCode() <= 299) {
 
             }else{
@@ -85,6 +106,25 @@ public class HTTPRequests {
 
         } catch (IOException e) {
             e.printStackTrace();
+        }finally{
+            if(conn != null){
+                conn.disconnect();
+            }
+            if(wr != null){
+                try {
+                    wr.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if(br != null){
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     }
 
@@ -93,37 +133,38 @@ public class HTTPRequests {
      * @param querry querry to be processed.
      */
     public void retrieveTransaction(String querry) {
+        HttpURLConnection conn = null;
+        BufferedReader br = null;
         try {
             URL url = new URL(BASE_URL + "getNrOfTransactions?"+querry+"&token="+myToken);
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
 
-            BufferedReader br = null;
-            try{
-                if (200 <= conn.getResponseCode() && conn.getResponseCode() <= 299) {
-                    br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-                } else {
-                    System.out.println("FAILED TO RETRIEVE TRANSACTIONS!!!!!!");
-                    br = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
-                }
-                System.out.println("Response:");
-                String s = "";
-                while((s = br.readLine()) != null){
-                    System.out.println(s);
-                }
-            }catch(Exception e){
-                e.printStackTrace();
-            }finally{
-                if(br != null){
-                    br.close();
-                }
+            if (200 <= conn.getResponseCode() && conn.getResponseCode() <= 299) {
+                br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            } else {
+                System.out.println("FAILED TO RETRIEVE TRANSACTIONS!!!!!!");
+                br = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
+            }
+            System.out.println("Response:");
+            String s = "";
+            while((s = br.readLine()) != null){
+                System.out.println(s);
             }
 
-            conn.disconnect();
-        } catch (MalformedURLException e) {
+        } catch (Exception e) {
             e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+        } finally{
+            if(conn != null){
+                conn.disconnect();
+            }
+            if(br != null){
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     }
 
@@ -131,9 +172,10 @@ public class HTTPRequests {
      * Removes the user token from the backend.
      */
     public void disconnect(){
+        HttpURLConnection conn = null;
         try {
             URL url = new URL(BASE_URL + "removeToken?&token="+myToken);
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             conn.disconnect();
             myToken = null;
@@ -141,6 +183,10 @@ public class HTTPRequests {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        }finally{
+            if(conn != null){
+                conn.disconnect();
+            }
         }
     }
 
