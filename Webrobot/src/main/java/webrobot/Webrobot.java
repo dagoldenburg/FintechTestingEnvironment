@@ -64,6 +64,7 @@ public class Webrobot {
         WebElement nrTransactionsField;
         nrTransactionsField = driver.findElement(
                 By.id("j_idt16:nrTransactions"));
+        nrTransactionsField.clear();
         nrTransactionsField.sendKeys(Integer.toString(nrTransactions));
 
         WebElement submitButton = driver.findElement(
@@ -92,12 +93,12 @@ public class Webrobot {
         //Get username field and enter username
         WebElement usernameField;
         usernameField = driver.findElement(By.name("j_idt6:username"));
-        usernameField.sendKeys("Jubbe");
+        usernameField.sendKeys("dag");
 
         //Get password field and enter password
         WebElement pwField;
         pwField = driver.findElement(By.name("j_idt6:password"));
-        pwField.sendKeys("abc123");
+        pwField.sendKeys("dag");
 
         //Get login button and click it
         WebElement loginBtn;

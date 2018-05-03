@@ -26,10 +26,9 @@ public class PostGreSQLDb implements DbI {
      */
     public boolean createConnection() {
         try{
-            Log.setPrintLog(true);
             Class.forName("org.postgresql.Driver");
             connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/"+DATABASE_NAME,
-                    "postgres","admin");
+                    "postgres","root");
             connection.setAutoCommit(true);
         }catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -59,7 +58,6 @@ public class PostGreSQLDb implements DbI {
                 Log.i(this,"Authentication unsuccessful");
                 return false;
             }
-            Log.i(this,"Authentication successful");
             return true;
         } catch (SQLException e) {
             e.printStackTrace();
@@ -86,7 +84,6 @@ public class PostGreSQLDb implements DbI {
             Log.e(this,"Transaction could not be created.");
             return false;
         }
-        Log.i(this,"Transaction successfully created!");
         return true;
     }
 
@@ -121,9 +118,8 @@ public class PostGreSQLDb implements DbI {
      * @return returns the last X transactions
      */
     public LinkedList<Transaction> retrieveNrOfTransactions(String username,int nrOfTransactions) {
-        String selectString ="SELECT * FROM transactions WHERE fromuser=? ORDER BY transactionid desc LIMIT ?;";
+        String selectString ="SELECT * FROM transactions WHERE touser=? ORDER BY transactionid desc LIMIT ?;";
         LinkedList<Transaction> trans = new LinkedList<Transaction>();
-        Log.i(this, "Getting nr transactions " + nrOfTransactions);
         try {
             ps = connection.prepareStatement(selectString);
             ps.setString(1,username);
@@ -183,7 +179,6 @@ public class PostGreSQLDb implements DbI {
             ps = connection.prepareStatement(insertString);
             ps.setString(1,token);
             ps.executeUpdate();
-            Log.i(this,"inserted token");
         } catch (SQLException e) {
             e.printStackTrace();
             Log.e(this,"Couldn't insert token");
@@ -202,7 +197,6 @@ public class PostGreSQLDb implements DbI {
             ps = connection.prepareStatement(selectString);
             rs = ps.executeQuery();
             if(rs.next()){
-                Log.i(this,"matched token");
                 return true;
             }else {
 

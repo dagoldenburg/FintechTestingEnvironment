@@ -8,6 +8,7 @@ import java.net.Socket;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
+import io.vertx.core.json.Json;
 
 public class TcpConnectionHandler implements Runnable {
 
@@ -56,8 +57,9 @@ public class TcpConnectionHandler implements Runnable {
         try {
             StringBuilder sb = new StringBuilder();
             for (Transaction t : dbRef.retrieveNrOfTransactions(username, Integer.parseInt(nrOfTransactions))) {
-                sb.append(t.getTo() + " " + t.getFrom() + " " + t.getAmount()+'\n');
-                System.out.printf(t.getTo() + " " + t.getFrom() + " " + t.getAmount()+'\n');
+               // sb.append(t.getTo() + " " + t.getFrom() + " " + t.getAmount()+'\n');
+               // System.out.printf(t.getTo() + " " + t.getFrom() + " " + t.getAmount()+'\n');
+                sb.append(Json.encodePrettily(t));
             }
             MessageDigest digest = MessageDigest.getInstance("SHA-256");
             byte[] hash = digest.digest(sb.toString().getBytes("UTF-8"));

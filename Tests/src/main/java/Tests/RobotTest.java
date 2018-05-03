@@ -36,8 +36,6 @@ public class RobotTest extends TestI implements Cloneable{
 
         MeasureLoop.measure(this,amountOfTransactions, MeasureLoop.TestType.SEND,super.isWarmup());
 
-
-
         System.out.println("KLAR MED ROBOT TEST SEND TRANSACTIONS");
 
 

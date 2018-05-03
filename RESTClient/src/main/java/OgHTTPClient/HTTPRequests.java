@@ -9,6 +9,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 
 public class HTTPRequests {
 
@@ -74,6 +75,41 @@ public class HTTPRequests {
         }
     }
 
+    public void clearDatabase(){
+        HttpURLConnection conn = null;
+        DataOutputStream wr = null;
+        BufferedReader br = null;
+        try {
+            URL url = new URL(BASE_URL + "cleardb");
+            conn = (HttpURLConnection) url.openConnection();
+            conn.setRequestMethod("GET");
+            if (200 <= conn.getResponseCode() && conn.getResponseCode() <= 299) {
+             //   System.out.println("Database cleared successfully");
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }finally{
+            if(conn != null){
+                conn.disconnect();
+            }
+            if(wr != null){
+                try {
+                    wr.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if(br != null){
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
     /**
      * Makes a transaction to the rest backend.
      */
@@ -146,11 +182,16 @@ public class HTTPRequests {
                 System.out.println("FAILED TO RETRIEVE TRANSACTIONS!!!!!!");
                 br = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
             }
-            System.out.println("Response:");
+           // System.out.println("Response:");
+            ArrayList<String> list = new ArrayList<>();
+
             String s = "";
             while((s = br.readLine()) != null){
+                list.add(s);
                 System.out.println(s);
             }
+
+            System.out.println("Length of list: " + list.size());
 
         } catch (Exception e) {
             e.printStackTrace();

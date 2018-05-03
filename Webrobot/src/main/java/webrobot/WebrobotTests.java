@@ -101,7 +101,7 @@ public class WebrobotTests {
             robot.goToTransferMoney();
             robot.makeTransaction();
             if (robot.transactionDidSucceed()) {
-                System.out.println("Success!");
+              //  System.out.println("Success!");
             } else {
                 System.out.println("Fail :<");
             }
@@ -127,7 +127,7 @@ public class WebrobotTests {
             for (int i = 0; i < nrTransactions; i++) {
                 robot.makeTransaction();
                 if (robot.transactionDidSucceed()) {
-                    System.out.println("Success!");
+                  //  System.out.println("Success!");
                 } else {
                     System.out.println("Fail :<");
                 }
@@ -149,6 +149,7 @@ public class WebrobotTests {
             robot = new Webrobot(BrowserType.CHROME,serverIp);
             robot.login();
             robot.goToHistory();
+            robot.getTransactionHistory(nrTransactions);
             for (String s : robot.getTransactionHistory(nrTransactions)) {
                 System.out.println(s);
             }

@@ -23,7 +23,7 @@ public class RestTest extends TestI implements Cloneable{
     @Override
     void sendTransactions(int amountOfTransactions) {
         //Execute the operations
-        System.out.println("Sending transactions: " + amountOfTransactions);
+      //  System.out.println("Sending transactions: " + amountOfTransactions);
         HTTPRequests h = null;
         try{
             h = new HTTPRequests(ServerInfo.getServerIp());
@@ -45,6 +45,7 @@ public class RestTest extends TestI implements Cloneable{
     @Override
     void retrieveTransactions(int amountOfTransactions) {
         HTTPRequests h = null;
+     //   System.out.println("Receiving transactions: " + amountOfTransactions);
         try{
             h = new HTTPRequests(ServerInfo.getServerIp());
             h.login();
@@ -68,7 +69,7 @@ public class RestTest extends TestI implements Cloneable{
 
     @Override
     void testRetrieveTransactions(int amountOfTransactions) {
-        System.out.println("Rest test: retrieving transactions ( " + 10 + ")");
+        System.out.println("Rest test: retrieving transactions ( " + amountOfTransactions + ")");
         super.setFileNameEnding("RestRetrieveManyTrans"+amountOfTransactions);
 
         MeasureLoop.measure(this,amountOfTransactions, MeasureLoop.TestType.RECEIVE,super.isWarmup());

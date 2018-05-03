@@ -4,6 +4,7 @@ import OgHTTPClient.HTTPRequests;
 import Tests.FileHandler.CsvWriter;
 import Tests.Measuring.MeasureResult;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class MeasureLoop {
@@ -16,19 +17,11 @@ public class MeasureLoop {
         ArrayList<MeasureResult> results = new ArrayList<>();
         for(int i = 0; i < 20; i ++){ //do test 20 times and calculate average
             //Create measure thread object and start the thread
-            if(!warmup) {
-                System.gc();
-                try {
-                    Thread.sleep(500);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
+
+            garbageCollect(warmup);
 
             AverageMeasurement am = new AverageMeasurement();
-            Thread t = new Thread(am);
-            am.setIsRunning(true);
-            t.start();
+            Thread t = startThread(am);
 
             //Execute the operations
             switch(testType){
@@ -38,18 +31,40 @@ public class MeasureLoop {
             }
 
             //Terminate the thread and store results.
-            am.setIsRunning(false);
-            try {
-                t.join();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            terminateThread(am,t);
             results.add(am.getResult());
 
-            //clear database
+
             //  super.clearDatabase();
         }
         //write to file
         new CsvWriter().writeToFile(test.getFolderName() + test.getFilename(), results);
+    }
+
+    public static Thread startThread(AverageMeasurement am){
+        Thread t = new Thread(am);
+        am.setIsRunning(true);
+        t.start();
+        return t;
+    }
+
+    public static void garbageCollect(boolean warmup){
+        if(!warmup) {
+            System.gc();
+            try {
+                Thread.sleep(1500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public static void terminateThread(AverageMeasurement am, Thread t){
+        am.setIsRunning(false);
+        try {
+            t.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

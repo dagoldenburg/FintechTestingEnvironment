@@ -1,6 +1,7 @@
 package Tests;
 
 import DB.PostGreSQLDb;
+import OgHTTPClient.HTTPRequests;
 
 import java.awt.*;
 import java.io.File;
@@ -13,6 +14,7 @@ public class AutoTestCentral {
 
     public static void main(String[] args){
 
+        String startTime = new Date().toString();
         TestI testInterface;
         String date = new Date().toString();
 
@@ -36,41 +38,53 @@ public class AutoTestCentral {
 
             ArrayList<TestI> tests = new ArrayList<>();
 
-           tests.add(new SFTPTest(SFTPTestFolder,true));
-           // tests.add(new RestTest(RestTestFolder));
-           // tests.add(new RobotTest(RobotTestFolder));
+            //1, 10, 25, 50, 100, 250, 500
+
+          //  tests.add(new RobotTest(RobotTestFolder,true));
+            //tests.add(new RestTest(RestTestFolder,true));
+            tests.add(new SFTPTest(SFTPTestFolder,true));
 
             //WARMUP
             System.out.println("WARMING UP");
             for(TestI t : tests){
-                t.testSendTransactions(10);
+             //   t.testSendTransactions(10);
                 t.testRetrieveTransactions(10);
-                t.testSendTransactions(10);
                 t.testRetrieveTransactions(10);
-                t.testSendTransactions(10);
+                t.testRetrieveTransactions(10);
+                t.testRetrieveTransactions(10);
+                t.testRetrieveTransactions(10);
+                t.testRetrieveTransactions(10);
+                t.testRetrieveTransactions(10);
+                t.testRetrieveTransactions(10);
                 t.testRetrieveTransactions(10);
             }
 
             for(TestI t : tests){
                 t.setWarmup(false);
             }
+
             System.out.println("STARTING REAL TESTS");
             for(TestI t : tests){
-
-                t.testSendTransactions(1);
-
-                for(int i = 10; i <= 100; i+=10){
-                    t.testSendTransactions(i);
-                }
-
+               // t.testRetrieveTransactions(250);
+             //   t.testSendTransactions(100);
                 t.testRetrieveTransactions(1);
-
-                for(int i = 10; i <= 100; i+=10){
-                    t.testRetrieveTransactions(i);
-                }
+                t.testRetrieveTransactions(5);
+                t.testRetrieveTransactions(10);
+                t.testRetrieveTransactions(25);
+                t.testRetrieveTransactions(50);
+                t.testRetrieveTransactions(100);
+                t.testRetrieveTransactions(250);
+                t.testRetrieveTransactions(500);
+                t.testRetrieveTransactions(1000);
             }
 
             System.out.println("Klar med testerna");
+
+            String finishTime = new Date().toString();
+
+
+            System.out.println("Test start time: " + startTime);
+            System.out.println("Test finish time: " + finishTime);
         }catch(Exception e){
             e.printStackTrace();
         }

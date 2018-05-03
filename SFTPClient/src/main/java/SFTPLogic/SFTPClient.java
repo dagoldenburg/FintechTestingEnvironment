@@ -3,10 +3,7 @@ package SFTPLogic;
 import Exceptions.SFTPClientException;
 import com.jcraft.jsch.*;
 
-import java.io.BufferedReader;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.nio.charset.Charset;
@@ -50,7 +47,7 @@ public class SFTPClient implements SFTPClientI{
             channel.connect();
             c = (ChannelSftp) channel;
 
-            System.out.println("CONNECTED TO SFTP SERVER "+ip+":"+port+" AS "+username);
+           // System.out.println("CONNECTED TO SFTP SERVER "+ip+":"+port+" AS "+username);
         } catch (JSchException e) {
             e.printStackTrace();
             throw new SFTPClientException(e.getMessage());
@@ -83,6 +80,7 @@ public class SFTPClient implements SFTPClientI{
                 retrieveFile("/Users/do/Documents/RESPONSEDOCUMENTS/" + strings[1]+".txt",
                         "/Users/do/IdeaProjects/ExjobbMonkaS/FileStatioN/"+strings[1]+".txt");
                 //System.out.println("Fuckin goteeem");
+                printResult("/Users/do/IdeaProjects/ExjobbMonkaS/FileStatioN/"+strings[1]+".txt");
             }else{
                 System.out.println("FAILED TO RETRIEVE SFTP FILE!!!!!!");
             }
@@ -133,6 +131,33 @@ public class SFTPClient implements SFTPClientI{
         }
     }
 
+    private void printResult(String filename){
+        BufferedReader br = null;
+        try {
+            br = new BufferedReader(new FileReader(filename));
+            String line = br.readLine();
+            int i = 0;
+            while(line != null){
+                System.out.println(line);
+                line = br.readLine();
+                i++;
+            }
+            System.out.println("Length: " + i);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }finally{
+            if(br != null){
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
     @Override
     public void disconnect() {
         if(c!=null)
@@ -142,7 +167,7 @@ public class SFTPClient implements SFTPClientI{
             channel.disconnect();
         if(session!=null)
             session.disconnect();
-        System.out.println("Disconnected");
+       // System.out.println("Disconnected");
     }
 
 }
