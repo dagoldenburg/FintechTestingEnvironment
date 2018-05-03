@@ -6,41 +6,41 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef6c738-f1f9-46a9-b96a-d5d31a2c1684" name="Default" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;SFTPClient/src/main/java/SFTPLogic/SFTPClient.java&#10;#&#9;Tests/src/main/java/Tests/AutoTestCentral.java&#10;#&#9;Tests/src/main/java/Tests/RobotTest.java&#10;#&#9;Tests/src/main/java/Tests/ServerInfo.java">
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:40:19 CEST 2018/SFTPTest/SFTPRetrieveManyTrans1" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:40:19 CEST 2018/SFTPTest/SFTPRetrieveManyTrans10" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:40:19 CEST 2018/SFTPTest/SFTPRetrieveManyTrans100" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:40:19 CEST 2018/SFTPTest/SFTPRetrieveManyTrans50" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:40:19 CEST 2018/SFTPTest/SFTPSendManyTrans1" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:40:19 CEST 2018/SFTPTest/SFTPSendManyTrans10" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:40:19 CEST 2018/SFTPTest/SFTPSendManyTrans100" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:40:19 CEST 2018/SFTPTest/SFTPSendManyTrans50" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:50:08 CEST 2018/RestTest/RestRetrieveManyTrans1" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:50:08 CEST 2018/RestTest/RestRetrieveManyTrans10" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:50:08 CEST 2018/RestTest/RestRetrieveManyTrans100" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:50:08 CEST 2018/RestTest/RestRetrieveManyTrans50" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:50:08 CEST 2018/RestTest/RestSendManyTrans1" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:50:08 CEST 2018/RestTest/RestSendManyTrans10" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:50:08 CEST 2018/RestTest/RestSendManyTrans100" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:50:08 CEST 2018/RestTest/RestSendManyTrans50" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:54:38 CEST 2018/RobotTest/RobotRetrieveManyTans1" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:54:38 CEST 2018/RobotTest/RobotRetrieveManyTans10" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:54:38 CEST 2018/RobotTest/RobotRetrieveManyTans100" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:54:38 CEST 2018/RobotTest/RobotRetrieveManyTans50" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:54:38 CEST 2018/RobotTest/RobotSendManyTrans1" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:54:38 CEST 2018/RobotTest/RobotSendManyTrans10" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:54:38 CEST 2018/RobotTest/RobotSendManyTrans100" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Fri Apr 20 15:54:38 CEST 2018/RobotTest/RobotSendManyTrans50" />
+    <list default="true" id="bef6c738-f1f9-46a9-b96a-d5d31a2c1684" name="Default" comment="Merge branch 'master' of https://github.com/kraken108/ExjobbMonkaS&#10;&#10;# Conflicts:&#10;#&#9;Tests/src/main/java/Tests/AutoTestCentral.java">
+      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans1" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans10" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans100" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans20" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans30" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans40" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans50" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans60" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans70" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans80" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans90" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPSendManyTrans1" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPSendManyTrans10" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPSendManyTrans100" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPSendManyTrans20" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPSendManyTrans30" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPSendManyTrans40" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPSendManyTrans50" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPSendManyTrans60" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPSendManyTrans70" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPSendManyTrans80" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPSendManyTrans90" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Database/src/main/java/DB/PostGreSQLDb.java" afterPath="$PROJECT_DIR$/Database/src/main/java/DB/PostGreSQLDb.java" />
       <change beforePath="$PROJECT_DIR$/SFTPClient/src/main/java/SFTPLogic/SFTPClient.java" afterPath="$PROJECT_DIR$/SFTPClient/src/main/java/SFTPLogic/SFTPClient.java" />
-      <change beforePath="$PROJECT_DIR$/SFTPServer/src/main/java/Filehandler.java" afterPath="$PROJECT_DIR$/SFTPServer/src/main/java/Filehandler.java" />
-      <change beforePath="$PROJECT_DIR$/SFTPServer/src/main/java/TcpConnectionHandler.java" afterPath="$PROJECT_DIR$/SFTPServer/src/main/java/TcpConnectionHandler.java" />
+      <change beforePath="$PROJECT_DIR$/SFTPClient/src/main/java/SFTPLogic/SFTPDataGenerator.java" afterPath="$PROJECT_DIR$/SFTPClient/src/main/java/SFTPLogic/SFTPDataGenerator.java" />
       <change beforePath="$PROJECT_DIR$/Tests/src/main/java/Tests/AutoTestCentral.java" afterPath="$PROJECT_DIR$/Tests/src/main/java/Tests/AutoTestCentral.java" />
+      <change beforePath="$PROJECT_DIR$/Tests/src/main/java/Tests/MeasureLoop.java" afterPath="$PROJECT_DIR$/Tests/src/main/java/Tests/MeasureLoop.java" />
       <change beforePath="$PROJECT_DIR$/Tests/src/main/java/Tests/RestTest.java" afterPath="$PROJECT_DIR$/Tests/src/main/java/Tests/RestTest.java" />
       <change beforePath="$PROJECT_DIR$/Tests/src/main/java/Tests/RobotTest.java" afterPath="$PROJECT_DIR$/Tests/src/main/java/Tests/RobotTest.java" />
       <change beforePath="$PROJECT_DIR$/Tests/src/main/java/Tests/SFTPTest.java" afterPath="$PROJECT_DIR$/Tests/src/main/java/Tests/SFTPTest.java" />
       <change beforePath="$PROJECT_DIR$/Tests/src/main/java/Tests/ServerInfo.java" afterPath="$PROJECT_DIR$/Tests/src/main/java/Tests/ServerInfo.java" />
+      <change beforePath="$PROJECT_DIR$/Tests/src/main/java/Tests/TestCentral.java" afterPath="$PROJECT_DIR$/Tests/src/main/java/Tests/TestCentral.java" />
+      <change beforePath="$PROJECT_DIR$/Tests/src/main/java/Tests/TestI.java" afterPath="$PROJECT_DIR$/Tests/src/main/java/Tests/TestI.java" />
     </list>
     <ignored path="$PROJECT_DIR$/Tests/target/" />
     <ignored path="$PROJECT_DIR$/ExjobbWebsite/target/" />
@@ -66,18 +66,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AutoTestCentral.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/AutoTestCentral.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-48">
-              <caret line="38" column="54" lean-forward="false" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RobotRetrieveManyTans10" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:54:38 CEST 2018/RobotTest/RobotRetrieveManyTans10">
+      <file leaf-file-name="SFTPRetrieveManyTrans20" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans20">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -86,8 +76,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RobotRetrieveManyTans50" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:54:38 CEST 2018/RobotTest/RobotRetrieveManyTans50">
+      <file leaf-file-name="SFTPRetrieveManyTrans1" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans1">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SFTPRetrieveManyTrans10" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans10">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -96,8 +96,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RobotRetrieveManyTans100" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:54:38 CEST 2018/RobotTest/RobotRetrieveManyTans100">
+      <file leaf-file-name="SFTPSendManyTrans1" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPSendManyTrans1">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -106,18 +106,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RobotRetrieveManyTans1" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:54:38 CEST 2018/RobotTest/RobotRetrieveManyTans1">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RestRetrieveManyTrans100" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:50:08 CEST 2018/RestTest/RestRetrieveManyTrans100">
+      <file leaf-file-name="SFTPSendManyTrans10" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPSendManyTrans10">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -126,8 +116,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestSendManyTrans1" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:50:08 CEST 2018/RestTest/RestSendManyTrans1">
+      <file leaf-file-name="SFTPSendManyTrans100" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPSendManyTrans100">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -136,8 +126,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestSendManyTrans10" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:50:08 CEST 2018/RestTest/RestSendManyTrans10">
+      <file leaf-file-name="SFTPSendManyTrans50" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPSendManyTrans50">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -146,8 +136,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestSendManyTrans50" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:50:08 CEST 2018/RestTest/RestSendManyTrans50">
+      <file leaf-file-name="SFTPRetrieveManyTrans40" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans40">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -156,8 +146,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestSendManyTrans100" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:50:08 CEST 2018/RestTest/RestSendManyTrans100">
+      <file leaf-file-name="SFTPRetrieveManyTrans30" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans30">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SFTPRetrieveManyTrans100" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans100">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -196,7 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sftpclient/src/main/java/SFTPLogic/SFTPDataGenerator.java" />
         <option value="$PROJECT_DIR$/sftpclient/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/restvertx/src/main/java/BigBoiVertx.java" />
         <option value="$PROJECT_DIR$/RESTFrontend/src/main/java/VerticleRestStartFrontend.java" />
@@ -227,26 +226,27 @@
         <option value="$PROJECT_DIR$/AppData/src/AppData/ServerInfo.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Tests/src/main/java/Tests/Measuring/MeasureResult.java" />
-        <option value="$PROJECT_DIR$/Tests/src/main/java/Tests/FileHandler/CsvWriter.java" />
         <option value="$PROJECT_DIR$/Webrobot/src/main/java/webrobot/Webrobot.java" />
         <option value="$PROJECT_DIR$/Webrobot/src/main/java/webrobot/WebrobotTests.java" />
         <option value="$PROJECT_DIR$/Webrobot/src/main/java/webrobot/Main.java" />
         <option value="$PROJECT_DIR$/RESTClient/src/main/java/OgHTTPClient/Main.java" />
-        <option value="$PROJECT_DIR$/Tests/src/main/java/Tests/TestI.java" />
         <option value="$PROJECT_DIR$/TestResults/Thu Apr 19 14:41:05 CEST 2018/RestTest/RestRetrieveManyTrans1" />
         <option value="$PROJECT_DIR$/RESTServer/src/main/java/Rest/VerticleRestStartBackend.java" />
         <option value="$PROJECT_DIR$/SFTPClient/src/main/java/SFTPLogic/SFTPDataGenerator.java" />
-        <option value="$PROJECT_DIR$/Tests/src/main/java/Tests/AverageMeasurement.java" />
-        <option value="$PROJECT_DIR$/RESTClient/src/main/java/OgHTTPClient/HTTPRequests.java" />
-        <option value="$PROJECT_DIR$/Database/src/main/java/DB/PostGreSQLDb.java" />
-        <option value="$PROJECT_DIR$/Tests/src/main/java/Tests/RobotTest.java" />
-        <option value="$PROJECT_DIR$/Tests/src/main/java/Tests/SFTPTest.java" />
         <option value="$PROJECT_DIR$/SFTPClient/src/main/java/SFTPLogic/SFTPClient.java" />
         <option value="$PROJECT_DIR$/SFTPServer/src/main/java/TcpConnectionHandler.java" />
         <option value="$PROJECT_DIR$/SFTPServer/src/main/java/Filehandler.java" />
-        <option value="$PROJECT_DIR$/Tests/src/main/java/Tests/ServerInfo.java" />
+        <option value="$PROJECT_DIR$/Tests/src/main/java/Tests/TestI.java" />
+        <option value="$PROJECT_DIR$/RESTClient/src/main/java/OgHTTPClient/HTTPRequests.java" />
+        <option value="$PROJECT_DIR$/Tests/src/main/java/Tests/RobotTest.java" />
+        <option value="$PROJECT_DIR$/Tests/src/main/java/Tests/SFTPTest.java" />
         <option value="$PROJECT_DIR$/Tests/src/main/java/Tests/RestTest.java" />
+        <option value="$PROJECT_DIR$/Tests/src/main/java/Tests/MeasureLoop.java" />
+        <option value="$PROJECT_DIR$/Tests/src/main/java/Tests/FileHandler/CsvWriter.java" />
+        <option value="$PROJECT_DIR$/Tests/src/main/java/Tests/AverageMeasurement.java" />
         <option value="$PROJECT_DIR$/Tests/src/main/java/Tests/AutoTestCentral.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/DB/PostGreSQLDb.java" />
+        <option value="$PROJECT_DIR$/Tests/src/main/java/Tests/ServerInfo.java" />
       </list>
     </option>
   </component>
@@ -293,10 +293,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="403" />
-    <option name="y" value="62" />
-    <option name="width" value="1839" />
-    <option name="height" value="1227" />
+    <option name="x" value="411" />
+    <option name="y" value="66" />
+    <option name="width" value="1741" />
+    <option name="height" value="1248" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -314,6 +314,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -324,46 +326,37 @@
             <path>
               <item name="ExjobbMonkaS" type="b2602c69:ProjectViewProjectNode" />
               <item name="ExjobbMonkaS" type="462c0819:PsiDirectoryNode" />
-              <item name="RESTClient" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ExjobbMonkaS" type="b2602c69:ProjectViewProjectNode" />
               <item name="ExjobbMonkaS" type="462c0819:PsiDirectoryNode" />
-              <item name="RESTClient" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ExjobbMonkaS" type="b2602c69:ProjectViewProjectNode" />
               <item name="ExjobbMonkaS" type="462c0819:PsiDirectoryNode" />
-              <item name="RESTClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExjobbMonkaS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExjobbMonkaS" type="462c0819:PsiDirectoryNode" />
-              <item name="RESTClient" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ExjobbMonkaS" type="b2602c69:ProjectViewProjectNode" />
               <item name="ExjobbMonkaS" type="462c0819:PsiDirectoryNode" />
-              <item name="RESTClient" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ExjobbMonkaS" type="b2602c69:ProjectViewProjectNode" />
               <item name="ExjobbMonkaS" type="462c0819:PsiDirectoryNode" />
-              <item name="RESTClient" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="OgHTTPClient" type="462c0819:PsiDirectoryNode" />
+              <item name="DB" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ExjobbMonkaS" type="b2602c69:ProjectViewProjectNode" />
@@ -399,59 +392,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Rest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExjobbMonkaS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExjobbMonkaS" type="462c0819:PsiDirectoryNode" />
-              <item name="SFTPClient" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExjobbMonkaS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExjobbMonkaS" type="462c0819:PsiDirectoryNode" />
-              <item name="SFTPClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExjobbMonkaS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExjobbMonkaS" type="462c0819:PsiDirectoryNode" />
-              <item name="SFTPClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExjobbMonkaS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExjobbMonkaS" type="462c0819:PsiDirectoryNode" />
-              <item name="SFTPClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExjobbMonkaS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExjobbMonkaS" type="462c0819:PsiDirectoryNode" />
-              <item name="SFTPClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExjobbMonkaS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExjobbMonkaS" type="462c0819:PsiDirectoryNode" />
-              <item name="SFTPClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="SFTPLogic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExjobbMonkaS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExjobbMonkaS" type="462c0819:PsiDirectoryNode" />
-              <item name="SFTPClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ExjobbMonkaS" type="b2602c69:ProjectViewProjectNode" />
@@ -523,10 +463,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -540,12 +478,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Database" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/AppData/src/main/java" />
       <recent name="$PROJECT_DIR$/SFTPClient" />
-      <recent name="$PROJECT_DIR$/Database" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Database" />
     </key>
   </component>
@@ -856,7 +794,8 @@
       <workItem from="1524139141637" duration="9377000" />
       <workItem from="1524207581542" duration="1394000" />
       <workItem from="1524210410775" duration="8225000" />
-      <workItem from="1524228162764" duration="4755000" />
+      <workItem from="1524228162764" duration="7142000" />
+      <workItem from="1524551605968" duration="15849000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/kraken108/ExjobbMonkaS&#10;&#10;# Conflicts:&#10;#&#9;Tests/src/main/java/Tests/RobotTest.java&#10;#&#9;Tests/src/main/java/Tests/TestCentral.java">
       <created>1523888968276</created>
@@ -907,14 +846,35 @@
       <option name="project" value="LOCAL" />
       <updated>1524228183429</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;SFTPClient/src/main/java/SFTPLogic/SFTPClient.java&#10;#&#9;Tests/src/main/java/Tests/AutoTestCentral.java&#10;#&#9;Tests/src/main/java/Tests/RobotTest.java&#10;#&#9;Tests/src/main/java/Tests/ServerInfo.java">
+      <created>1524234507741</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1524234507741</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;SFTPClient/src/main/java/SFTPLogic/SFTPClient.java&#10;#&#9;Tests/src/main/java/Tests/AutoTestCentral.java&#10;#&#9;Tests/src/main/java/Tests/RobotTest.java&#10;#&#9;Tests/src/main/java/Tests/ServerInfo.java">
+      <created>1524569818815</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1524569818815</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;SFTPClient/src/main/java/SFTPLogic/SFTPClient.java&#10;#&#9;Tests/src/main/java/Tests/AutoTestCentral.java&#10;#&#9;Tests/src/main/java/Tests/RobotTest.java&#10;#&#9;Tests/src/main/java/Tests/ServerInfo.java">
+      <created>1524579772855</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1524579772855</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85400000" />
+    <option name="totallyTimeSpent" value="103636000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="403" y="62" width="1839" height="1227" extended-state="0" />
+    <frame x="411" y="66" width="1741" height="1248" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -924,8 +884,8 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39919677" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -935,10 +895,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33160174" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3256803" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30560088" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.322803" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -972,7 +932,15 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/RestTest/RestSendManyTrans15">
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 12:03:32 CEST 2018/RestTest/RestRetrieveManyTrans60">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 12:03:32 CEST 2018/RestTest/RestRetrieveManyTrans70">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -980,7 +948,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/RestTest/RestSendManyTrans10">
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 13:26:01 CEST 2018/RestTest/RestRetrieveManyTrans1">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -988,7 +956,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/RestTest/RestSendManyTrans5">
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 13:26:01 CEST 2018/RestTest/RestRetrieveManyTrans10">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -996,7 +964,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/RestTest/RestSendManyTrans1">
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 13:26:01 CEST 2018/RestTest/RestRetrieveManyTrans20">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1004,7 +972,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/RobotTest/RobotRetrieveManyTans1">
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 13:26:01 CEST 2018/RestTest/RestRetrieveManyTrans30">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1012,7 +980,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/RobotTest/RobotRetrieveManyTans5">
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 13:26:01 CEST 2018/RestTest/RestRetrieveManyTrans40">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1020,7 +988,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/RobotTest/RobotRetrieveManyTans10">
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 13:26:01 CEST 2018/RestTest/RestRetrieveManyTrans50">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1028,7 +996,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/RobotTest/RobotRetrieveManyTans15">
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 13:26:01 CEST 2018/RestTest/RestRetrieveManyTrans60">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1036,7 +1004,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/RobotTest/RobotRetrieveManyTans20">
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 13:26:01 CEST 2018/RestTest/RestRetrieveManyTrans70">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1044,7 +1012,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/RobotTest/RobotRetrieveManyTans25">
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 13:26:01 CEST 2018/RestTest/RestRetrieveManyTrans80">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1052,7 +1020,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/RobotTest/RobotSendManyTrans1">
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 13:26:01 CEST 2018/RestTest/RestRetrieveManyTrans100">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1060,223 +1028,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/RobotTest/RobotSendManyTrans5">
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 13:26:01 CEST 2018/RestTest/RestRetrieveManyTrans90">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/RobotTest/RobotSendManyTrans10">
+    <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/Measuring/MeasureResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/RobotTest/RobotSendManyTrans15">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/RobotTest/RobotSendManyTrans20">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/RobotTest/RobotSendManyTrans25">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/SFTPTest/SFTPRetrieveManyTrans15">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/SFTPTest/SFTPRetrieveManyTrans10">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/SFTPTest/SFTPRetrieveManyTrans20">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/SFTPTest/SFTPRetrieveManyTrans25">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/SFTPTest/SFTPSendManyTrans1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/SFTPTest/SFTPSendManyTrans5">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/SFTPTest/SFTPSendManyTrans10">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/SFTPTest/SFTPSendManyTrans15">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/SFTPTest/SFTPSendManyTrans20">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/SFTPTest/SFTPSendManyTrans25">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/SFTPTest/SFTPRetrieveManyTrans5">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:09:08 CEST 2018/SFTPTest/SFTPRetrieveManyTrans1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/ServerInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:40:19 CEST 2018/SFTPTest/SFTPSendManyTrans100">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:40:19 CEST 2018/SFTPTest/SFTPSendManyTrans50">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:40:19 CEST 2018/SFTPTest/SFTPSendManyTrans10">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:40:19 CEST 2018/SFTPTest/SFTPSendManyTrans1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:40:19 CEST 2018/SFTPTest/SFTPRetrieveManyTrans1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:40:19 CEST 2018/SFTPTest/SFTPRetrieveManyTrans10">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:40:19 CEST 2018/SFTPTest/SFTPRetrieveManyTrans50">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:40:19 CEST 2018/SFTPTest/SFTPRetrieveManyTrans100">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/RestTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="23" column="85" lean-forward="false" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="85" />
+        <state relative-caret-position="-447">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:50:08 CEST 2018/RestTest/RestRetrieveManyTrans1">
+    <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/MeasureLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="643">
+          <caret line="50" column="25" lean-forward="false" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 14:28:56 CEST 2018/RestTest/RestRetrieveManyTrans10">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1284,7 +1068,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:50:08 CEST 2018/RestTest/RestRetrieveManyTrans10">
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 14:28:56 CEST 2018/RestTest/RestSendManyTrans1">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1292,7 +1076,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:50:08 CEST 2018/RestTest/RestRetrieveManyTrans50">
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 14:28:56 CEST 2018/RestTest/RestSendManyTrans10">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1300,7 +1084,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:50:08 CEST 2018/RestTest/RestRetrieveManyTrans100">
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 14:28:56 CEST 2018/RestTest/RestRetrieveManyTrans1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/Runtime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="645" column="23" lean-forward="false" selection-start-line="645" selection-start-column="23" selection-end-line="645" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 14:59:59 CEST 2018/RestTest/RestRetrieveManyTrans1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 14:59:59 CEST 2018/RestTest/RestSendManyTrans1">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1308,7 +1116,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:50:08 CEST 2018/RestTest/RestSendManyTrans50">
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 14:59:59 CEST 2018/RestTest/RestSendManyTrans10">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1316,7 +1124,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:50:08 CEST 2018/RestTest/RestSendManyTrans100">
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 14:59:59 CEST 2018/RestTest/RestRetrieveManyTrans10">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1324,7 +1132,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:50:08 CEST 2018/RestTest/RestSendManyTrans1">
+    <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/AverageMeasurement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 15:04:26 CEST 2018/RestTest/RestSendManyTrans1">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1332,23 +1148,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:50:08 CEST 2018/RestTest/RestSendManyTrans10">
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 15:04:26 CEST 2018/RestTest/RestSendManyTrans10">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 15:04:26 CEST 2018/RestTest/RestRetrieveManyTrans1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 15:04:26 CEST 2018/RestTest/RestRetrieveManyTrans10">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/FileHandler/CsvWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-99">
+          <caret line="79" column="64" lean-forward="false" selection-start-line="79" selection-start-column="64" selection-end-line="79" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/AutoTestCentral.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-48">
-          <caret line="38" column="54" lean-forward="false" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+        <state relative-caret-position="619">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:54:38 CEST 2018/RobotTest/RobotRetrieveManyTans10">
+    <entry file="file://$PROJECT_DIR$/SFTPClient/src/main/java/SFTPLogic/SFTPDataGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/SFTPTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/DB/PostGreSQLDb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+          <folding>
+            <marker date="1524579904948" expanded="true" signature="1642:1689" ph="SELECT * FRO... users" />
+            <marker date="1524579904948" expanded="true" signature="2603:2666" ph="INSERT INTO transactions... " />
+            <marker date="1524579904948" expanded="true" signature="3405:3446" ph="SELECT * FRO... transactions" />
+            <marker date="1524579904948" expanded="true" signature="4386:4465" ph="SELECT * FRO... transactions" />
+            <marker date="1524579904948" expanded="true" signature="5409:5431" ph="SELECT name users" />
+            <marker date="1524579904948" expanded="true" signature="6365:6402" ph="INSERT INTO tokens... " />
+            <marker date="1524579904948" expanded="true" signature="6962:6982" ph="SELECT * FRO... tokens" />
+            <marker date="1524579904948" expanded="true" signature="7685:7717" ph="SELECT * FRO... users" />
+            <marker date="1524579904948" expanded="true" signature="8792:8837" ph="INSERT INTO users... " />
+            <marker date="1524579904948" expanded="true" signature="9794:9826" ph="DELETE from tokens... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/src/main/java/Tests/ServerInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="67" lean-forward="false" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans50">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1356,7 +1239,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:54:38 CEST 2018/RobotTest/RobotRetrieveManyTans50">
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans90">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1364,7 +1247,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:54:38 CEST 2018/RobotTest/RobotRetrieveManyTans100">
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans80">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1372,10 +1255,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestResults/Fri Apr 20 15:54:38 CEST 2018/RobotTest/RobotRetrieveManyTans1">
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans70">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans60">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans40">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans100">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPSendManyTrans50">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPSendManyTrans100">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPSendManyTrans1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPSendManyTrans10">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans10">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans20">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPRetrieveManyTrans30">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

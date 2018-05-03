@@ -11,6 +11,7 @@ abstract class TestI implements Cloneable{
 
     private String filename;
     private String folderName;
+    private boolean warmup;
 
     abstract void sendTransactions(int amountOfTransactions);
     abstract void retrieveTransactions(int amountOfTransactions);
@@ -48,5 +49,13 @@ abstract class TestI implements Cloneable{
     @Override
     protected Object clone() throws CloneNotSupportedException {
         return super.clone();
+    }
+
+    public boolean isWarmup() {
+        return warmup;
+    }
+
+    public void setWarmup(boolean warmup) {
+        this.warmup = warmup;
     }
 }

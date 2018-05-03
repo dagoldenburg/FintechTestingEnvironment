@@ -11,7 +11,8 @@ import java.util.ArrayList;
 public class SFTPTest extends TestI{
 
 
-    public SFTPTest(String folderName){
+    public SFTPTest(String folderName,boolean warmup){
+        super.setWarmup(warmup);
         super.setFolderName(folderName);
     }
 
@@ -25,7 +26,7 @@ public class SFTPTest extends TestI{
                     new SFTPClient(ServerInfo.getServerIp(),22, ServerInfo.getSFTPUsername(),
                             ServerInfo.getSFTPPassword(),2222);
             sftpc.connect();
-            sftpc.uploadFile("/Users/do/IdeaProjects/ExjobbMonkaSrevert/Hejhej/"+fname,
+            sftpc.uploadFile("/Users/do/IdeaProjects/ExjobbMonkaS/Hejhej/"+fname,
                     "/Users/do/Documents/REQUESTDOCUMENTS/"+fname);
 
         }catch(Exception e){
@@ -59,7 +60,7 @@ public class SFTPTest extends TestI{
         System.out.println("SFTP test: send transactions (" + amountOfTransactions + ")");
         super.setFileNameEnding("SFTPSendManyTrans"+ amountOfTransactions);
 
-        MeasureLoop.measure(this,amountOfTransactions, MeasureLoop.TestType.SEND);
+        MeasureLoop.measure(this,amountOfTransactions, MeasureLoop.TestType.SEND,super.isWarmup());
         System.out.println("DONE WITH SFTP SEND TRANSACTIONS TEST");
 
     }
@@ -69,7 +70,7 @@ public class SFTPTest extends TestI{
         System.out.println("SFTP test: retrieve transactions (" + amountOfTransactions + ")");
         super.setFileNameEnding("SFTPRetrieveManyTrans"+amountOfTransactions);
 
-        MeasureLoop.measure(this,amountOfTransactions, MeasureLoop.TestType.RECEIVE);
+        MeasureLoop.measure(this,amountOfTransactions, MeasureLoop.TestType.RECEIVE,super.isWarmup());
         System.out.println("DONE WITH SFTP RETRIEVE TRANSACTIONS TEST");
 
     }

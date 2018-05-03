@@ -36,7 +36,7 @@ public class AutoTestCentral {
 
             ArrayList<TestI> tests = new ArrayList<>();
 
-           tests.add(new SFTPTest(SFTPTestFolder));
+           tests.add(new SFTPTest(SFTPTestFolder,true));
            // tests.add(new RestTest(RestTestFolder));
            // tests.add(new RobotTest(RobotTestFolder));
 
@@ -51,6 +51,9 @@ public class AutoTestCentral {
                 t.testRetrieveTransactions(10);
             }
 
+            for(TestI t : tests){
+                t.setWarmup(false);
+            }
             System.out.println("STARTING REAL TESTS");
             for(TestI t : tests){
 

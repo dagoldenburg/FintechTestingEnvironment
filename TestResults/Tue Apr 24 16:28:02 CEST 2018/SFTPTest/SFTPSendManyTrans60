@@ -1,0 +1,21 @@
+###### TEST FILE - TestResults/Tue Apr 24 16:28:02 CEST 2018/SFTPTest/SFTPSendManyTrans60######
+
+
+****** CPU USAGE ******
+Average: 13.675003123801428
+Confidence interval 1: 13.47847694060613
+Confidence interval 2: 13.871529306996726
+*************************
+
+****** RAM USAGE ******
+Average: 18409.55720907917
+Confidence interval 1: 17792.700760191132
+Confidence interval 2: 19026.413657967205
+***********************
+
+****** OPERATION TIME ******
+Average: 585.25
+Confidence interval 1: 507.59302326371187
+Confidence interval 2: 662.9069767362881
+*****************************
+
